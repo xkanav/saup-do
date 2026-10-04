@@ -1,0 +1,34 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "get_parcel_context",
+          "args": {
+            "reason": "Read updated context after invitation acceptance",
+            "rule_id": "R03",
+            "case_id": "DEMO-CASE-001"
+          },
+          "id": "call_2847732"
+        },
+        "thoughtSignature": "EmkKZwFpFH0T7+mjSFoOm/WL5uaIAFHqkbSjZ4yn5/0mdajXx0dcR4emZfUpRsf2J3apkneF/L3UgjR2snSFSIa0WBNDT9xRFF/x9n03QFNrbTVUGL2hwWAQENzOJ6mCvT3C2wEhMWm8iaU="
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 4870,
+      "candidatesTokenCount": 48,
+      "totalTokenCount": 4918,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 4870
+        }
+      ],
+      "serviceTier": "standard"
+    }
+  }
+}

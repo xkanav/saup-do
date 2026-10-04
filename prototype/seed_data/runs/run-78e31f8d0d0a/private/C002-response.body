@@ -1,0 +1,46 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "name": "send_message",
+              "args": {
+                "attempt_id": null,
+                "rule_id": "R07",
+                "response_kind": "invitation",
+                "text": "नमस्ते मीरा जी, यह एक डेमो पार्सल की जानकारी है। आरव ने आपके लिए बेडशीट का पार्सल रिसीव करने की मंज़ूरी दी है, क्या आप इसमें मदद चाहती हैं?",
+                "case_id": "DEMO-CASE-001",
+                "recipient_id": "DEMO-RECEIVER-01",
+                "reason": "Invite Meera to coordinate test parcel receipt and explain demo limitations",
+                "purpose": "invite",
+                "expected_state_version": 1
+              },
+              "id": "call_2916133"
+            },
+            "thoughtSignature": "EmkKZwFpFH0TUCn3R9X+ABJESSr6cIuzeGwIPrGGTPHgGK3JYp8E/3O5l42QZcXxLI1WXG7ABz1OG09yri63f+FQMo4jB3dKpsDLQCUYaNaCJmiqBhDqr7lDT4ACVpMKwbpc27ZPaycoSl0="
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0,
+      "finishMessage": "Model generated function call(s)."
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 4138,
+    "candidatesTokenCount": 143,
+    "totalTokenCount": 4281,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 4138
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "YrDBarjlE4mkqfkP_eSo6AQ"
+}

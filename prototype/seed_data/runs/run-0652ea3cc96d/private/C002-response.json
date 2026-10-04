@@ -1,0 +1,76 @@
+{
+  "call_id": "C002",
+  "provider": "Gemini",
+  "status_code": 200,
+  "elapsed_ms": 1626,
+  "content_type": "application/json; charset=UTF-8",
+  "response_body": {
+    "path": "private/C002-response.body",
+    "sha256": "d3c21295deababb66470e2c59449493cb47a79607b78e45a7ef2e0ed3077e93f",
+    "bytes": 2299
+  },
+  "json": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "name": "send_message",
+                "args": {
+                  "response_kind": "invitation",
+                  "purpose": "invite",
+                  "reason": "Invite Meera to participate in parcel coordination",
+                  "case_id": "DEMO-CASE-001",
+                  "rule_id": "R07",
+                  "recipient_id": "DEMO-RECEIVER-01",
+                  "expected_state_version": 1,
+                  "text": "नमस्ते मीरा जी, आरव ने आपके लिए एक पार्सल की जानकारी साझा करने की मंज़ूरी दी है। यह एक डेमो है, क्या आप इस पार्सल की जानकारी में मदद चाहते हैं?",
+                  "attempt_id": null
+                },
+                "id": "call_1983369"
+              },
+              "thoughtSignature": "EmkKZwFpFH0Td4ktdtPt7YnOJOI9RgyZOrO+iw6E9ynrmCSbgFjzW1QpUikjcWV+TTlhpKn/mK7GENLaI0i6ZgkPjxFTNmjiEJQjpfmg9D85Ynza/bouhhRjKfcxOuGyoHXI0SvMlytP/Kc="
+            },
+            {
+              "functionCall": {
+                "name": "wait_for_event",
+                "args": {
+                  "timeout_seconds": 120,
+                  "case_id": "DEMO-CASE-001",
+                  "rule_id": "R12",
+                  "reason": "Wait for receiver response to invitation or buyer revocation",
+                  "event_types": [
+                    "invitation_responded",
+                    "receiver_audio_uploaded",
+                    "receiver_text_received",
+                    "buyer_revoked"
+                  ]
+                },
+                "id": "call_1983370"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "finishMessage": "Model generated function call(s)."
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 4149,
+      "candidatesTokenCount": 233,
+      "totalTokenCount": 4382,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 4149
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.8-flash",
+    "responseId": "ALDBapOfFYHUqfkPk5aN2QQ"
+  }
+}

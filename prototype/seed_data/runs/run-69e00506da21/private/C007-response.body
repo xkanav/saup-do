@@ -1,0 +1,42 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "name": "transcribe_receiver_audio",
+              "args": {
+                "reason": "Transcribe receiver question audio using registered audio ID",
+                "case_id": "DEMO-CASE-001",
+                "audio_id": "sample-19a2acf29199db0c",
+                "rule_id": "R02"
+              },
+              "id": "call_2538345"
+            },
+            "thoughtSignature": "EuUFCuIFAWkUfRMvCfQ1FUMjyr5Ajo9xLUGdZwu6LgitJ+qJDYDZv+EGkclY9L+4f007RvIOWyVCzBFHVCHaa5fh+zrQZhpzOtSzniIuoTx6KCp4mgNEL/03lsYX702hE1VFwkh74koOqQM9GbkdEtji2aoOoUAQ+X3wpw/klogab5Vj7ea+qNlScOVexrNAHHN1GCt7AF4fyNBu48e0JaIheqMLe7YZg8HjSoKlEGRkFRV7R+/ec/KUvi/1jlrEMlbFxnZ4YWfrG/JKXFczRfEV2dd551xBxAmlCvvx7ZJOsLG2RpbgSjIuCbcesntd43yUyHFC2XCK7qoolMNVTV5OzLO7f5NddRtLATjeg0CcUonMA772zMzy7cGhy16zU6OjcJP2VYaWgJx43ZjsDgtiKdJsYHa2ado/CqOJzRNjxJ6a2fBYDxxKPrEE5ciE0+jklcXII+pF0F4IMhTUIBtVZtPgdA9rCSTWYvtkVSrBfHslsLmvQ9PtOuwmmR3lRdDs53QeoLN51lkTeWBhSU/23a0VZaR+fsGXbsD1fNEta5HaeYxVXaeczfGUlG67LWLxcfok0QPngDgMKtdkEAVviIwXP8efi39lRcO/XTx7vXuqfX5qROvfOP0Qfxe8W/Olairy8T2bYgcJ26xsjA5eBSVGi9wdKX/yowNpJMsxzS3ML+gXHL0sL/iM1nvjV8AMwvwkVT7OSIYJgcBnXRRTgFvmgeorphckgzH20poaiHeOcffanSZ6aRztsiCIirRndFhW6QCiTiaCNvWZYX9yQeeSK5vMti0KWnYvSmqwhCzp9t4kH8xDCbpqONvGx1npzdcVvdZavkcC93+OkJkOpo5YHRyh2ivnjp54vexhlzHi76jQ61/Qqyifl47OPbrZuTzGvHVz35a+sncWC+X9PQg6QOVfwyFXIAMoy4MWCTUOs40WHvG1awF6/Z0O+IbpjH3ulGhqxwH3PgFBOBtXFadOLFwN"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0,
+      "finishMessage": "Model generated function call(s)."
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 11175,
+    "candidatesTokenCount": 74,
+    "totalTokenCount": 11417,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 11175
+      }
+    ],
+    "thoughtsTokenCount": 168,
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "hmjBapGqGanEg8UPh53EsQk"
+}

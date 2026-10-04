@@ -1,0 +1,51 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "name": "close_case",
+              "args": {
+                "case_id": "DEMO-CASE-001",
+                "rule_id": "R14",
+                "reason_code": "carrier_delegation_unsupported",
+                "reason": "Receiver questions answered and availability coordinated; closing as unresolved since carrier release is unsupported in coordination_only mode",
+                "outcome": "unresolved",
+                "evidence_refs": [
+                  "E-6ac596c4a2cc",
+                  "E-49e6a729ca21",
+                  "E-162a8a40becb",
+                  "E-f05b35768584",
+                  "E-cce770d17a92",
+                  "E-faa6552a2230"
+                ],
+                "expected_state_version": 4
+              },
+              "id": "call_1553228"
+            },
+            "thoughtSignature": "EmkKZwFpFH0T0+2InWJz048Xpfygl0SXDy07Xu8uBlUbsWFGWhXziGlbSmkYdy9L/nFnYFewI8JsEUH/zOUrYwO6fV/69xqUt2HN+/NZaAAbpyaF4RC+0q5+aJj/F8Hf89M7A04LfAtxXCA="
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0,
+      "finishMessage": "Model generated function call(s)."
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 10373,
+    "candidatesTokenCount": 187,
+    "totalTokenCount": 10560,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 10373
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "crDBas2AFpq2g8UPqcK0yQk"
+}

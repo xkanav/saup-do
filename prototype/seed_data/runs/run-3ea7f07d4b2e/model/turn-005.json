@@ -1,0 +1,39 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "send_message",
+          "args": {
+            "rule_id": "R06",
+            "purpose": "explain",
+            "expected_state_version": 2,
+            "text": "यह Myntra से बेडशीट का एक डेमो पार्सल है, जो पहले से प्रीपेड है। डिलीवरी कंपनी अपनी सामान्य प्रक्रिया से ही पार्सल देगी। क्या आपका कोई सवाल है?",
+            "response_kind": "text",
+            "recipient_id": "DEMO-RECEIVER-01",
+            "case_id": "DEMO-CASE-001",
+            "reason": "Explain parcel details, demo limitation, and give receiver a chance to ask questions"
+          },
+          "id": "call_2817578"
+        },
+        "thoughtSignature": "EmkKZwFpFH0TOR9Hr8mglSF/K6GhSf6YaC1HTnn0uUkZzTEH9jZOCL5TrEwGF0g5Phc6IxV/Kmab4QxzhlYExwRXBCIYzs8RmtF1YWHK6R1lRvzrOUDePVjUqRgi4XzCQ6U89jJ/2kNYESQ="
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 6292,
+      "candidatesTokenCount": 136,
+      "totalTokenCount": 6428,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 6292
+        }
+      ],
+      "serviceTier": "standard"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "send_message",
+          "args": {
+            "purpose": "update",
+            "reason": "Notify receiver that coordination is complete and reminder about carrier verification",
+            "attempt_id": null,
+            "expected_state_version": 4,
+            "response_kind": "none",
+            "rule_id": "R06",
+            "case_id": "DEMO-CASE-001",
+            "text": "धन्यवाद। डिलीवरी कंपनी पार्सल देते समय अपने सामान्य नियमों के अनुसार सत्यापन करेगी।",
+            "recipient_id": "DEMO-RECEIVER-01"
+          },
+          "id": "call_1976583"
+        },
+        "thoughtSignature": "EmkKZwFpFH0T9TsLE5GWm9qsZ7Kmq/6HlNK6PIzEAYGCUNnHMh3fMZJ/fb8Pw0CBgv6UKqCuUftrzhvssTa/XZzG65TN2c3Gb19l9NvwVJ3fHa53CzQiOJHd5W2+EAK1PEyjrXkKEX0iJvo="
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 13780,
+      "candidatesTokenCount": 117,
+      "totalTokenCount": 13897,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 13780
+        }
+      ],
+      "serviceTier": "standard"
+    }
+  }
+}

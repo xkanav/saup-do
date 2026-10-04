@@ -1,0 +1,58 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "name": "close_case",
+              "args": {
+                "reason_code": "missing_carrier_support",
+                "case_id": "DEMO-CASE-001",
+                "reason": "Receiver questions answered; carrier delegated release is unavailable in coordination_only mode, leaving delivery to standard carrier verification",
+                "evidence_refs": [
+                  "E-7517e30dc2db",
+                  "E-6d3d908b846f",
+                  "E-971bd3bc19bc",
+                  "E-5d64b1ec767f",
+                  "E-1a143fb46367"
+                ],
+                "expected_state_version": 3,
+                "outcome": "unresolved",
+                "rule_id": "R14"
+              },
+              "id": "call_1921404"
+            },
+            "thoughtSignature": "Eq0JCqoJAWkUfRNE1XKZPBW3ytbMM4oESrJyCWgx6jMEJeoR0t65iyxN6spQlq/DrYgjJdqG/GvTDBaIBZ7h1WX+E6mo31/vD+bOCpxTxIbkCxfCCTz9rgWufc77zRyuh+4sgSX33uzSEvxHt9AUrC6VGtVqav3ElgGtmmEDjbKRSBCRAgWEiF/gvgW5jkTHrt/oyFmkQvkJ/0JFgfFv41BEhvWNPyaTN8YL4iD4KpFB6awZu3aCRsksWSQ3fkvLJoUhwavP4KV8Kv4SXTG1nBaEWoX9x9nMvZlhoww3lhJ05MEPAg8DrMMrllfOqkhntv7FmttlcrLoK3BoiB+UY6k/TXw2cPlGVp8kjDvxaptvQp9hzdDtIa3DTRa4yO149K7gUgxtZFKbKpzr3qhR5VyLzaRXmjJgwcA4Uf+iKaxmWBOqj4n2UTCRSYelXCJUEcxKBzEkCMeBO3navVnoCRMmMYpOYuzOUuahWxNpAs6WuxPKb5x0LBEaukXa9yCGSbizVWCxvela2FceR4Vkt2eel7QH2kQ4g7zQGX2fCRDoebylisJ1gJzqr0V2jvFs2OOa9v3DmvkXb+n3GOHaCihrLOxTL3QSxohsd49GfHdHyIPKMaidj4DxtmqtECXEVeqKmupv0MxKqtQCl4hywiUIwC9fKdnqn0KiHkHtOawy+J10Ca960rRusY1VFMXmceJuO0kENu53axKwLQigudH2V1i1CaErnnr/zWTHc89/CLMNfi7yn4WYf/Heby+bxoBbyS/FjeNH8NPazgdjUn+Mi2puh0tCddQQ4rYh4Nh8qCy3MoJEchEdfzjE8PJKhx+vXZNJasfwuC/ky85Js7vqZJ7Joz/OGjZXsleGwjmzC8iBLGQPbvNb75EmZneprJ38OSF9B5XXwvcyVrc43ZWsVHwli0zUemrKDMoHojTTOa2pfozlOWHv3rbo9LTtF/03U1/Rf0RNIq0J8dPYkvQtBQOPRlHOfhTJTTKbzsr1Py/b5KAq5T7Ayu94+T6FyOeeDg1SxZW1RaqoZWdpcAEMKsYecTlhNXYegIPXYcmkPfDFtR3VxxpMYi5sJIA+ZpTxZgvR+XKM2aW/LnuEwCJadtoFqerbnGuG9/au+pK8xp6vemFL6t5Hh22Z+Gzkl2LuPpRUCns8AEcldfn4bkFbGnBI40wytw+bzIeTDcD0Su63ZQibAIBfd5ns575fqaLjsM1hweuajULuDtfj4tE6LM6IR2kEEn8I1kM0DPsIonAI+wq9SsgjQYPkcAwjzEBbSxnvqhwC++C0wX88S9lDIcnF+sZL6J3sNnlMAeBkxeyd/6GlIfh5gyROx/Za3Emb4IWRt3yRwQDanPsh/RcwzvmhuXdxwxGetPT7EJtg3iVIMKqpOgViApBDuObobJztE4Y4ujmPGAMNsYwRLaKS5Xc1wqFLkyV7a1nxAke9Hcf5n709lYE0FoGgG4oZmGX824CabbaLFwzNO7wMWmEc9skR2rRXbhxEV2T77rtpUMI2qtBeCQwGulSbeNyj080iu0sb1yHuahRIi/nHkiDGO0qIMcDrAjjlxfAwd39raGFXS62fN3OaR+499Jgw"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0,
+      "finishMessage": "Model generated function call(s)."
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 18064,
+    "candidatesTokenCount": 170,
+    "totalTokenCount": 18682,
+    "cachedContentTokenCount": 12163,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 18064
+      }
+    ],
+    "cacheTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 12163
+      }
+    ],
+    "thoughtsTokenCount": 448,
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "mmjBarLQBdi6juMPqaLB4Qk"
+}

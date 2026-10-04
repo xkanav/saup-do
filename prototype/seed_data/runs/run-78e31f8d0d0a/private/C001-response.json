@@ -1,0 +1,52 @@
+{
+  "call_id": "C001",
+  "provider": "Gemini",
+  "status_code": 200,
+  "elapsed_ms": 2206,
+  "content_type": "application/json; charset=UTF-8",
+  "response_body": {
+    "path": "private/C001-response.body",
+    "sha256": "1ad547ce5f46818dcf09d5bb748e041d585645242868821b46ed1f05bbd8fb94",
+    "bytes": 1104
+  },
+  "json": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "name": "get_parcel_context",
+                "args": {
+                  "rule_id": "R03",
+                  "case_id": "DEMO-CASE-001",
+                  "reason": "Read current case facts and enrolled participants after buyer grant"
+                },
+                "id": "call_2656187"
+              },
+              "thoughtSignature": "EmkKZwFpFH0Tl0/UAbPGQHGQ+nKSMBtRYgHOU1DJRVCJs7O3RpiWRSul2MmcegHC/caTE5vG3ffJtADANyGdy8bV3FymnKemYxFTYjxx7D5YOnia21hz4VhQv2cqKxRxsY30C07KveLfw/I="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "finishMessage": "Model generated function call(s)."
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 3252,
+      "candidatesTokenCount": 52,
+      "totalTokenCount": 3304,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3252
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.8-flash",
+    "responseId": "YLDBaqaLKoHUqfkPk5aN2QQ"
+  }
+}

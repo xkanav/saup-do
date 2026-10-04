@@ -1,0 +1,914 @@
+[
+  {
+    "decision_id": "D-f21fe89b69ac",
+    "run_id": "run-44a85da4814c",
+    "case_id": "DEMO-CASE-001",
+    "decided_at": "2026-10-04T01:48:38.057160+00:00",
+    "trigger_event_ids": [
+      "E-295b0b1af11e"
+    ],
+    "input_exact_refs": [
+      "E-295b0b1af11e"
+    ],
+    "source_refs": [
+      "OPERATOR_TEST_ACTION:E-295b0b1af11e"
+    ],
+    "incoming_connectors": [
+      "SaunpDo participant app"
+    ],
+    "decision_summary": "get_parcel_context",
+    "rule_id": "R03",
+    "reason": "Read parcel context and enrolled participants before taking action.",
+    "kind": "tool_call",
+    "tool_name": "get_parcel_context",
+    "tool_arguments": {
+      "rule_id": "R03",
+      "reason": "Read parcel context and enrolled participants before taking action.",
+      "case_id": "DEMO-CASE-001"
+    },
+    "call_id": "tool-04164d9a1d92",
+    "action_or_message_exact": "{\"rule_id\":\"R03\",\"reason\":\"Read parcel context and enrolled participants before taking action.\",\"case_id\":\"DEMO-CASE-001\"}",
+    "recipient_ids": [],
+    "outgoing_connector": "SaunpDo local app",
+    "context_state_version": 1,
+    "result_event_ids": [
+      "E-337fff51d1e3"
+    ],
+    "result_refs": [
+      "E-337fff51d1e3"
+    ],
+    "execution_status": "succeeded",
+    "model_response_ref": "model/turn-001.json",
+    "trigger_inputs_exact": [
+      {
+        "event_id": "E-295b0b1af11e",
+        "run_id": "run-44a85da4814c",
+        "sequence": 2,
+        "received_at": "2026-10-04T01:48:35.975563+00:00",
+        "event_type": "buyer_granted",
+        "actor": "buyer",
+        "source_mode": "OPERATOR_TEST_ACTION",
+        "payload": {
+          "grant": {
+            "grant_id": "grant-d4805ce5bd2e",
+            "version": 1,
+            "buyer_id": "DEMO-BUYER-01",
+            "receiver_id": "DEMO-RECEIVER-01",
+            "order_id": "DEMO-ORDER-001",
+            "parcel_id": "DEMO-PARCEL-001",
+            "address_id": "DEMO-HOME-01",
+            "scope": "receive_only",
+            "value_cap_inr": 900,
+            "starts_at": "2026-10-04T01:48:35.975508+00:00",
+            "expires_at": "2026-10-04T02:18:35.975508+00:00",
+            "revoked_at": null,
+            "source_event_id": null
+          },
+          "request": "Help my mother understand this test parcel and answer her questions. Carrier release support is unavailable."
+        },
+        "state_version_before": 0,
+        "state_version_after": 1
+      }
+    ],
+    "preceding_tool_result_event_ids": []
+  },
+  {
+    "decision_id": "D-6a8193b6d64d",
+    "run_id": "run-44a85da4814c",
+    "case_id": "DEMO-CASE-001",
+    "decided_at": "2026-10-04T01:48:40.388361+00:00",
+    "trigger_event_ids": [
+      "E-295b0b1af11e"
+    ],
+    "input_exact_refs": [
+      "E-295b0b1af11e"
+    ],
+    "source_refs": [
+      "OPERATOR_TEST_ACTION:E-295b0b1af11e"
+    ],
+    "incoming_connectors": [
+      "SaunpDo participant app"
+    ],
+    "decision_summary": "send_message",
+    "rule_id": "R07",
+    "reason": "Invite receiver Meera to coordinate parcel information under coordination_only mode.",
+    "kind": "tool_call",
+    "tool_name": "send_message",
+    "tool_arguments": {
+      "text": "नमस्ते मीरा जी, यह एक डेमो पार्सल की जानकारी है। आरव ने एक चादर का पार्सल आपके नाम से जोड़ने की मंज़ूरी दी है। क्या आप इस पार्सल की जानकारी में मदद चाहती हैं?",
+      "expected_state_version": 1,
+      "case_id": "DEMO-CASE-001",
+      "attempt_id": null,
+      "response_kind": "invitation",
+      "recipient_id": "DEMO-RECEIVER-01",
+      "rule_id": "R07",
+      "reason": "Invite receiver Meera to coordinate parcel information under coordination_only mode.",
+      "purpose": "invite"
+    },
+    "call_id": "tool-929e65fb4e74",
+    "action_or_message_exact": "नमस्ते मीरा जी, यह एक डेमो पार्सल की जानकारी है। आरव ने एक चादर का पार्सल आपके नाम से जोड़ने की मंज़ूरी दी है। क्या आप इस पार्सल की जानकारी में मदद चाहती हैं?",
+    "recipient_ids": [
+      "DEMO-RECEIVER-01"
+    ],
+    "outgoing_connector": "SaunpDo local app",
+    "context_state_version": 1,
+    "result_event_ids": [
+      "E-7332e0f1434b"
+    ],
+    "result_refs": [
+      "E-7332e0f1434b"
+    ],
+    "execution_status": "succeeded",
+    "model_response_ref": "model/turn-002.json",
+    "trigger_inputs_exact": [
+      {
+        "event_id": "E-295b0b1af11e",
+        "run_id": "run-44a85da4814c",
+        "sequence": 2,
+        "received_at": "2026-10-04T01:48:35.975563+00:00",
+        "event_type": "buyer_granted",
+        "actor": "buyer",
+        "source_mode": "OPERATOR_TEST_ACTION",
+        "payload": {
+          "grant": {
+            "grant_id": "grant-d4805ce5bd2e",
+            "version": 1,
+            "buyer_id": "DEMO-BUYER-01",
+            "receiver_id": "DEMO-RECEIVER-01",
+            "order_id": "DEMO-ORDER-001",
+            "parcel_id": "DEMO-PARCEL-001",
+            "address_id": "DEMO-HOME-01",
+            "scope": "receive_only",
+            "value_cap_inr": 900,
+            "starts_at": "2026-10-04T01:48:35.975508+00:00",
+            "expires_at": "2026-10-04T02:18:35.975508+00:00",
+            "revoked_at": null,
+            "source_event_id": null
+          },
+          "request": "Help my mother understand this test parcel and answer her questions. Carrier release support is unavailable."
+        },
+        "state_version_before": 0,
+        "state_version_after": 1
+      }
+    ],
+    "preceding_tool_result_event_ids": [
+      "E-337fff51d1e3"
+    ]
+  },
+  {
+    "decision_id": "D-61eb62c0c60b",
+    "run_id": "run-44a85da4814c",
+    "case_id": "DEMO-CASE-001",
+    "decided_at": "2026-10-04T01:48:40.389985+00:00",
+    "trigger_event_ids": [
+      "E-295b0b1af11e"
+    ],
+    "input_exact_refs": [
+      "E-295b0b1af11e"
+    ],
+    "source_refs": [
+      "OPERATOR_TEST_ACTION:E-295b0b1af11e"
+    ],
+    "incoming_connectors": [
+      "SaunpDo participant app"
+    ],
+    "decision_summary": "wait_for_event",
+    "rule_id": "R12",
+    "reason": "Wait for receiver response to invitation.",
+    "kind": "tool_call",
+    "tool_name": "wait_for_event",
+    "tool_arguments": {
+      "event_types": [
+        "invitation_responded",
+        "receiver_text_received",
+        "receiver_audio_uploaded",
+        "buyer_revoked"
+      ],
+      "timeout_seconds": 120,
+      "rule_id": "R12",
+      "reason": "Wait for receiver response to invitation.",
+      "case_id": "DEMO-CASE-001"
+    },
+    "call_id": "tool-fb6534bf9208",
+    "action_or_message_exact": "{\"event_types\":[\"invitation_responded\",\"receiver_text_received\",\"receiver_audio_uploaded\",\"buyer_revoked\"],\"timeout_seconds\":120,\"rule_id\":\"R12\",\"reason\":\"Wait for receiver response to invitation.\",\"case_id\":\"DEMO-CASE-001\"}",
+    "recipient_ids": [],
+    "outgoing_connector": "SaunpDo local app",
+    "context_state_version": 1,
+    "result_event_ids": [
+      "E-70e51ea7ca0d"
+    ],
+    "result_refs": [
+      "E-70e51ea7ca0d"
+    ],
+    "execution_status": "succeeded",
+    "model_response_ref": "model/turn-002.json",
+    "trigger_inputs_exact": [
+      {
+        "event_id": "E-295b0b1af11e",
+        "run_id": "run-44a85da4814c",
+        "sequence": 2,
+        "received_at": "2026-10-04T01:48:35.975563+00:00",
+        "event_type": "buyer_granted",
+        "actor": "buyer",
+        "source_mode": "OPERATOR_TEST_ACTION",
+        "payload": {
+          "grant": {
+            "grant_id": "grant-d4805ce5bd2e",
+            "version": 1,
+            "buyer_id": "DEMO-BUYER-01",
+            "receiver_id": "DEMO-RECEIVER-01",
+            "order_id": "DEMO-ORDER-001",
+            "parcel_id": "DEMO-PARCEL-001",
+            "address_id": "DEMO-HOME-01",
+            "scope": "receive_only",
+            "value_cap_inr": 900,
+            "starts_at": "2026-10-04T01:48:35.975508+00:00",
+            "expires_at": "2026-10-04T02:18:35.975508+00:00",
+            "revoked_at": null,
+            "source_event_id": null
+          },
+          "request": "Help my mother understand this test parcel and answer her questions. Carrier release support is unavailable."
+        },
+        "state_version_before": 0,
+        "state_version_after": 1
+      }
+    ],
+    "preceding_tool_result_event_ids": [
+      "E-337fff51d1e3",
+      "E-7332e0f1434b"
+    ]
+  },
+  {
+    "decision_id": "D-840e293083f1",
+    "run_id": "run-44a85da4814c",
+    "case_id": "DEMO-CASE-001",
+    "decided_at": "2026-10-04T01:48:42.749684+00:00",
+    "trigger_event_ids": [
+      "E-ab12333314c0"
+    ],
+    "input_exact_refs": [
+      "E-ab12333314c0"
+    ],
+    "source_refs": [
+      "OPERATOR_TEST_ACTION:E-ab12333314c0"
+    ],
+    "incoming_connectors": [
+      "SaunpDo participant app"
+    ],
+    "decision_summary": "get_parcel_context",
+    "rule_id": "R03",
+    "reason": "Read updated context following invitation acceptance.",
+    "kind": "tool_call",
+    "tool_name": "get_parcel_context",
+    "tool_arguments": {
+      "reason": "Read updated context following invitation acceptance.",
+      "rule_id": "R03",
+      "case_id": "DEMO-CASE-001"
+    },
+    "call_id": "tool-43c053574c00",
+    "action_or_message_exact": "{\"reason\":\"Read updated context following invitation acceptance.\",\"rule_id\":\"R03\",\"case_id\":\"DEMO-CASE-001\"}",
+    "recipient_ids": [],
+    "outgoing_connector": "SaunpDo local app",
+    "context_state_version": 2,
+    "result_event_ids": [
+      "E-5206e5a84b52"
+    ],
+    "result_refs": [
+      "E-5206e5a84b52"
+    ],
+    "execution_status": "succeeded",
+    "model_response_ref": "model/turn-003.json",
+    "trigger_inputs_exact": [
+      {
+        "event_id": "E-ab12333314c0",
+        "run_id": "run-44a85da4814c",
+        "sequence": 17,
+        "received_at": "2026-10-04T01:48:41.032024+00:00",
+        "event_type": "invitation_responded",
+        "actor": "receiver",
+        "source_mode": "OPERATOR_TEST_ACTION",
+        "payload": {
+          "choice": "Accept invitation",
+          "message_id": "message-18953e0a875a"
+        },
+        "state_version_before": 1,
+        "state_version_after": 2
+      }
+    ],
+    "preceding_tool_result_event_ids": [
+      "E-337fff51d1e3",
+      "E-7332e0f1434b",
+      "E-70e51ea7ca0d"
+    ]
+  },
+  {
+    "decision_id": "D-b9fc465b75c9",
+    "run_id": "run-44a85da4814c",
+    "case_id": "DEMO-CASE-001",
+    "decided_at": "2026-10-04T01:48:44.518482+00:00",
+    "trigger_event_ids": [
+      "E-ab12333314c0"
+    ],
+    "input_exact_refs": [
+      "E-ab12333314c0"
+    ],
+    "source_refs": [
+      "OPERATOR_TEST_ACTION:E-ab12333314c0"
+    ],
+    "incoming_connectors": [
+      "SaunpDo participant app"
+    ],
+    "decision_summary": "send_message",
+    "rule_id": "R06",
+    "reason": "Explain parcel facts, coordination_only limits, and offer to answer questions.",
+    "kind": "tool_call",
+    "tool_name": "send_message",
+    "tool_arguments": {
+      "purpose": "explain",
+      "expected_state_version": 2,
+      "text": "यह मिंत्रा से एक चादर का डेमो पार्सल है, जिसका भुगतान पहले ही हो चुका है। डिलीवरी कंपनी अपनी प्रक्रिया से ही पार्सल देगी। क्या आप इस पार्सल के बारे में कुछ पूछना चाहती हैं?",
+      "response_kind": "text",
+      "recipient_id": "DEMO-RECEIVER-01",
+      "reason": "Explain parcel facts, coordination_only limits, and offer to answer questions.",
+      "case_id": "DEMO-CASE-001",
+      "rule_id": "R06"
+    },
+    "call_id": "tool-1e950b63d33e",
+    "action_or_message_exact": "यह मिंत्रा से एक चादर का डेमो पार्सल है, जिसका भुगतान पहले ही हो चुका है। डिलीवरी कंपनी अपनी प्रक्रिया से ही पार्सल देगी। क्या आप इस पार्सल के बारे में कुछ पूछना चाहती हैं?",
+    "recipient_ids": [
+      "DEMO-RECEIVER-01"
+    ],
+    "outgoing_connector": "SaunpDo local app",
+    "context_state_version": 2,
+    "result_event_ids": [
+      "E-0ba6238712bd"
+    ],
+    "result_refs": [
+      "E-0ba6238712bd"
+    ],
+    "execution_status": "succeeded",
+    "model_response_ref": "model/turn-004.json",
+    "trigger_inputs_exact": [
+      {
+        "event_id": "E-ab12333314c0",
+        "run_id": "run-44a85da4814c",
+        "sequence": 17,
+        "received_at": "2026-10-04T01:48:41.032024+00:00",
+        "event_type": "invitation_responded",
+        "actor": "receiver",
+        "source_mode": "OPERATOR_TEST_ACTION",
+        "payload": {
+          "choice": "Accept invitation",
+          "message_id": "message-18953e0a875a"
+        },
+        "state_version_before": 1,
+        "state_version_after": 2
+      }
+    ],
+    "preceding_tool_result_event_ids": [
+      "E-337fff51d1e3",
+      "E-7332e0f1434b",
+      "E-70e51ea7ca0d",
+      "E-5206e5a84b52"
+    ]
+  },
+  {
+    "decision_id": "D-cc7c2be40208",
+    "run_id": "run-44a85da4814c",
+    "case_id": "DEMO-CASE-001",
+    "decided_at": "2026-10-04T01:48:44.520737+00:00",
+    "trigger_event_ids": [
+      "E-ab12333314c0"
+    ],
+    "input_exact_refs": [
+      "E-ab12333314c0"
+    ],
+    "source_refs": [
+      "OPERATOR_TEST_ACTION:E-ab12333314c0"
+    ],
+    "incoming_connectors": [
+      "SaunpDo participant app"
+    ],
+    "decision_summary": "wait_for_event",
+    "rule_id": "R12",
+    "reason": "Wait for Meera to ask a question or provide input.",
+    "kind": "tool_call",
+    "tool_name": "wait_for_event",
+    "tool_arguments": {
+      "timeout_seconds": 120,
+      "rule_id": "R12",
+      "event_types": [
+        "receiver_text_received",
+        "receiver_audio_uploaded",
+        "availability_changed",
+        "buyer_revoked"
+      ],
+      "case_id": "DEMO-CASE-001",
+      "reason": "Wait for Meera to ask a question or provide input."
+    },
+    "call_id": "tool-39e36644e2ac",
+    "action_or_message_exact": "{\"timeout_seconds\":120,\"rule_id\":\"R12\",\"event_types\":[\"receiver_text_received\",\"receiver_audio_uploaded\",\"availability_changed\",\"buyer_revoked\"],\"case_id\":\"DEMO-CASE-001\",\"reason\":\"Wait for Meera to ask a question or provide input.\"}",
+    "recipient_ids": [],
+    "outgoing_connector": "SaunpDo local app",
+    "context_state_version": 2,
+    "result_event_ids": [
+      "E-6538218c95db"
+    ],
+    "result_refs": [
+      "E-6538218c95db"
+    ],
+    "execution_status": "succeeded",
+    "model_response_ref": "model/turn-004.json",
+    "trigger_inputs_exact": [
+      {
+        "event_id": "E-ab12333314c0",
+        "run_id": "run-44a85da4814c",
+        "sequence": 17,
+        "received_at": "2026-10-04T01:48:41.032024+00:00",
+        "event_type": "invitation_responded",
+        "actor": "receiver",
+        "source_mode": "OPERATOR_TEST_ACTION",
+        "payload": {
+          "choice": "Accept invitation",
+          "message_id": "message-18953e0a875a"
+        },
+        "state_version_before": 1,
+        "state_version_after": 2
+      }
+    ],
+    "preceding_tool_result_event_ids": [
+      "E-337fff51d1e3",
+      "E-7332e0f1434b",
+      "E-70e51ea7ca0d",
+      "E-5206e5a84b52",
+      "E-0ba6238712bd"
+    ]
+  },
+  {
+    "decision_id": "D-e9db956bdb69",
+    "run_id": "run-44a85da4814c",
+    "case_id": "DEMO-CASE-001",
+    "decided_at": "2026-10-04T01:48:47.010144+00:00",
+    "trigger_event_ids": [
+      "E-bf9ab4610af4"
+    ],
+    "input_exact_refs": [
+      "E-bf9ab4610af4"
+    ],
+    "source_refs": [
+      "OPERATOR_TEST_ACTION:E-bf9ab4610af4"
+    ],
+    "incoming_connectors": [
+      "SaunpDo participant app"
+    ],
+    "decision_summary": "get_parcel_context",
+    "rule_id": "R03",
+    "reason": "Read context after receiver set availability.",
+    "kind": "tool_call",
+    "tool_name": "get_parcel_context",
+    "tool_arguments": {
+      "case_id": "DEMO-CASE-001",
+      "rule_id": "R03",
+      "reason": "Read context after receiver set availability."
+    },
+    "call_id": "tool-d5fb75e69164",
+    "action_or_message_exact": "{\"case_id\":\"DEMO-CASE-001\",\"rule_id\":\"R03\",\"reason\":\"Read context after receiver set availability.\"}",
+    "recipient_ids": [],
+    "outgoing_connector": "SaunpDo local app",
+    "context_state_version": 4,
+    "result_event_ids": [
+      "E-02e2d16e802e"
+    ],
+    "result_refs": [
+      "E-02e2d16e802e"
+    ],
+    "execution_status": "succeeded",
+    "model_response_ref": "model/turn-005.json",
+    "trigger_inputs_exact": [
+      {
+        "event_id": "E-bf9ab4610af4",
+        "run_id": "run-44a85da4814c",
+        "sequence": 32,
+        "received_at": "2026-10-04T01:48:45.070378+00:00",
+        "event_type": "availability_changed",
+        "actor": "receiver",
+        "source_mode": "OPERATOR_TEST_ACTION",
+        "payload": {
+          "choice": "I can receive",
+          "interface": "receiver_availability_form"
+        },
+        "state_version_before": 2,
+        "state_version_after": 3
+      }
+    ],
+    "preceding_tool_result_event_ids": [
+      "E-337fff51d1e3",
+      "E-7332e0f1434b",
+      "E-70e51ea7ca0d",
+      "E-5206e5a84b52",
+      "E-0ba6238712bd",
+      "E-6538218c95db"
+    ]
+  },
+  {
+    "decision_id": "D-74facb0de491",
+    "run_id": "run-44a85da4814c",
+    "case_id": "DEMO-CASE-001",
+    "decided_at": "2026-10-04T01:48:52.152638+00:00",
+    "trigger_event_ids": [
+      "E-40148a303497"
+    ],
+    "input_exact_refs": [
+      "E-40148a303497"
+    ],
+    "source_refs": [
+      "OPERATOR_TEST_ACTION:E-40148a303497"
+    ],
+    "incoming_connectors": [
+      "SaunpDo participant app"
+    ],
+    "decision_summary": "transcribe_receiver_audio",
+    "rule_id": "R02",
+    "reason": "Transcribe receiver audio per R02.",
+    "kind": "tool_call",
+    "tool_name": "transcribe_receiver_audio",
+    "tool_arguments": {
+      "rule_id": "R02",
+      "audio_id": "sample-d99e628e177c3bd5",
+      "reason": "Transcribe receiver audio per R02.",
+      "case_id": "DEMO-CASE-001"
+    },
+    "call_id": "tool-ae6d5d35af58",
+    "action_or_message_exact": "{\"rule_id\":\"R02\",\"audio_id\":\"sample-d99e628e177c3bd5\",\"reason\":\"Transcribe receiver audio per R02.\",\"case_id\":\"DEMO-CASE-001\"}",
+    "recipient_ids": [],
+    "outgoing_connector": "Gnani STT",
+    "context_state_version": 4,
+    "result_event_ids": [
+      "E-ae4753e27530"
+    ],
+    "result_refs": [
+      "E-ae4753e27530"
+    ],
+    "execution_status": "succeeded",
+    "model_response_ref": "model/turn-006.json",
+    "trigger_inputs_exact": [
+      {
+        "event_id": "E-40148a303497",
+        "run_id": "run-44a85da4814c",
+        "sequence": 33,
+        "received_at": "2026-10-04T01:48:45.075294+00:00",
+        "event_type": "receiver_audio_uploaded",
+        "actor": "receiver",
+        "source_mode": "OPERATOR_TEST_ACTION",
+        "payload": {
+          "audio_id": "sample-d99e628e177c3bd5",
+          "filename": "receiver-refusal.m4a",
+          "sha256": "d99e628e177c3bd5085deac180c171adbafe73c79e72873ec3f61e2aa3d34f5b",
+          "duration_seconds": 3.84,
+          "recording_source": "USER_SUPPLIED_RECORDING",
+          "transcript": null
+        },
+        "state_version_before": 3,
+        "state_version_after": 4
+      }
+    ],
+    "preceding_tool_result_event_ids": [
+      "E-337fff51d1e3",
+      "E-7332e0f1434b",
+      "E-70e51ea7ca0d",
+      "E-5206e5a84b52",
+      "E-0ba6238712bd",
+      "E-6538218c95db",
+      "E-02e2d16e802e"
+    ]
+  },
+  {
+    "decision_id": "D-3a081f2ff952",
+    "run_id": "run-44a85da4814c",
+    "case_id": "DEMO-CASE-001",
+    "decided_at": "2026-10-04T01:48:54.238256+00:00",
+    "trigger_event_ids": [
+      "E-40148a303497"
+    ],
+    "input_exact_refs": [
+      "E-40148a303497"
+    ],
+    "source_refs": [
+      "OPERATOR_TEST_ACTION:E-40148a303497"
+    ],
+    "incoming_connectors": [
+      "SaunpDo participant app"
+    ],
+    "decision_summary": "send_message",
+    "rule_id": "R05",
+    "reason": "Confirm receiver refusal and inform Meera coordination is stopping per R05.",
+    "kind": "tool_call",
+    "tool_name": "send_message",
+    "tool_arguments": {
+      "case_id": "DEMO-CASE-001",
+      "expected_state_version": 4,
+      "text": "आपकी बात समझ आ गई है। आप यह पार्सल नहीं लेना चाहती हैं, इसलिए हमने यह प्रक्रिया रोक दी है।",
+      "reason": "Confirm receiver refusal and inform Meera coordination is stopping per R05.",
+      "rule_id": "R05",
+      "recipient_id": "DEMO-RECEIVER-01",
+      "purpose": "update",
+      "response_kind": "none"
+    },
+    "call_id": "tool-2604324e3fa4",
+    "action_or_message_exact": "आपकी बात समझ आ गई है। आप यह पार्सल नहीं लेना चाहती हैं, इसलिए हमने यह प्रक्रिया रोक दी है।",
+    "recipient_ids": [
+      "DEMO-RECEIVER-01"
+    ],
+    "outgoing_connector": "SaunpDo local app",
+    "context_state_version": 4,
+    "result_event_ids": [
+      "E-00eaf2007009"
+    ],
+    "result_refs": [
+      "E-00eaf2007009"
+    ],
+    "execution_status": "succeeded",
+    "model_response_ref": "model/turn-007.json",
+    "trigger_inputs_exact": [
+      {
+        "event_id": "E-40148a303497",
+        "run_id": "run-44a85da4814c",
+        "sequence": 33,
+        "received_at": "2026-10-04T01:48:45.075294+00:00",
+        "event_type": "receiver_audio_uploaded",
+        "actor": "receiver",
+        "source_mode": "OPERATOR_TEST_ACTION",
+        "payload": {
+          "audio_id": "sample-d99e628e177c3bd5",
+          "filename": "receiver-refusal.m4a",
+          "sha256": "d99e628e177c3bd5085deac180c171adbafe73c79e72873ec3f61e2aa3d34f5b",
+          "duration_seconds": 3.84,
+          "recording_source": "USER_SUPPLIED_RECORDING",
+          "transcript": null
+        },
+        "state_version_before": 3,
+        "state_version_after": 4
+      }
+    ],
+    "preceding_tool_result_event_ids": [
+      "E-337fff51d1e3",
+      "E-7332e0f1434b",
+      "E-70e51ea7ca0d",
+      "E-5206e5a84b52",
+      "E-0ba6238712bd",
+      "E-6538218c95db",
+      "E-02e2d16e802e",
+      "E-ae4753e27530"
+    ]
+  },
+  {
+    "decision_id": "D-6cc7dac3cff6",
+    "run_id": "run-44a85da4814c",
+    "case_id": "DEMO-CASE-001",
+    "decided_at": "2026-10-04T01:48:55.751058+00:00",
+    "trigger_event_ids": [
+      "E-40148a303497"
+    ],
+    "input_exact_refs": [
+      "E-40148a303497"
+    ],
+    "source_refs": [
+      "OPERATOR_TEST_ACTION:E-40148a303497"
+    ],
+    "incoming_connectors": [
+      "SaunpDo participant app"
+    ],
+    "decision_summary": "send_message",
+    "rule_id": "R07",
+    "reason": "Notify buyer Aarav that receiver Meera declined the parcel.",
+    "kind": "tool_call",
+    "tool_name": "send_message",
+    "tool_arguments": {
+      "recipient_id": "DEMO-BUYER-01",
+      "expected_state_version": 4,
+      "case_id": "DEMO-CASE-001",
+      "purpose": "update",
+      "response_kind": "none",
+      "rule_id": "R07",
+      "text": "मीरा जी ने यह पार्सल लेने से मना कर दिया है। SaunpDo की प्रक्रिया बंद कर दी गई है।",
+      "reason": "Notify buyer Aarav that receiver Meera declined the parcel."
+    },
+    "call_id": "tool-66017fd42f89",
+    "action_or_message_exact": "मीरा जी ने यह पार्सल लेने से मना कर दिया है। SaunpDo की प्रक्रिया बंद कर दी गई है।",
+    "recipient_ids": [
+      "DEMO-BUYER-01"
+    ],
+    "outgoing_connector": "SaunpDo local app",
+    "context_state_version": 4,
+    "result_event_ids": [
+      "E-7a0d0614f155"
+    ],
+    "result_refs": [
+      "E-7a0d0614f155"
+    ],
+    "execution_status": "succeeded",
+    "model_response_ref": "model/turn-008.json",
+    "trigger_inputs_exact": [
+      {
+        "event_id": "E-40148a303497",
+        "run_id": "run-44a85da4814c",
+        "sequence": 33,
+        "received_at": "2026-10-04T01:48:45.075294+00:00",
+        "event_type": "receiver_audio_uploaded",
+        "actor": "receiver",
+        "source_mode": "OPERATOR_TEST_ACTION",
+        "payload": {
+          "audio_id": "sample-d99e628e177c3bd5",
+          "filename": "receiver-refusal.m4a",
+          "sha256": "d99e628e177c3bd5085deac180c171adbafe73c79e72873ec3f61e2aa3d34f5b",
+          "duration_seconds": 3.84,
+          "recording_source": "USER_SUPPLIED_RECORDING",
+          "transcript": null
+        },
+        "state_version_before": 3,
+        "state_version_after": 4
+      }
+    ],
+    "preceding_tool_result_event_ids": [
+      "E-337fff51d1e3",
+      "E-7332e0f1434b",
+      "E-70e51ea7ca0d",
+      "E-5206e5a84b52",
+      "E-0ba6238712bd",
+      "E-6538218c95db",
+      "E-02e2d16e802e",
+      "E-ae4753e27530",
+      "E-00eaf2007009"
+    ]
+  },
+  {
+    "decision_id": "D-85251d16e107",
+    "run_id": "run-44a85da4814c",
+    "case_id": "DEMO-CASE-001",
+    "decided_at": "2026-10-04T01:48:57.179429+00:00",
+    "trigger_event_ids": [
+      "E-40148a303497"
+    ],
+    "input_exact_refs": [
+      "E-40148a303497"
+    ],
+    "source_refs": [
+      "OPERATOR_TEST_ACTION:E-40148a303497"
+    ],
+    "incoming_connectors": [
+      "SaunpDo participant app"
+    ],
+    "decision_summary": "close_case",
+    "rule_id": "R14",
+    "reason": "Receiver stated in transcribed audio that she does not want to receive the parcel.",
+    "kind": "tool_call",
+    "tool_name": "close_case",
+    "tool_arguments": {
+      "outcome": "declined",
+      "case_id": "DEMO-CASE-001",
+      "reason_code": "receiver_refused_parcel",
+      "rule_id": "R14",
+      "expected_state_version": 4,
+      "reason": "Receiver stated in transcribed audio that she does not want to receive the parcel.",
+      "evidence_refs": [
+        "E-40148a303497",
+        "tool-ae6d5d35af58",
+        "message-81798090307b",
+        "E-2a645aaab477",
+        "message-51dad8ebe030",
+        "E-8f55a017b440"
+      ]
+    },
+    "call_id": "tool-59dc20284e89",
+    "action_or_message_exact": "{\"outcome\":\"declined\",\"case_id\":\"DEMO-CASE-001\",\"reason_code\":\"receiver_refused_parcel\",\"rule_id\":\"R14\",\"expected_state_version\":4,\"reason\":\"Receiver stated in transcribed audio that she does not want to receive the parcel.\",\"evidence_refs\":[\"E-40148a303497\",\"tool-ae6d5d35af58\",\"message-81798090307b\",\"E-2a645aaab477\",\"message-51dad8ebe030\",\"E-8f55a017b440\"]}",
+    "recipient_ids": [],
+    "outgoing_connector": "SaunpDo local app",
+    "context_state_version": 4,
+    "result_event_ids": [
+      "E-afd75c493d15"
+    ],
+    "result_refs": [
+      "E-afd75c493d15"
+    ],
+    "execution_status": "rejected",
+    "model_response_ref": "model/turn-009.json",
+    "trigger_inputs_exact": [
+      {
+        "event_id": "E-40148a303497",
+        "run_id": "run-44a85da4814c",
+        "sequence": 33,
+        "received_at": "2026-10-04T01:48:45.075294+00:00",
+        "event_type": "receiver_audio_uploaded",
+        "actor": "receiver",
+        "source_mode": "OPERATOR_TEST_ACTION",
+        "payload": {
+          "audio_id": "sample-d99e628e177c3bd5",
+          "filename": "receiver-refusal.m4a",
+          "sha256": "d99e628e177c3bd5085deac180c171adbafe73c79e72873ec3f61e2aa3d34f5b",
+          "duration_seconds": 3.84,
+          "recording_source": "USER_SUPPLIED_RECORDING",
+          "transcript": null
+        },
+        "state_version_before": 3,
+        "state_version_after": 4
+      }
+    ],
+    "preceding_tool_result_event_ids": [
+      "E-337fff51d1e3",
+      "E-7332e0f1434b",
+      "E-70e51ea7ca0d",
+      "E-5206e5a84b52",
+      "E-0ba6238712bd",
+      "E-6538218c95db",
+      "E-02e2d16e802e",
+      "E-ae4753e27530",
+      "E-00eaf2007009",
+      "E-7a0d0614f155"
+    ]
+  },
+  {
+    "decision_id": "D-a6edc57f90e7",
+    "run_id": "run-44a85da4814c",
+    "case_id": "DEMO-CASE-001",
+    "decided_at": "2026-10-04T01:48:58.509580+00:00",
+    "trigger_event_ids": [
+      "E-40148a303497"
+    ],
+    "input_exact_refs": [
+      "E-40148a303497"
+    ],
+    "source_refs": [
+      "OPERATOR_TEST_ACTION:E-40148a303497"
+    ],
+    "incoming_connectors": [
+      "SaunpDo participant app"
+    ],
+    "decision_summary": "close_case",
+    "rule_id": "R14",
+    "reason": "Receiver explicitly declined to receive the parcel via audio transcript.",
+    "kind": "tool_call",
+    "tool_name": "close_case",
+    "tool_arguments": {
+      "case_id": "DEMO-CASE-001",
+      "reason_code": "receiver_refused_parcel",
+      "reason": "Receiver explicitly declined to receive the parcel via audio transcript.",
+      "outcome": "declined",
+      "evidence_refs": [
+        "E-40148a303497",
+        "E-2a645aaab477",
+        "message-81798090307b",
+        "E-8f55a017b440",
+        "message-51dad8ebe030"
+      ],
+      "expected_state_version": 4,
+      "rule_id": "R14"
+    },
+    "call_id": "tool-1056f7910371",
+    "action_or_message_exact": "{\"case_id\":\"DEMO-CASE-001\",\"reason_code\":\"receiver_refused_parcel\",\"reason\":\"Receiver explicitly declined to receive the parcel via audio transcript.\",\"outcome\":\"declined\",\"evidence_refs\":[\"E-40148a303497\",\"E-2a645aaab477\",\"message-81798090307b\",\"E-8f55a017b440\",\"message-51dad8ebe030\"],\"expected_state_version\":4,\"rule_id\":\"R14\"}",
+    "recipient_ids": [],
+    "outgoing_connector": "SaunpDo local app",
+    "context_state_version": 4,
+    "result_event_ids": [
+      "E-9f55756623e1"
+    ],
+    "result_refs": [
+      "E-9f55756623e1"
+    ],
+    "execution_status": "succeeded",
+    "model_response_ref": "model/turn-010.json",
+    "trigger_inputs_exact": [
+      {
+        "event_id": "E-40148a303497",
+        "run_id": "run-44a85da4814c",
+        "sequence": 33,
+        "received_at": "2026-10-04T01:48:45.075294+00:00",
+        "event_type": "receiver_audio_uploaded",
+        "actor": "receiver",
+        "source_mode": "OPERATOR_TEST_ACTION",
+        "payload": {
+          "audio_id": "sample-d99e628e177c3bd5",
+          "filename": "receiver-refusal.m4a",
+          "sha256": "d99e628e177c3bd5085deac180c171adbafe73c79e72873ec3f61e2aa3d34f5b",
+          "duration_seconds": 3.84,
+          "recording_source": "USER_SUPPLIED_RECORDING",
+          "transcript": null
+        },
+        "state_version_before": 3,
+        "state_version_after": 4
+      }
+    ],
+    "preceding_tool_result_event_ids": [
+      "E-337fff51d1e3",
+      "E-7332e0f1434b",
+      "E-70e51ea7ca0d",
+      "E-5206e5a84b52",
+      "E-0ba6238712bd",
+      "E-6538218c95db",
+      "E-02e2d16e802e",
+      "E-ae4753e27530",
+      "E-00eaf2007009",
+      "E-7a0d0614f155",
+      "E-afd75c493d15"
+    ]
+  }
+]

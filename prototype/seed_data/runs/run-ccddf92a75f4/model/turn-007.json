@@ -1,0 +1,49 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "close_case",
+          "args": {
+            "case_id": "DEMO-CASE-001",
+            "reason": "Receiver did not respond to the invitation within the timeout period. Notifications sent to both buyer and receiver.",
+            "evidence_refs": [
+              "E-2736a8b9e1d5",
+              "E-f36affb321ef",
+              "message-35f6dc128237",
+              "E-617a5dc9f3e7",
+              "E-37735c3a2731",
+              "E-4384e53ca2bb",
+              "message-6c872ed149b3",
+              "E-71bf482e2759",
+              "message-08e420cff2d3"
+            ],
+            "outcome": "unresolved",
+            "reason_code": "INVITATION_TIMEOUT",
+            "rule_id": "R14",
+            "expected_state_version": 1
+          },
+          "id": "call_2390952"
+        },
+        "thoughtSignature": "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"
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 10445,
+      "candidatesTokenCount": 233,
+      "totalTokenCount": 11297,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 10445
+        }
+      ],
+      "thoughtsTokenCount": 619,
+      "serviceTier": "standard"
+    }
+  }
+}

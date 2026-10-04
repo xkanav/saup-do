@@ -1,0 +1,48 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "send_message",
+          "args": {
+            "response_kind": "none",
+            "rule_id": "R07",
+            "purpose": "update",
+            "expected_state_version": 3,
+            "attempt_id": null,
+            "reason": "Update buyer that receiver questions have been addressed and carrier release support is unavailable",
+            "recipient_id": "DEMO-BUYER-01",
+            "text": "I answered Meera's questions regarding the demo Myntra bedsheet order. Since carrier release support is unavailable, the delivery will follow standard carrier verification.",
+            "case_id": "DEMO-CASE-001"
+          },
+          "id": "call_2434030"
+        },
+        "thoughtSignature": "EtUICtIIAWkUfROX4LNvnQAuG9PXpikVMJS25ycFuWszXvCZhUMpYis3JPvRVLcydEhapEE2zBRMwPIqm9UB5GH8KtcAiBs28y//Q1f2mEf6z7HzyelBB6FYwLoDxzYZYBLNo6OGgyQrQAsunbfu1NVenqM4izUYu+Ud6PjoTEPt4Ph1qZ44t9JyeAgPv6y4cAsz8ibH7mx5bgs8qFAlOauIKvSkDu4BKHlrr1oRqsrBzVRs1+eQc3bd9C9yr20MH90H8mg0Db/j1eGj+l0X3ORoGtug7sb7aF9fW8ob13yj7gsJqC4XIxYFM1POaTXuNXjIGHA6+jwVfcqZXfK7anaATkL0Dr8VX5E69OjFnGxpLIF3tDwv5SLoVYLUmO0+cvZxvVOElPsMqFhK3L3qh5DhWd5mAjannV3gQJ5oF0MlJYHBn64ZTfbtSArI6i1fs719/ma/PavjtsHMOf++aZWIcFwOJ3qthFzhN/PO68L6lO6bOY2DoHkrC6007FTRJjpG1sz/HtjjPUrZkUoFyV3GZaHtohi8JV6RI43u39eXh0m8KqQozLl5Keuetd67caIYEEw5oEXOWx8KvLmMDFe2Xg+/2zR9zMtfL6kd7067S5eu3a1kQTTbMUjolrYAIzAP31Vz1ldkRgzwQIKLvExhJcycVlm6LYlsHoGE22x8rpSy80kHJZL2Ypb1H7SbNXZW6SW2sPZgAizJ0BgnYDWsLHVk7ngzIjPtCdWZDorEugRiIl79aJKVdMCmYzdfLWwRvaipCP5SHPqud2izwhsODizqCCzrnfr13liRvdURE8+sdAnX64STvhLfwq+VLcw4rDCLOALxrFTmp27gIl34Nyqla2U9TLE1L3RGX4S2pJq6QmAeG3ZT0LnGNrOL3e3zt7GmHUeoRy9ajFmcAmgvPrKx1twAwSO8csgUaca4Bxe8Gg6mdeP3uL94+cCkyhCCRrPcwQJtNQkWG8whtN6VqlA9fci0vJkcWjH8K/iAWFZJ1KPLy7fe3SXQK1LJF0NhWWHX/Kehi+0z2x1vI5vZkFdN7zdxEfOht19x607FGPpSGfBgQu0hnUmgqYaJEs2X41LHEUH4YjV7V293gizuo5pJRMTEpi0IZL0/jg8WIfTPL+lyk+M0uDnlA95FNymLvlPTQvrHo1Ofd1CNwEUqqI9eBErPQ5yolI8pkyn1TqGHnpGz97gopoxm3fhE8IhSOL8e9Ca8tUfLYey1YpovtDpAZzc3Dq6F5QdyH3/grku+opqTEZG1uSOCc+Zst1ZIt11fipmLfbeKtJIhaJ9bkmbOeOrStibvsTsLJKRvWLJHEH+9E4zU44uGg2Is3yi5qT3kVDwMjMhOwsj3TdyZCG5vfs/FNdrKoePQ1zxNEWSxLGaAiZNvL46SrQvjxUY0PvW+ryh1jKJn/ZjOCDNg/mUGfPGQVvYvu4DpVaUX2PsgpaHzzPHVhz/kKPovpZPhBTLzLJQ="
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 17517,
+      "candidatesTokenCount": 134,
+      "totalTokenCount": 17936,
+      "cachedContentTokenCount": 12166,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 17517
+        }
+      ],
+      "cacheTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 12166
+        }
+      ],
+      "thoughtsTokenCount": 285,
+      "serviceTier": "standard"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "message-35f6dc128237",
+    "run": "run-ccddf92a75f4",
+    "recipient": "DEMO-RECEIVER-01",
+    "text": "नमस्ते मीरा जी, आरव की मंज़ूरी से मैं आपको इस डेमो पार्सल की जानकारी दे सकता हूँ। डिलीवरी कंपनी अपनी प्रक्रिया इस्तेमाल करेगी, क्या आप मदद चाहते हैं?",
+    "purpose": "invite",
+    "response_kind": "invitation",
+    "created": "2026-10-03T17:59:37.891957+00:00",
+    "version": 1,
+    "answered": null,
+    "read_at": "2026-10-03T18:00:47.076578+00:00",
+    "source_event": "E-f36affb321ef",
+    "trigger_seq": 2
+  },
+  {
+    "id": "message-6c872ed149b3",
+    "run": "run-ccddf92a75f4",
+    "recipient": "DEMO-BUYER-01",
+    "text": "Meera did not respond to the invitation within the allowed time. This coordination case is now closed as unresolved.",
+    "purpose": "update",
+    "response_kind": "none",
+    "created": "2026-10-03T18:01:45.522166+00:00",
+    "version": 1,
+    "answered": null,
+    "read_at": "2026-10-03T18:01:45.917564+00:00",
+    "source_event": "E-4384e53ca2bb",
+    "trigger_seq": 18
+  },
+  {
+    "id": "message-08e420cff2d3",
+    "run": "run-ccddf92a75f4",
+    "recipient": "DEMO-RECEIVER-01",
+    "text": "निमंत्रण का समय समाप्त हो गया है। डिलीवरी कंपनी अपनी सामान्य प्रक्रिया जारी रखेगी।",
+    "purpose": "update",
+    "response_kind": "none",
+    "created": "2026-10-03T18:01:50.782083+00:00",
+    "version": 1,
+    "answered": null,
+    "read_at": "2026-10-03T18:29:36.917848+00:00",
+    "source_event": "E-71bf482e2759",
+    "trigger_seq": 18
+  }
+]

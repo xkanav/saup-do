@@ -1,0 +1,48 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "close_case",
+          "args": {
+            "rule_id": "R14",
+            "reason": "Receiver answered questions, indicated availability, and both parties notified under coordination-only simulation mode",
+            "expected_state_version": 4,
+            "reason_code": "COORDINATION_COMPLETE",
+            "case_id": "DEMO-CASE-001",
+            "outcome": "completed_simulated",
+            "evidence_refs": [
+              "E-c8fa34142441",
+              "E-4c5889bc7128",
+              "E-0791bf376dd5",
+              "E-4c380eb899bd",
+              "E-f0af226c0718",
+              "E-61757a8725b2",
+              "E-ff4ce7757d16",
+              "E-05d6e32abb2a",
+              "E-2fc06fdc1f67"
+            ]
+          },
+          "id": "call_2456182"
+        },
+        "thoughtSignature": "EmkKZwFpFH0Tr1FFrmb75JuUnNJr1vHNCobdW7UsbboTc36O35UIywJTtxuK6vvzOQHpZnrpD/X8LAFYnGUla7puBNOK24stIDmI5FSD0Sy9geHpnWplP9nF8gx3/3Fd5zfay1BstaTsELo="
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 14612,
+      "candidatesTokenCount": 230,
+      "totalTokenCount": 14842,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 14612
+        }
+      ],
+      "serviceTier": "standard"
+    }
+  }
+}

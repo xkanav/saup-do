@@ -1,0 +1,382 @@
+[
+  {
+    "decision_id": "D-ceeebc7b9260",
+    "run_id": "run-ccddf92a75f4",
+    "case_id": "DEMO-CASE-001",
+    "decided_at": "2026-10-03T17:59:31.951240+00:00",
+    "trigger_event_ids": [
+      "E-2736a8b9e1d5"
+    ],
+    "input_exact_refs": [
+      "E-2736a8b9e1d5"
+    ],
+    "source_refs": [
+      "OPERATOR_TEST_ACTION:E-2736a8b9e1d5"
+    ],
+    "incoming_connectors": [
+      "SaunpDo participant app"
+    ],
+    "decision_summary": "get_parcel_context",
+    "rule_id": "R03",
+    "reason": "Read current case context and enrolled participants before taking action.",
+    "kind": "tool_call",
+    "tool_name": "get_parcel_context",
+    "tool_arguments": {
+      "rule_id": "R03",
+      "case_id": "DEMO-CASE-001",
+      "reason": "Read current case context and enrolled participants before taking action."
+    },
+    "call_id": "tool-b1aef959fcd8",
+    "action_or_message_exact": "{\"rule_id\":\"R03\",\"case_id\":\"DEMO-CASE-001\",\"reason\":\"Read current case context and enrolled participants before taking action.\"}",
+    "recipient_ids": [],
+    "outgoing_connector": "SaunpDo local app",
+    "context_state_version": 1,
+    "result_event_ids": [
+      "E-36480bae9230"
+    ],
+    "result_refs": [
+      "E-36480bae9230"
+    ],
+    "execution_status": "succeeded",
+    "model_response_ref": "model/turn-001.json"
+  },
+  {
+    "decision_id": "D-44da1eaf2dc9",
+    "run_id": "run-ccddf92a75f4",
+    "case_id": "DEMO-CASE-001",
+    "decided_at": "2026-10-03T17:59:37.890913+00:00",
+    "trigger_event_ids": [
+      "E-2736a8b9e1d5"
+    ],
+    "input_exact_refs": [
+      "E-2736a8b9e1d5"
+    ],
+    "source_refs": [
+      "OPERATOR_TEST_ACTION:E-2736a8b9e1d5"
+    ],
+    "incoming_connectors": [
+      "SaunpDo participant app"
+    ],
+    "decision_summary": "send_message",
+    "rule_id": "R07",
+    "reason": "Invite receiver Meera to coordinate parcel info with Aarav's permission.",
+    "kind": "tool_call",
+    "tool_name": "send_message",
+    "tool_arguments": {
+      "text": "नमस्ते मीरा जी, आरव की मंज़ूरी से मैं आपको इस डेमो पार्सल की जानकारी दे सकता हूँ। डिलीवरी कंपनी अपनी प्रक्रिया इस्तेमाल करेगी, क्या आप मदद चाहते हैं?",
+      "response_kind": "invitation",
+      "purpose": "invite",
+      "expected_state_version": 1,
+      "case_id": "DEMO-CASE-001",
+      "attempt_id": null,
+      "recipient_id": "DEMO-RECEIVER-01",
+      "reason": "Invite receiver Meera to coordinate parcel info with Aarav's permission.",
+      "rule_id": "R07"
+    },
+    "call_id": "tool-f7884de64488",
+    "action_or_message_exact": "नमस्ते मीरा जी, आरव की मंज़ूरी से मैं आपको इस डेमो पार्सल की जानकारी दे सकता हूँ। डिलीवरी कंपनी अपनी प्रक्रिया इस्तेमाल करेगी, क्या आप मदद चाहते हैं?",
+    "recipient_ids": [
+      "DEMO-RECEIVER-01"
+    ],
+    "outgoing_connector": "SaunpDo local app",
+    "context_state_version": 1,
+    "result_event_ids": [
+      "E-5ad7a449b850"
+    ],
+    "result_refs": [
+      "E-5ad7a449b850"
+    ],
+    "execution_status": "succeeded",
+    "model_response_ref": "model/turn-002.json"
+  },
+  {
+    "decision_id": "D-13a53dfb3b8d",
+    "run_id": "run-ccddf92a75f4",
+    "case_id": "DEMO-CASE-001",
+    "decided_at": "2026-10-03T17:59:37.894267+00:00",
+    "trigger_event_ids": [
+      "E-2736a8b9e1d5"
+    ],
+    "input_exact_refs": [
+      "E-2736a8b9e1d5"
+    ],
+    "source_refs": [
+      "OPERATOR_TEST_ACTION:E-2736a8b9e1d5"
+    ],
+    "incoming_connectors": [
+      "SaunpDo participant app"
+    ],
+    "decision_summary": "wait_for_event",
+    "rule_id": "R12",
+    "reason": "Wait for receiver response to the invitation.",
+    "kind": "tool_call",
+    "tool_name": "wait_for_event",
+    "tool_arguments": {
+      "timeout_seconds": 120,
+      "case_id": "DEMO-CASE-001",
+      "rule_id": "R12",
+      "reason": "Wait for receiver response to the invitation.",
+      "event_types": [
+        "invitation_responded",
+        "receiver_text_received",
+        "receiver_audio_uploaded",
+        "buyer_revoked"
+      ]
+    },
+    "call_id": "tool-cae894a809db",
+    "action_or_message_exact": "{\"timeout_seconds\":120,\"case_id\":\"DEMO-CASE-001\",\"rule_id\":\"R12\",\"reason\":\"Wait for receiver response to the invitation.\",\"event_types\":[\"invitation_responded\",\"receiver_text_received\",\"receiver_audio_uploaded\",\"buyer_revoked\"]}",
+    "recipient_ids": [],
+    "outgoing_connector": "SaunpDo local app",
+    "context_state_version": 1,
+    "result_event_ids": [
+      "E-de84d21160aa"
+    ],
+    "result_refs": [
+      "E-de84d21160aa"
+    ],
+    "execution_status": "succeeded",
+    "model_response_ref": "model/turn-002.json"
+  },
+  {
+    "decision_id": "D-18af120e8910",
+    "run_id": "run-ccddf92a75f4",
+    "case_id": "DEMO-CASE-001",
+    "decided_at": "2026-10-03T18:01:40.411426+00:00",
+    "trigger_event_ids": [
+      "E-37735c3a2731"
+    ],
+    "input_exact_refs": [
+      "E-37735c3a2731"
+    ],
+    "source_refs": [
+      "APP_CLOCK:E-37735c3a2731"
+    ],
+    "incoming_connectors": [
+      "App clock"
+    ],
+    "decision_summary": "get_parcel_context",
+    "rule_id": "R03",
+    "reason": "Check current state version and facts after invitation timer expired.",
+    "kind": "tool_call",
+    "tool_name": "get_parcel_context",
+    "tool_arguments": {
+      "rule_id": "R03",
+      "case_id": "DEMO-CASE-001",
+      "reason": "Check current state version and facts after invitation timer expired."
+    },
+    "call_id": "tool-6605754d9ee3",
+    "action_or_message_exact": "{\"rule_id\":\"R03\",\"case_id\":\"DEMO-CASE-001\",\"reason\":\"Check current state version and facts after invitation timer expired.\"}",
+    "recipient_ids": [],
+    "outgoing_connector": "SaunpDo local app",
+    "context_state_version": 1,
+    "result_event_ids": [
+      "E-f1c6722a0282"
+    ],
+    "result_refs": [
+      "E-f1c6722a0282"
+    ],
+    "execution_status": "succeeded",
+    "model_response_ref": "model/turn-003.json"
+  },
+  {
+    "decision_id": "D-9fb75265988a",
+    "run_id": "run-ccddf92a75f4",
+    "case_id": "DEMO-CASE-001",
+    "decided_at": "2026-10-03T18:01:45.521323+00:00",
+    "trigger_event_ids": [
+      "E-37735c3a2731"
+    ],
+    "input_exact_refs": [
+      "E-37735c3a2731"
+    ],
+    "source_refs": [
+      "APP_CLOCK:E-37735c3a2731"
+    ],
+    "incoming_connectors": [
+      "App clock"
+    ],
+    "decision_summary": "send_message",
+    "rule_id": "R07",
+    "reason": "Notify buyer Aarav that receiver did not respond within timeout.",
+    "kind": "tool_call",
+    "tool_name": "send_message",
+    "tool_arguments": {
+      "rule_id": "R07",
+      "recipient_id": "DEMO-BUYER-01",
+      "expected_state_version": 1,
+      "attempt_id": null,
+      "reason": "Notify buyer Aarav that receiver did not respond within timeout.",
+      "response_kind": "none",
+      "text": "Meera did not respond to the invitation within the allowed time. This coordination case is now closed as unresolved.",
+      "purpose": "update",
+      "case_id": "DEMO-CASE-001"
+    },
+    "call_id": "tool-09c41880263f",
+    "action_or_message_exact": "Meera did not respond to the invitation within the allowed time. This coordination case is now closed as unresolved.",
+    "recipient_ids": [
+      "DEMO-BUYER-01"
+    ],
+    "outgoing_connector": "SaunpDo local app",
+    "context_state_version": 1,
+    "result_event_ids": [
+      "E-302e4ce94dc7"
+    ],
+    "result_refs": [
+      "E-302e4ce94dc7"
+    ],
+    "execution_status": "succeeded",
+    "model_response_ref": "model/turn-004.json"
+  },
+  {
+    "decision_id": "D-6ea2ed5c6aa9",
+    "run_id": "run-ccddf92a75f4",
+    "case_id": "DEMO-CASE-001",
+    "decided_at": "2026-10-03T18:01:47.713016+00:00",
+    "trigger_event_ids": [
+      "E-37735c3a2731"
+    ],
+    "input_exact_refs": [
+      "E-37735c3a2731"
+    ],
+    "source_refs": [
+      "APP_CLOCK:E-37735c3a2731"
+    ],
+    "incoming_connectors": [
+      "App clock"
+    ],
+    "decision_summary": "send_message",
+    "rule_id": "R07",
+    "reason": "Notify receiver Meera that the invitation has timed out.",
+    "kind": "tool_call",
+    "tool_name": "send_message",
+    "tool_arguments": {
+      "expected_state_version": 1,
+      "purpose": "update",
+      "rule_id": "R07",
+      "reason": "Notify receiver Meera that the invitation has timed out.",
+      "response_kind": "none",
+      "recipient_id": "DEMO-RECEIVER-01",
+      "case_id": "DEMO-CASE-001",
+      "text": "निमंत्रण का समय समाप्त हो गया है। डिलीवरी कंपनी अपनी सामान्य प्रक्रिया जारी रखेगी।"
+    },
+    "call_id": "tool-00397933d924",
+    "action_or_message_exact": "निमंत्रण का समय समाप्त हो गया है। डिलीवरी कंपनी अपनी सामान्य प्रक्रिया जारी रखेगी।",
+    "recipient_ids": [
+      "DEMO-RECEIVER-01"
+    ],
+    "outgoing_connector": "SaunpDo local app",
+    "context_state_version": 1,
+    "result_event_ids": [
+      "E-93001508dd22"
+    ],
+    "result_refs": [
+      "E-93001508dd22"
+    ],
+    "execution_status": "rejected",
+    "model_response_ref": "model/turn-005.json"
+  },
+  {
+    "decision_id": "D-2c7578326861",
+    "run_id": "run-ccddf92a75f4",
+    "case_id": "DEMO-CASE-001",
+    "decided_at": "2026-10-03T18:01:50.780948+00:00",
+    "trigger_event_ids": [
+      "E-37735c3a2731"
+    ],
+    "input_exact_refs": [
+      "E-37735c3a2731"
+    ],
+    "source_refs": [
+      "APP_CLOCK:E-37735c3a2731"
+    ],
+    "incoming_connectors": [
+      "App clock"
+    ],
+    "decision_summary": "send_message",
+    "rule_id": "R07",
+    "reason": "Notify receiver Meera that the invitation has timed out.",
+    "kind": "tool_call",
+    "tool_name": "send_message",
+    "tool_arguments": {
+      "case_id": "DEMO-CASE-001",
+      "reason": "Notify receiver Meera that the invitation has timed out.",
+      "text": "निमंत्रण का समय समाप्त हो गया है। डिलीवरी कंपनी अपनी सामान्य प्रक्रिया जारी रखेगी।",
+      "expected_state_version": 1,
+      "recipient_id": "DEMO-RECEIVER-01",
+      "response_kind": "none",
+      "purpose": "update",
+      "rule_id": "R07",
+      "attempt_id": null
+    },
+    "call_id": "tool-4e9649ec3013",
+    "action_or_message_exact": "निमंत्रण का समय समाप्त हो गया है। डिलीवरी कंपनी अपनी सामान्य प्रक्रिया जारी रखेगी।",
+    "recipient_ids": [
+      "DEMO-RECEIVER-01"
+    ],
+    "outgoing_connector": "SaunpDo local app",
+    "context_state_version": 1,
+    "result_event_ids": [
+      "E-5ff0caaea69c"
+    ],
+    "result_refs": [
+      "E-5ff0caaea69c"
+    ],
+    "execution_status": "succeeded",
+    "model_response_ref": "model/turn-006.json"
+  },
+  {
+    "decision_id": "D-512ddad2192e",
+    "run_id": "run-ccddf92a75f4",
+    "case_id": "DEMO-CASE-001",
+    "decided_at": "2026-10-03T18:01:54.185204+00:00",
+    "trigger_event_ids": [
+      "E-37735c3a2731"
+    ],
+    "input_exact_refs": [
+      "E-37735c3a2731"
+    ],
+    "source_refs": [
+      "APP_CLOCK:E-37735c3a2731"
+    ],
+    "incoming_connectors": [
+      "App clock"
+    ],
+    "decision_summary": "close_case",
+    "rule_id": "R14",
+    "reason": "Receiver did not respond to the invitation within the timeout period. Notifications sent to both buyer and receiver.",
+    "kind": "tool_call",
+    "tool_name": "close_case",
+    "tool_arguments": {
+      "case_id": "DEMO-CASE-001",
+      "reason": "Receiver did not respond to the invitation within the timeout period. Notifications sent to both buyer and receiver.",
+      "evidence_refs": [
+        "E-2736a8b9e1d5",
+        "E-f36affb321ef",
+        "message-35f6dc128237",
+        "E-617a5dc9f3e7",
+        "E-37735c3a2731",
+        "E-4384e53ca2bb",
+        "message-6c872ed149b3",
+        "E-71bf482e2759",
+        "message-08e420cff2d3"
+      ],
+      "outcome": "unresolved",
+      "reason_code": "INVITATION_TIMEOUT",
+      "rule_id": "R14",
+      "expected_state_version": 1
+    },
+    "call_id": "tool-0ee05a5072e4",
+    "action_or_message_exact": "{\"case_id\":\"DEMO-CASE-001\",\"reason\":\"Receiver did not respond to the invitation within the timeout period. Notifications sent to both buyer and receiver.\",\"evidence_refs\":[\"E-2736a8b9e1d5\",\"E-f36affb321ef\",\"message-35f6dc128237\",\"E-617a5dc9f3e7\",\"E-37735c3a2731\",\"E-4384e53ca2bb\",\"message-6c872ed149b3\",\"E-71bf482e2759\",\"message-08e420cff2d3\"],\"outcome\":\"unresolved\",\"reason_code\":\"INVITATION_TIMEOUT\",\"rule_id\":\"R14\",\"expected_state_version\":1}",
+    "recipient_ids": [],
+    "outgoing_connector": "SaunpDo local app",
+    "context_state_version": 1,
+    "result_event_ids": [
+      "E-ce1fc30c16fb"
+    ],
+    "result_refs": [
+      "E-ce1fc30c16fb"
+    ],
+    "execution_status": "succeeded",
+    "model_response_ref": "model/turn-007.json"
+  }
+]

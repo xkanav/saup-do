@@ -1,0 +1,58 @@
+[
+  {
+    "id": "message-18953e0a875a",
+    "run": "run-44a85da4814c",
+    "recipient": "DEMO-RECEIVER-01",
+    "text": "नमस्ते मीरा जी, यह एक डेमो पार्सल की जानकारी है। आरव ने एक चादर का पार्सल आपके नाम से जोड़ने की मंज़ूरी दी है। क्या आप इस पार्सल की जानकारी में मदद चाहती हैं?",
+    "purpose": "invite",
+    "response_kind": "invitation",
+    "created": "2026-10-04T01:48:40.389291+00:00",
+    "version": 1,
+    "answered": "Accept invitation",
+    "read_at": "2026-10-04T01:49:46.315846+00:00",
+    "source_event": "E-141e25b7b27a",
+    "trigger_seq": 2
+  },
+  {
+    "id": "message-ca6b38388a31",
+    "run": "run-44a85da4814c",
+    "recipient": "DEMO-RECEIVER-01",
+    "text": "यह मिंत्रा से एक चादर का डेमो पार्सल है, जिसका भुगतान पहले ही हो चुका है। डिलीवरी कंपनी अपनी प्रक्रिया से ही पार्सल देगी। क्या आप इस पार्सल के बारे में कुछ पूछना चाहती हैं?",
+    "purpose": "explain",
+    "response_kind": "text",
+    "created": "2026-10-04T01:48:44.519829+00:00",
+    "version": 2,
+    "answered": null,
+    "read_at": "2026-10-04T01:49:46.317293+00:00",
+    "source_event": "E-d19ede7f2cec",
+    "trigger_seq": 17
+  },
+  {
+    "id": "message-81798090307b",
+    "run": "run-44a85da4814c",
+    "recipient": "DEMO-RECEIVER-01",
+    "text": "आपकी बात समझ आ गई है। आप यह पार्सल नहीं लेना चाहती हैं, इसलिए हमने यह प्रक्रिया रोक दी है।",
+    "purpose": "update",
+    "response_kind": "none",
+    "created": "2026-10-04T01:48:54.239120+00:00",
+    "version": 4,
+    "answered": null,
+    "read_at": "2026-10-04T01:49:46.318084+00:00",
+    "source_event": "E-2a645aaab477",
+    "trigger_seq": 33
+  },
+  {
+    "id": "message-51dad8ebe030",
+    "run": "run-44a85da4814c",
+    "recipient": "DEMO-BUYER-01",
+    "text": "मीरा जी ने यह पार्सल लेने से मना कर दिया है। SaunpDo की प्रक्रिया बंद कर दी गई है।",
+    "purpose": "update",
+    "response_kind": "none",
+    "created": "2026-10-04T01:48:55.752548+00:00",
+    "version": 4,
+    "answered": null,
+    "read_at": null,
+    "source_event": "E-8f55a017b440",
+    "trigger_seq": 33
+  }
+]

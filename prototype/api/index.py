@@ -17,7 +17,7 @@ DATA_DIR = Path('/tmp/data')
 
 if not DATA_DIR.exists():
     try:
-        shutil.copytree(ROOT / 'data', DATA_DIR)
+        shutil.copytree(ROOT / 'seed_data', DATA_DIR)
     except Exception as e:
         print(f"Failed to copy data: {e}")
         DATA_DIR.mkdir(parents=True, exist_ok=True)

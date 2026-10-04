@@ -1,0 +1,30 @@
+[
+  {
+    "id": "message-e55b13b4286d",
+    "run": "run-0652ea3cc96d",
+    "recipient": "DEMO-RECEIVER-01",
+    "text": "नमस्ते मीरा जी, आरव ने आपके लिए एक पार्सल की जानकारी साझा करने की मंज़ूरी दी है। यह एक डेमो है, क्या आप इस पार्सल की जानकारी में मदद चाहते हैं?",
+    "purpose": "invite",
+    "response_kind": "invitation",
+    "created": "2026-10-04T01:46:41.497073+00:00",
+    "version": 1,
+    "answered": "Accept invitation",
+    "read_at": null,
+    "source_event": "E-54775fbb78df",
+    "trigger_seq": 2
+  },
+  {
+    "id": "message-5f2091321110",
+    "run": "run-0652ea3cc96d",
+    "recipient": "DEMO-RECEIVER-01",
+    "text": "यह Myntra से बेडशीट का एक डेमो पार्सल है और इसका भुगतान हो चुका है। डिलीवरी कंपनी अपनी सामान्य प्रक्रिया अपनाएगी, क्या आपका कोई सवाल है?",
+    "purpose": "explain",
+    "response_kind": "text",
+    "created": "2026-10-04T01:48:50.276045+00:00",
+    "version": 2,
+    "answered": null,
+    "read_at": null,
+    "source_event": "E-90d2ed69330f",
+    "trigger_seq": 31
+  }
+]

@@ -1,0 +1,62 @@
+{
+  "call_id": "C011",
+  "provider": "Gemini",
+  "status_code": 200,
+  "elapsed_ms": 1318,
+  "content_type": "application/json; charset=UTF-8",
+  "response_body": {
+    "path": "private/C011-response.body",
+    "sha256": "a2178b92601c66f455e6311ed02c65abec5550e8f3340b82c1ae945a3fbd2a3c",
+    "bytes": 1492
+  },
+  "json": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "name": "close_case",
+                "args": {
+                  "case_id": "DEMO-CASE-001",
+                  "reason_code": "receiver_refused_parcel",
+                  "reason": "Receiver explicitly declined to receive the parcel via audio transcript.",
+                  "outcome": "declined",
+                  "evidence_refs": [
+                    "E-40148a303497",
+                    "E-2a645aaab477",
+                    "message-81798090307b",
+                    "E-8f55a017b440",
+                    "message-51dad8ebe030"
+                  ],
+                  "expected_state_version": 4,
+                  "rule_id": "R14"
+                },
+                "id": "call_2904371"
+              },
+              "thoughtSignature": "EmkKZwFpFH0TINCjTVi3exWWDu+QVsIqouKxzHEU3vGAKt5aD41KnnlKhuN2j/ik2CQxSy3qsTqDho4k6o7OenWtavuV3dqvxSIlYxxtPtvnOHtvhApnokc6PsCC479xvUteQAoa8LAUoAg="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "finishMessage": "Model generated function call(s)."
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 10604,
+      "candidatesTokenCount": 162,
+      "totalTokenCount": 10766,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 10604
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.8-flash",
+    "responseId": "ibDBapXjIvq2juMPvbjaoAk"
+  }
+}

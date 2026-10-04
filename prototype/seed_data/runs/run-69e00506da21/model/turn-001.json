@@ -1,0 +1,35 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "get_parcel_context",
+          "args": {
+            "rule_id": "R03",
+            "case_id": "DEMO-CASE-001",
+            "reason": "Retrieve current parcel context and enrolled participant details following buyer grant"
+          },
+          "id": "call_2454154"
+        },
+        "thoughtSignature": "Es4FCssFAWkUfRMuO255Kemy0imZLLaFl1oaE7xxW/LLF5k/SGhoULXV8IZunCZNodDufrdnv36NJ7hTtZnqh/JqPH4qk1OB3SzKTxL0dsB6Dm1krfZa+kb/V8WMEXlMXgOY85Za67oklqD6AzVhilKHAYktFI4Zd95T3WXKgv35xN48xXgTaW0iHoxh5GD/+hnIUoHGivpji0BOeGXmCaKvZJpvm+Ll7Pt0kVRay8dVCqzXK6S2kP5hNXK9XPzDCNWlFq73DX7pTq7wzPK94DI19XPsKpJQkyX2GrsKdavzYENPs+3m1ZzVqq2aQqFAeN3Ck0D3NFFBttBWVdwG+XEmNn0lcF+nqxOofRCNk5X6nc7MGUPrWjsFUj5w6HAabhyOYSuo2cUUa2StJz8jrYolElhh7IEC6Te0T2FkKDSfQVBNe7Ew7Za1m27/1AWMKa3lu630Ad3qkxk9PPCcIA73ifP9RUjjEvrmdG/p+MLy28roxeoJU4VLw9vU0AFmnCQzfgjxuU7iSKuRX2l4hsbjOVIx6CiyiTXOFih8k1H36LBnl8BDvNGb3KILvXFtS4TCL3wN14MkPoWXvAUU8hlDN/IJKqHeVlyW+Br0C3KVBZeBBVNhW4Sa5XF43Uz61hVj1t1yHbt+VK+th3SdiA0pgxGfndIbd+cfyB9unaXoEQP8usstiWGYkEaN5Eb1cDL3zN8Q/MB/d7dvNnLDOrsgGc48gJGwmMgjA3kmMQ7U8MAKHQfPIP8XYOKWUrbwV8AGfWdCvax1T3se7hOe/i4OIgkxlc/eIcu6nnS/vkIjXQQHN0hBKjrASmg1rGlU2lpbFaM9IVKm1Mav8X053zJKeG0iHivXkvAf8KXzyd21vM1t9KUwrgShMX+z87OE/yK4s0ys8jVIK5Iz6iv56DBsjUG+WcAFntepjCtRPELaR5EBfHhNlqYnssVaUl4AOQ=="
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 3145,
+      "candidatesTokenCount": 53,
+      "totalTokenCount": 3374,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3145
+        }
+      ],
+      "thoughtsTokenCount": 176,
+      "serviceTier": "standard"
+    }
+  }
+}

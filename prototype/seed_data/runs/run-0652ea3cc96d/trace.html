@@ -1,0 +1,1521 @@
+<!doctype html><meta charset="utf-8"><title>SaunpDo run evidence</title><style>body{font:16px/1.6 system-ui;background:#faf9f5;color:#193d35;max-width:1100px;margin:40px auto;padding:24px}aside{background:#eee7d4;padding:16px;border-radius:12px}details{background:white;padding:16px;margin:12px 0;border:1px solid #ddd;border-radius:12px}summary{cursor:pointer}pre{font:13px/1.6 monospace;white-space:pre-wrap;overflow-wrap:anywhere}</style><h1>SaunpDo · Run evidence</h1><aside>Fictional order. practice interaction. Real API responses where labelled. No carrier release or delivery completion.</aside><h2>Outcome</h2><pre>{
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;profile&quot;: &quot;coordination_only&quot;,
+  &quot;interaction_mode&quot;: &quot;practice&quot;,
+  &quot;status&quot;: &quot;halted&quot;,
+  &quot;case&quot;: {
+    &quot;schema_version&quot;: &quot;0.3-draft&quot;,
+    &quot;case_id&quot;: &quot;DEMO-CASE-001&quot;,
+    &quot;source&quot;: {
+      &quot;mode&quot;: &quot;FICTIONAL_DEVELOPMENT_FIXTURE&quot;,
+      &quot;reference&quot;: &quot;User confirmed fictional Myntra order in chat on 3 October 2026; see phase-02/inputs/confirmed-2026-10-03/input-register.json.&quot;,
+      &quot;fictional_case&quot;: true
+    },
+    &quot;state_version&quot;: 2,
+    &quot;case_state&quot;: &quot;coordinating&quot;,
+    &quot;buyer&quot;: {
+      &quot;id&quot;: &quot;DEMO-BUYER-01&quot;,
+      &quot;alias&quot;: &quot;Aarav&quot;
+    },
+    &quot;receiver&quot;: {
+      &quot;id&quot;: &quot;DEMO-RECEIVER-01&quot;,
+      &quot;alias&quot;: &quot;Meera&quot;,
+      &quot;relationship_in_scenario&quot;: &quot;mother&quot;,
+      &quot;adult_in_scenario&quot;: true
+    },
+    &quot;merchant&quot;: {
+      &quot;name&quot;: &quot;Myntra&quot;,
+      &quot;fictional&quot;: false
+    },
+    &quot;order&quot;: {
+      &quot;reference&quot;: &quot;DEMO-ORDER-001&quot;,
+      &quot;parcel_id&quot;: &quot;DEMO-PARCEL-001&quot;,
+      &quot;description&quot;: &quot;Bedsheet&quot;,
+      &quot;payment_type&quot;: &quot;prepaid&quot;,
+      &quot;value_inr&quot;: 900,
+      &quot;address_reference&quot;: &quot;DEMO-HOME-01&quot;,
+      &quot;fictional&quot;: true
+    },
+    &quot;carrier&quot;: {
+      &quot;proposed_partner&quot;: &quot;Delhivery&quot;,
+      &quot;waybill&quot;: null,
+      &quot;delegated_release_support&quot;: &quot;unverified&quot;
+    },
+    &quot;policy_reference&quot;: null,
+    &quot;buyer_grant&quot;: {
+      &quot;grant_id&quot;: &quot;grant-081bae45145a&quot;,
+      &quot;version&quot;: 1,
+      &quot;buyer_id&quot;: &quot;DEMO-BUYER-01&quot;,
+      &quot;receiver_id&quot;: &quot;DEMO-RECEIVER-01&quot;,
+      &quot;order_id&quot;: &quot;DEMO-ORDER-001&quot;,
+      &quot;parcel_id&quot;: &quot;DEMO-PARCEL-001&quot;,
+      &quot;address_id&quot;: &quot;DEMO-HOME-01&quot;,
+      &quot;scope&quot;: &quot;receive_only&quot;,
+      &quot;value_cap_inr&quot;: 900,
+      &quot;starts_at&quot;: &quot;2026-10-04T01:46:37.808804+00:00&quot;,
+      &quot;expires_at&quot;: &quot;2026-10-04T02:16:37.808804+00:00&quot;,
+      &quot;revoked_at&quot;: null,
+      &quot;source_event_id&quot;: &quot;E-885d4a18b6e7&quot;
+    },
+    &quot;invitation&quot;: {
+      &quot;choice&quot;: &quot;Accept invitation&quot;,
+      &quot;event_id&quot;: &quot;E-198652623e80&quot;,
+      &quot;recorded_at&quot;: &quot;2026-10-04T01:46:41.843128+00:00&quot;
+    },
+    &quot;receiver_availability&quot;: null,
+    &quot;active_attempt&quot;: null,
+    &quot;doorstep_willingness&quot;: null,
+    &quot;receiver_acknowledgment&quot;: null,
+    &quot;unresolved_input_event_ids&quot;: [],
+    &quot;carrier_release_decision_ref&quot;: null,
+    &quot;handoff_evidence_ref&quot;: null,
+    &quot;label_for_recording&quot;: &quot;Fictional Myntra order scenario, prepaid INR 900. User-authored out-for-delivery status for 3 October 2026 is not a carrier event. No real merchant integration, consent grant or carrier approval.&quot;,
+    &quot;last_human_seq&quot;: 17,
+    &quot;profile&quot;: &quot;coordination_only&quot;,
+    &quot;outcome&quot;: null,
+    &quot;reason_code&quot;: null
+  },
+  &quot;model&quot;: &quot;gemini-3.8-flash&quot;,
+  &quot;model_calls&quot;: 6,
+  &quot;failure&quot;: &quot;Superseded development check stopped before final verification. Original events and outputs retained.&quot;,
+  &quot;delivery_completed&quot;: false,
+  &quot;exported_at&quot;: &quot;2026-10-04T01:51:31.481996+00:00&quot;
+}</pre><details><summary>2026-10-04T01:46:37.805009+00:00 · run_started · runtime</summary><pre>{
+  &quot;event_id&quot;: &quot;E-4694ac06591a&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 1,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:37.805009+00:00&quot;,
+  &quot;event_type&quot;: &quot;run_started&quot;,
+  &quot;actor&quot;: &quot;runtime&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;profile&quot;: &quot;coordination_only&quot;,
+    &quot;interaction_mode&quot;: &quot;practice&quot;,
+    &quot;case_source&quot;: &quot;FICTIONAL_DEVELOPMENT_FIXTURE&quot;,
+    &quot;carrier_integration&quot;: false,
+    &quot;model&quot;: &quot;gemini-3.8-flash&quot;,
+    &quot;prompt_sha256&quot;: &quot;8dcd288f21a8edb105c40e122facb1833d6cb702845396026480f7e5ddcecf02&quot;,
+    &quot;audio_processing_agreement&quot;: &quot;User attestation recorded in Phase 2 inputs.&quot;
+  },
+  &quot;state_version_before&quot;: 0,
+  &quot;state_version_after&quot;: 0
+}</pre></details><details><summary>2026-10-04T01:46:37.808856+00:00 · buyer_granted · buyer</summary><pre>{
+  &quot;event_id&quot;: &quot;E-885d4a18b6e7&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 2,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:37.808856+00:00&quot;,
+  &quot;event_type&quot;: &quot;buyer_granted&quot;,
+  &quot;actor&quot;: &quot;buyer&quot;,
+  &quot;source_mode&quot;: &quot;OPERATOR_TEST_ACTION&quot;,
+  &quot;payload&quot;: {
+    &quot;grant&quot;: {
+      &quot;grant_id&quot;: &quot;grant-081bae45145a&quot;,
+      &quot;version&quot;: 1,
+      &quot;buyer_id&quot;: &quot;DEMO-BUYER-01&quot;,
+      &quot;receiver_id&quot;: &quot;DEMO-RECEIVER-01&quot;,
+      &quot;order_id&quot;: &quot;DEMO-ORDER-001&quot;,
+      &quot;parcel_id&quot;: &quot;DEMO-PARCEL-001&quot;,
+      &quot;address_id&quot;: &quot;DEMO-HOME-01&quot;,
+      &quot;scope&quot;: &quot;receive_only&quot;,
+      &quot;value_cap_inr&quot;: 900,
+      &quot;starts_at&quot;: &quot;2026-10-04T01:46:37.808804+00:00&quot;,
+      &quot;expires_at&quot;: &quot;2026-10-04T02:16:37.808804+00:00&quot;,
+      &quot;revoked_at&quot;: null,
+      &quot;source_event_id&quot;: null
+    },
+    &quot;request&quot;: &quot;Help my mother understand this test parcel and answer her questions. Carrier release support is unavailable.&quot;
+  },
+  &quot;state_version_before&quot;: 0,
+  &quot;state_version_after&quot;: 1
+}</pre></details><details><summary>2026-10-04T01:46:37.810705+00:00 · connector_request · runtime</summary><pre>{
+  &quot;event_id&quot;: &quot;E-48ca84a790d0&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 3,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:37.810705+00:00&quot;,
+  &quot;event_type&quot;: &quot;connector_request&quot;,
+  &quot;actor&quot;: &quot;runtime&quot;,
+  &quot;source_mode&quot;: &quot;LIVE_API&quot;,
+  &quot;payload&quot;: {
+    &quot;call_id&quot;: &quot;C001&quot;,
+    &quot;provider&quot;: &quot;Gemini&quot;,
+    &quot;method&quot;: &quot;POST&quot;,
+    &quot;url&quot;: &quot;https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent&quot;,
+    &quot;body&quot;: {
+      &quot;path&quot;: &quot;private/C001-request.body&quot;,
+      &quot;sha256&quot;: &quot;6fe39706ced9fd1762a3b0644897ef1858cf60420773c64a93ece94810177ea2&quot;,
+      &quot;bytes&quot;: 14358
+    },
+    &quot;json&quot;: null,
+    &quot;form_fields&quot;: null
+  },
+  &quot;state_version_before&quot;: 1,
+  &quot;state_version_after&quot;: 1
+}</pre></details><details><summary>2026-10-04T01:46:39.849373+00:00 · connector_response · provider</summary><pre>{
+  &quot;event_id&quot;: &quot;E-ff4a497d8548&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 4,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:39.849373+00:00&quot;,
+  &quot;event_type&quot;: &quot;connector_response&quot;,
+  &quot;actor&quot;: &quot;provider&quot;,
+  &quot;source_mode&quot;: &quot;LIVE_API&quot;,
+  &quot;payload&quot;: {
+    &quot;call_id&quot;: &quot;C001&quot;,
+    &quot;provider&quot;: &quot;Gemini&quot;,
+    &quot;status_code&quot;: 200,
+    &quot;elapsed_ms&quot;: 2036,
+    &quot;content_type&quot;: &quot;application/json; charset=UTF-8&quot;,
+    &quot;response_body&quot;: {
+      &quot;path&quot;: &quot;private/C001-response.body&quot;,
+      &quot;sha256&quot;: &quot;7a26d627587ad34c81f37c5c9eafdd134ff551b6afbad83233c88da06c3370f0&quot;,
+      &quot;bytes&quot;: 1104
+    }
+  },
+  &quot;state_version_before&quot;: 1,
+  &quot;state_version_after&quot;: 1
+}</pre></details><details><summary>2026-10-04T01:46:39.851745+00:00 · model_output · model</summary><pre>{
+  &quot;event_id&quot;: &quot;E-985a1d8ef22d&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 5,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:39.851745+00:00&quot;,
+  &quot;event_type&quot;: &quot;model_output&quot;,
+  &quot;actor&quot;: &quot;model&quot;,
+  &quot;source_mode&quot;: &quot;LIVE_API&quot;,
+  &quot;payload&quot;: {
+    &quot;turn&quot;: 1,
+    &quot;model_version&quot;: &quot;gemini-3.8-flash&quot;,
+    &quot;usage&quot;: {
+      &quot;promptTokenCount&quot;: 3258,
+      &quot;candidatesTokenCount&quot;: 51,
+      &quot;totalTokenCount&quot;: 3309,
+      &quot;promptTokensDetails&quot;: [
+        {
+          &quot;modality&quot;: &quot;TEXT&quot;,
+          &quot;tokenCount&quot;: 3258
+        }
+      ],
+      &quot;serviceTier&quot;: &quot;standard&quot;
+    },
+    &quot;response_ref&quot;: {
+      &quot;path&quot;: &quot;model/turn-001.json&quot;,
+      &quot;sha256&quot;: &quot;c45a9838472dbbee29aa6a1ee1607562f2b342025aabe2240c92f3288cb3610c&quot;,
+      &quot;bytes&quot;: 890
+    },
+    &quot;function_names&quot;: [
+      &quot;get_parcel_context&quot;
+    ]
+  },
+  &quot;state_version_before&quot;: 1,
+  &quot;state_version_after&quot;: 1
+}</pre></details><details><summary>2026-10-04T01:46:39.852815+00:00 · model_tool_request · model</summary><pre>{
+  &quot;event_id&quot;: &quot;E-73187f3a94b4&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 6,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:39.852815+00:00&quot;,
+  &quot;event_type&quot;: &quot;model_tool_request&quot;,
+  &quot;actor&quot;: &quot;model&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;decision_id&quot;: &quot;D-d1c81d1b07d9&quot;,
+    &quot;tool_call_id&quot;: &quot;tool-fd63cc34f29f&quot;,
+    &quot;name&quot;: &quot;get_parcel_context&quot;,
+    &quot;arguments&quot;: {
+      &quot;reason&quot;: &quot;Read parcel context and enrolled participants following buyer grant&quot;,
+      &quot;rule_id&quot;: &quot;R03&quot;,
+      &quot;case_id&quot;: &quot;DEMO-CASE-001&quot;
+    }
+  },
+  &quot;state_version_before&quot;: 1,
+  &quot;state_version_after&quot;: 1
+}</pre></details><details><summary>2026-10-04T01:46:39.853487+00:00 · tool_result · runtime</summary><pre>{
+  &quot;event_id&quot;: &quot;E-5207f9962223&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 7,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:39.853487+00:00&quot;,
+  &quot;event_type&quot;: &quot;tool_result&quot;,
+  &quot;actor&quot;: &quot;runtime&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;tool_call_id&quot;: &quot;tool-fd63cc34f29f&quot;,
+    &quot;tool_name&quot;: &quot;get_parcel_context&quot;,
+    &quot;response&quot;: {
+      &quot;ok&quot;: true,
+      &quot;call_id&quot;: &quot;tool-fd63cc34f29f&quot;,
+      &quot;state_version&quot;: 1,
+      &quot;result&quot;: {
+        &quot;case&quot;: {
+          &quot;schema_version&quot;: &quot;0.3-draft&quot;,
+          &quot;case_id&quot;: &quot;DEMO-CASE-001&quot;,
+          &quot;source&quot;: {
+            &quot;mode&quot;: &quot;FICTIONAL_DEVELOPMENT_FIXTURE&quot;,
+            &quot;reference&quot;: &quot;User confirmed fictional Myntra order in chat on 3 October 2026; see phase-02/inputs/confirmed-2026-10-03/input-register.json.&quot;,
+            &quot;fictional_case&quot;: true
+          },
+          &quot;state_version&quot;: 1,
+          &quot;case_state&quot;: &quot;awaiting_receiver&quot;,
+          &quot;buyer&quot;: {
+            &quot;id&quot;: &quot;DEMO-BUYER-01&quot;,
+            &quot;alias&quot;: &quot;Aarav&quot;
+          },
+          &quot;receiver&quot;: {
+            &quot;id&quot;: &quot;DEMO-RECEIVER-01&quot;,
+            &quot;alias&quot;: &quot;Meera&quot;,
+            &quot;relationship_in_scenario&quot;: &quot;mother&quot;,
+            &quot;adult_in_scenario&quot;: true
+          },
+          &quot;merchant&quot;: {
+            &quot;name&quot;: &quot;Myntra&quot;,
+            &quot;fictional&quot;: false
+          },
+          &quot;order&quot;: {
+            &quot;reference&quot;: &quot;DEMO-ORDER-001&quot;,
+            &quot;parcel_id&quot;: &quot;DEMO-PARCEL-001&quot;,
+            &quot;description&quot;: &quot;Bedsheet&quot;,
+            &quot;payment_type&quot;: &quot;prepaid&quot;,
+            &quot;value_inr&quot;: 900,
+            &quot;address_reference&quot;: &quot;DEMO-HOME-01&quot;,
+            &quot;fictional&quot;: true
+          },
+          &quot;carrier&quot;: {
+            &quot;proposed_partner&quot;: &quot;Delhivery&quot;,
+            &quot;waybill&quot;: null,
+            &quot;delegated_release_support&quot;: &quot;unverified&quot;
+          },
+          &quot;policy_reference&quot;: null,
+          &quot;buyer_grant&quot;: {
+            &quot;grant_id&quot;: &quot;grant-081bae45145a&quot;,
+            &quot;version&quot;: 1,
+            &quot;buyer_id&quot;: &quot;DEMO-BUYER-01&quot;,
+            &quot;receiver_id&quot;: &quot;DEMO-RECEIVER-01&quot;,
+            &quot;order_id&quot;: &quot;DEMO-ORDER-001&quot;,
+            &quot;parcel_id&quot;: &quot;DEMO-PARCEL-001&quot;,
+            &quot;address_id&quot;: &quot;DEMO-HOME-01&quot;,
+            &quot;scope&quot;: &quot;receive_only&quot;,
+            &quot;value_cap_inr&quot;: 900,
+            &quot;starts_at&quot;: &quot;2026-10-04T01:46:37.808804+00:00&quot;,
+            &quot;expires_at&quot;: &quot;2026-10-04T02:16:37.808804+00:00&quot;,
+            &quot;revoked_at&quot;: null,
+            &quot;source_event_id&quot;: &quot;E-885d4a18b6e7&quot;
+          },
+          &quot;invitation&quot;: null,
+          &quot;receiver_availability&quot;: null,
+          &quot;active_attempt&quot;: null,
+          &quot;doorstep_willingness&quot;: null,
+          &quot;receiver_acknowledgment&quot;: null,
+          &quot;unresolved_input_event_ids&quot;: [],
+          &quot;carrier_release_decision_ref&quot;: null,
+          &quot;handoff_evidence_ref&quot;: null,
+          &quot;label_for_recording&quot;: &quot;Fictional Myntra order scenario, prepaid INR 900. User-authored out-for-delivery status for 3 October 2026 is not a carrier event. No real merchant integration, consent grant or carrier approval.&quot;,
+          &quot;last_human_seq&quot;: 2,
+          &quot;profile&quot;: &quot;coordination_only&quot;,
+          &quot;outcome&quot;: null,
+          &quot;reason_code&quot;: null
+        },
+        &quot;state_version&quot;: 1,
+        &quot;run_profile&quot;: &quot;coordination_only&quot;,
+        &quot;messages&quot;: [],
+        &quot;source_label&quot;: &quot;Fictional order; participant actions labelled separately&quot;,
+        &quot;pending_inputs&quot;: [],
+        &quot;evidence_refs&quot;: [
+          &quot;E-4694ac06591a&quot;,
+          &quot;E-885d4a18b6e7&quot;,
+          &quot;E-48ca84a790d0&quot;,
+          &quot;E-ff4a497d8548&quot;,
+          &quot;E-985a1d8ef22d&quot;,
+          &quot;E-73187f3a94b4&quot;
+        ],
+        &quot;grant_valid_now&quot;: true,
+        &quot;now&quot;: &quot;2026-10-04T01:46:39.853375+00:00&quot;
+      }
+    }
+  },
+  &quot;state_version_before&quot;: 1,
+  &quot;state_version_after&quot;: 1
+}</pre></details><details><summary>2026-10-04T01:46:39.859526+00:00 · connector_request · runtime</summary><pre>{
+  &quot;event_id&quot;: &quot;E-efe58683e724&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 8,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:39.859526+00:00&quot;,
+  &quot;event_type&quot;: &quot;connector_request&quot;,
+  &quot;actor&quot;: &quot;runtime&quot;,
+  &quot;source_mode&quot;: &quot;LIVE_API&quot;,
+  &quot;payload&quot;: {
+    &quot;call_id&quot;: &quot;C002&quot;,
+    &quot;provider&quot;: &quot;Gemini&quot;,
+    &quot;method&quot;: &quot;POST&quot;,
+    &quot;url&quot;: &quot;https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent&quot;,
+    &quot;body&quot;: {
+      &quot;path&quot;: &quot;private/C002-request.body&quot;,
+      &quot;sha256&quot;: &quot;f43f0a1b5957ea46fb795bf46f7f54fe56f90d7d178c27e4f432593b221eea69&quot;,
+      &quot;bytes&quot;: 17207
+    },
+    &quot;json&quot;: null,
+    &quot;form_fields&quot;: null
+  },
+  &quot;state_version_before&quot;: 1,
+  &quot;state_version_after&quot;: 1
+}</pre></details><details><summary>2026-10-04T01:46:41.486714+00:00 · connector_response · provider</summary><pre>{
+  &quot;event_id&quot;: &quot;E-58d01bc6ab31&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 9,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:41.486714+00:00&quot;,
+  &quot;event_type&quot;: &quot;connector_response&quot;,
+  &quot;actor&quot;: &quot;provider&quot;,
+  &quot;source_mode&quot;: &quot;LIVE_API&quot;,
+  &quot;payload&quot;: {
+    &quot;call_id&quot;: &quot;C002&quot;,
+    &quot;provider&quot;: &quot;Gemini&quot;,
+    &quot;status_code&quot;: 200,
+    &quot;elapsed_ms&quot;: 1626,
+    &quot;content_type&quot;: &quot;application/json; charset=UTF-8&quot;,
+    &quot;response_body&quot;: {
+      &quot;path&quot;: &quot;private/C002-response.body&quot;,
+      &quot;sha256&quot;: &quot;d3c21295deababb66470e2c59449493cb47a79607b78e45a7ef2e0ed3077e93f&quot;,
+      &quot;bytes&quot;: 2299
+    }
+  },
+  &quot;state_version_before&quot;: 1,
+  &quot;state_version_after&quot;: 1
+}</pre></details><details><summary>2026-10-04T01:46:41.489952+00:00 · model_output · model</summary><pre>{
+  &quot;event_id&quot;: &quot;E-079fd3470e08&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 10,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:41.489952+00:00&quot;,
+  &quot;event_type&quot;: &quot;model_output&quot;,
+  &quot;actor&quot;: &quot;model&quot;,
+  &quot;source_mode&quot;: &quot;LIVE_API&quot;,
+  &quot;payload&quot;: {
+    &quot;turn&quot;: 2,
+    &quot;model_version&quot;: &quot;gemini-3.8-flash&quot;,
+    &quot;usage&quot;: {
+      &quot;promptTokenCount&quot;: 4149,
+      &quot;candidatesTokenCount&quot;: 233,
+      &quot;totalTokenCount&quot;: 4382,
+      &quot;promptTokensDetails&quot;: [
+        {
+          &quot;modality&quot;: &quot;TEXT&quot;,
+          &quot;tokenCount&quot;: 4149
+        }
+      ],
+      &quot;serviceTier&quot;: &quot;standard&quot;
+    },
+    &quot;response_ref&quot;: {
+      &quot;path&quot;: &quot;model/turn-002.json&quot;,
+      &quot;sha256&quot;: &quot;63d69aa2e512742d4fbde0c8f07ee0fa673cf1f97384913d27c11756b33cabec&quot;,
+      &quot;bytes&quot;: 1989
+    },
+    &quot;function_names&quot;: [
+      &quot;send_message&quot;,
+      &quot;wait_for_event&quot;
+    ]
+  },
+  &quot;state_version_before&quot;: 1,
+  &quot;state_version_after&quot;: 1
+}</pre></details><details><summary>2026-10-04T01:46:41.496266+00:00 · model_tool_request · model</summary><pre>{
+  &quot;event_id&quot;: &quot;E-d49e5da78a99&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 11,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:41.496266+00:00&quot;,
+  &quot;event_type&quot;: &quot;model_tool_request&quot;,
+  &quot;actor&quot;: &quot;model&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;decision_id&quot;: &quot;D-1cf51872019a&quot;,
+    &quot;tool_call_id&quot;: &quot;tool-a27712e4fb5c&quot;,
+    &quot;name&quot;: &quot;send_message&quot;,
+    &quot;arguments&quot;: {
+      &quot;response_kind&quot;: &quot;invitation&quot;,
+      &quot;purpose&quot;: &quot;invite&quot;,
+      &quot;reason&quot;: &quot;Invite Meera to participate in parcel coordination&quot;,
+      &quot;case_id&quot;: &quot;DEMO-CASE-001&quot;,
+      &quot;rule_id&quot;: &quot;R07&quot;,
+      &quot;recipient_id&quot;: &quot;DEMO-RECEIVER-01&quot;,
+      &quot;expected_state_version&quot;: 1,
+      &quot;text&quot;: &quot;नमस्ते मीरा जी, आरव ने आपके लिए एक पार्सल की जानकारी साझा करने की मंज़ूरी दी है। यह एक डेमो है, क्या आप इस पार्सल की जानकारी में मदद चाहते हैं?&quot;,
+      &quot;attempt_id&quot;: null
+    }
+  },
+  &quot;state_version_before&quot;: 1,
+  &quot;state_version_after&quot;: 1
+}</pre></details><details><summary>2026-10-04T01:46:41.497134+00:00 · message_stored · model</summary><pre>{
+  &quot;event_id&quot;: &quot;E-54775fbb78df&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 12,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:41.497134+00:00&quot;,
+  &quot;event_type&quot;: &quot;message_stored&quot;,
+  &quot;actor&quot;: &quot;model&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;message_id&quot;: &quot;message-e55b13b4286d&quot;,
+    &quot;recipient_id&quot;: &quot;DEMO-RECEIVER-01&quot;,
+    &quot;text&quot;: &quot;नमस्ते मीरा जी, आरव ने आपके लिए एक पार्सल की जानकारी साझा करने की मंज़ूरी दी है। यह एक डेमो है, क्या आप इस पार्सल की जानकारी में मदद चाहते हैं?&quot;,
+    &quot;purpose&quot;: &quot;invite&quot;,
+    &quot;response_kind&quot;: &quot;invitation&quot;,
+    &quot;choices&quot;: [
+      &quot;Accept invitation&quot;,
+      &quot;Decline invitation&quot;
+    ],
+    &quot;delivery_status&quot;: &quot;stored_in_app&quot;,
+    &quot;tool_call_id&quot;: &quot;tool-a27712e4fb5c&quot;
+  },
+  &quot;state_version_before&quot;: 1,
+  &quot;state_version_after&quot;: 1
+}</pre></details><details><summary>2026-10-04T01:46:41.497858+00:00 · tool_result · runtime</summary><pre>{
+  &quot;event_id&quot;: &quot;E-43aaac36d320&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 13,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:41.497858+00:00&quot;,
+  &quot;event_type&quot;: &quot;tool_result&quot;,
+  &quot;actor&quot;: &quot;runtime&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;tool_call_id&quot;: &quot;tool-a27712e4fb5c&quot;,
+    &quot;tool_name&quot;: &quot;send_message&quot;,
+    &quot;response&quot;: {
+      &quot;ok&quot;: true,
+      &quot;call_id&quot;: &quot;tool-a27712e4fb5c&quot;,
+      &quot;state_version&quot;: 1,
+      &quot;result&quot;: {
+        &quot;message_id&quot;: &quot;message-e55b13b4286d&quot;,
+        &quot;persisted_at&quot;: &quot;2026-10-04T01:46:41.497073+00:00&quot;,
+        &quot;delivery_status&quot;: &quot;stored_in_app&quot;,
+        &quot;read_at&quot;: null,
+        &quot;evidence_ref&quot;: &quot;E-54775fbb78df&quot;,
+        &quot;choices&quot;: [
+          &quot;Accept invitation&quot;,
+          &quot;Decline invitation&quot;
+        ]
+      }
+    }
+  },
+  &quot;state_version_before&quot;: 1,
+  &quot;state_version_after&quot;: 1
+}</pre></details><details><summary>2026-10-04T01:46:41.499186+00:00 · model_tool_request · model</summary><pre>{
+  &quot;event_id&quot;: &quot;E-743ecd90171b&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 14,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:41.499186+00:00&quot;,
+  &quot;event_type&quot;: &quot;model_tool_request&quot;,
+  &quot;actor&quot;: &quot;model&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;decision_id&quot;: &quot;D-9961236dbbe1&quot;,
+    &quot;tool_call_id&quot;: &quot;tool-f0b16ec48317&quot;,
+    &quot;name&quot;: &quot;wait_for_event&quot;,
+    &quot;arguments&quot;: {
+      &quot;timeout_seconds&quot;: 120,
+      &quot;case_id&quot;: &quot;DEMO-CASE-001&quot;,
+      &quot;rule_id&quot;: &quot;R12&quot;,
+      &quot;reason&quot;: &quot;Wait for receiver response to invitation or buyer revocation&quot;,
+      &quot;event_types&quot;: [
+        &quot;invitation_responded&quot;,
+        &quot;receiver_audio_uploaded&quot;,
+        &quot;receiver_text_received&quot;,
+        &quot;buyer_revoked&quot;
+      ]
+    }
+  },
+  &quot;state_version_before&quot;: 1,
+  &quot;state_version_after&quot;: 1
+}</pre></details><details><summary>2026-10-04T01:46:41.499539+00:00 · wait_registered · runtime</summary><pre>{
+  &quot;event_id&quot;: &quot;E-ca38b650fdc6&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 15,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:41.499539+00:00&quot;,
+  &quot;event_type&quot;: &quot;wait_registered&quot;,
+  &quot;actor&quot;: &quot;runtime&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;event_types&quot;: [
+      &quot;invitation_responded&quot;,
+      &quot;receiver_audio_uploaded&quot;,
+      &quot;receiver_text_received&quot;,
+      &quot;buyer_revoked&quot;
+    ],
+    &quot;deadline&quot;: &quot;2026-10-04T01:48:41.499477+00:00&quot;,
+    &quot;requested_by&quot;: &quot;tool-f0b16ec48317&quot;,
+    &quot;pending_inputs&quot;: 0
+  },
+  &quot;state_version_before&quot;: 1,
+  &quot;state_version_after&quot;: 1
+}</pre></details><details><summary>2026-10-04T01:46:41.499967+00:00 · tool_result · runtime</summary><pre>{
+  &quot;event_id&quot;: &quot;E-f1aedcd6f77d&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 16,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:41.499967+00:00&quot;,
+  &quot;event_type&quot;: &quot;tool_result&quot;,
+  &quot;actor&quot;: &quot;runtime&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;tool_call_id&quot;: &quot;tool-f0b16ec48317&quot;,
+    &quot;tool_name&quot;: &quot;wait_for_event&quot;,
+    &quot;response&quot;: {
+      &quot;ok&quot;: true,
+      &quot;call_id&quot;: &quot;tool-f0b16ec48317&quot;,
+      &quot;state_version&quot;: 1,
+      &quot;result&quot;: {
+        &quot;waiting&quot;: true,
+        &quot;deadline&quot;: &quot;2026-10-04T01:48:41.499477+00:00&quot;,
+        &quot;queued_input_will_resume&quot;: false,
+        &quot;evidence_ref&quot;: &quot;E-ca38b650fdc6&quot;
+      }
+    }
+  },
+  &quot;state_version_before&quot;: 1,
+  &quot;state_version_after&quot;: 1
+}</pre></details><details><summary>2026-10-04T01:46:41.843289+00:00 · invitation_responded · receiver</summary><pre>{
+  &quot;event_id&quot;: &quot;E-198652623e80&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 17,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:41.843289+00:00&quot;,
+  &quot;event_type&quot;: &quot;invitation_responded&quot;,
+  &quot;actor&quot;: &quot;receiver&quot;,
+  &quot;source_mode&quot;: &quot;OPERATOR_TEST_ACTION&quot;,
+  &quot;payload&quot;: {
+    &quot;choice&quot;: &quot;Accept invitation&quot;,
+    &quot;message_id&quot;: &quot;message-e55b13b4286d&quot;
+  },
+  &quot;state_version_before&quot;: 1,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:46:41.851978+00:00 · connector_request · runtime</summary><pre>{
+  &quot;event_id&quot;: &quot;E-86bc4c7ebdb5&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 18,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:41.851978+00:00&quot;,
+  &quot;event_type&quot;: &quot;connector_request&quot;,
+  &quot;actor&quot;: &quot;runtime&quot;,
+  &quot;source_mode&quot;: &quot;LIVE_API&quot;,
+  &quot;payload&quot;: {
+    &quot;call_id&quot;: &quot;C003&quot;,
+    &quot;provider&quot;: &quot;Gemini&quot;,
+    &quot;method&quot;: &quot;POST&quot;,
+    &quot;url&quot;: &quot;https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent&quot;,
+    &quot;body&quot;: {
+      &quot;path&quot;: &quot;private/C003-request.body&quot;,
+      &quot;sha256&quot;: &quot;5933d582078c9ec6525cc567ab102a482c0da0fb8797b8152ce5ec741b9ca46f&quot;,
+      &quot;bytes&quot;: 20193
+    },
+    &quot;json&quot;: null,
+    &quot;form_fields&quot;: null
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:46:43.463984+00:00 · connector_response · provider</summary><pre>{
+  &quot;event_id&quot;: &quot;E-9342565d9eab&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 19,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:43.463984+00:00&quot;,
+  &quot;event_type&quot;: &quot;connector_response&quot;,
+  &quot;actor&quot;: &quot;provider&quot;,
+  &quot;source_mode&quot;: &quot;LIVE_API&quot;,
+  &quot;payload&quot;: {
+    &quot;call_id&quot;: &quot;C003&quot;,
+    &quot;provider&quot;: &quot;Gemini&quot;,
+    &quot;status_code&quot;: 200,
+    &quot;elapsed_ms&quot;: 1611,
+    &quot;content_type&quot;: &quot;application/json; charset=UTF-8&quot;,
+    &quot;response_body&quot;: {
+      &quot;path&quot;: &quot;private/C003-response.body&quot;,
+      &quot;sha256&quot;: &quot;598b07cdac6f7596b1111930f6b27d142457cbf0336e81ad020e58e482821c6a&quot;,
+      &quot;bytes&quot;: 1091
+    }
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:46:43.465443+00:00 · model_output · model</summary><pre>{
+  &quot;event_id&quot;: &quot;E-59e2af89ef2d&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 20,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:43.465443+00:00&quot;,
+  &quot;event_type&quot;: &quot;model_output&quot;,
+  &quot;actor&quot;: &quot;model&quot;,
+  &quot;source_mode&quot;: &quot;LIVE_API&quot;,
+  &quot;payload&quot;: {
+    &quot;turn&quot;: 3,
+    &quot;model_version&quot;: &quot;gemini-3.8-flash&quot;,
+    &quot;usage&quot;: {
+      &quot;promptTokenCount&quot;: 4876,
+      &quot;candidatesTokenCount&quot;: 49,
+      &quot;totalTokenCount&quot;: 4925,
+      &quot;promptTokensDetails&quot;: [
+        {
+          &quot;modality&quot;: &quot;TEXT&quot;,
+          &quot;tokenCount&quot;: 4876
+        }
+      ],
+      &quot;serviceTier&quot;: &quot;standard&quot;
+    },
+    &quot;response_ref&quot;: {
+      &quot;path&quot;: &quot;model/turn-003.json&quot;,
+      &quot;sha256&quot;: &quot;df88c569480c8f0c1f2565db1818a9e0fae7d7acbf5a091c651bde29004db41b&quot;,
+      &quot;bytes&quot;: 877
+    },
+    &quot;function_names&quot;: [
+      &quot;get_parcel_context&quot;
+    ]
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:46:43.466520+00:00 · model_tool_request · model</summary><pre>{
+  &quot;event_id&quot;: &quot;E-6bde166bde96&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 21,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:43.466520+00:00&quot;,
+  &quot;event_type&quot;: &quot;model_tool_request&quot;,
+  &quot;actor&quot;: &quot;model&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;decision_id&quot;: &quot;D-b4926cd119a9&quot;,
+    &quot;tool_call_id&quot;: &quot;tool-fa340fbf94e3&quot;,
+    &quot;name&quot;: &quot;get_parcel_context&quot;,
+    &quot;arguments&quot;: {
+      &quot;reason&quot;: &quot;Fetch updated parcel context after invitation accepted&quot;,
+      &quot;rule_id&quot;: &quot;R03&quot;,
+      &quot;case_id&quot;: &quot;DEMO-CASE-001&quot;
+    }
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:46:43.467436+00:00 · tool_result · runtime</summary><pre>{
+  &quot;event_id&quot;: &quot;E-ab6e311269ae&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 22,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:43.467436+00:00&quot;,
+  &quot;event_type&quot;: &quot;tool_result&quot;,
+  &quot;actor&quot;: &quot;runtime&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;tool_call_id&quot;: &quot;tool-fa340fbf94e3&quot;,
+    &quot;tool_name&quot;: &quot;get_parcel_context&quot;,
+    &quot;response&quot;: {
+      &quot;ok&quot;: true,
+      &quot;call_id&quot;: &quot;tool-fa340fbf94e3&quot;,
+      &quot;state_version&quot;: 2,
+      &quot;result&quot;: {
+        &quot;case&quot;: {
+          &quot;schema_version&quot;: &quot;0.3-draft&quot;,
+          &quot;case_id&quot;: &quot;DEMO-CASE-001&quot;,
+          &quot;source&quot;: {
+            &quot;mode&quot;: &quot;FICTIONAL_DEVELOPMENT_FIXTURE&quot;,
+            &quot;reference&quot;: &quot;User confirmed fictional Myntra order in chat on 3 October 2026; see phase-02/inputs/confirmed-2026-10-03/input-register.json.&quot;,
+            &quot;fictional_case&quot;: true
+          },
+          &quot;state_version&quot;: 2,
+          &quot;case_state&quot;: &quot;coordinating&quot;,
+          &quot;buyer&quot;: {
+            &quot;id&quot;: &quot;DEMO-BUYER-01&quot;,
+            &quot;alias&quot;: &quot;Aarav&quot;
+          },
+          &quot;receiver&quot;: {
+            &quot;id&quot;: &quot;DEMO-RECEIVER-01&quot;,
+            &quot;alias&quot;: &quot;Meera&quot;,
+            &quot;relationship_in_scenario&quot;: &quot;mother&quot;,
+            &quot;adult_in_scenario&quot;: true
+          },
+          &quot;merchant&quot;: {
+            &quot;name&quot;: &quot;Myntra&quot;,
+            &quot;fictional&quot;: false
+          },
+          &quot;order&quot;: {
+            &quot;reference&quot;: &quot;DEMO-ORDER-001&quot;,
+            &quot;parcel_id&quot;: &quot;DEMO-PARCEL-001&quot;,
+            &quot;description&quot;: &quot;Bedsheet&quot;,
+            &quot;payment_type&quot;: &quot;prepaid&quot;,
+            &quot;value_inr&quot;: 900,
+            &quot;address_reference&quot;: &quot;DEMO-HOME-01&quot;,
+            &quot;fictional&quot;: true
+          },
+          &quot;carrier&quot;: {
+            &quot;proposed_partner&quot;: &quot;Delhivery&quot;,
+            &quot;waybill&quot;: null,
+            &quot;delegated_release_support&quot;: &quot;unverified&quot;
+          },
+          &quot;policy_reference&quot;: null,
+          &quot;buyer_grant&quot;: {
+            &quot;grant_id&quot;: &quot;grant-081bae45145a&quot;,
+            &quot;version&quot;: 1,
+            &quot;buyer_id&quot;: &quot;DEMO-BUYER-01&quot;,
+            &quot;receiver_id&quot;: &quot;DEMO-RECEIVER-01&quot;,
+            &quot;order_id&quot;: &quot;DEMO-ORDER-001&quot;,
+            &quot;parcel_id&quot;: &quot;DEMO-PARCEL-001&quot;,
+            &quot;address_id&quot;: &quot;DEMO-HOME-01&quot;,
+            &quot;scope&quot;: &quot;receive_only&quot;,
+            &quot;value_cap_inr&quot;: 900,
+            &quot;starts_at&quot;: &quot;2026-10-04T01:46:37.808804+00:00&quot;,
+            &quot;expires_at&quot;: &quot;2026-10-04T02:16:37.808804+00:00&quot;,
+            &quot;revoked_at&quot;: null,
+            &quot;source_event_id&quot;: &quot;E-885d4a18b6e7&quot;
+          },
+          &quot;invitation&quot;: {
+            &quot;choice&quot;: &quot;Accept invitation&quot;,
+            &quot;event_id&quot;: &quot;E-198652623e80&quot;,
+            &quot;recorded_at&quot;: &quot;2026-10-04T01:46:41.843128+00:00&quot;
+          },
+          &quot;receiver_availability&quot;: null,
+          &quot;active_attempt&quot;: null,
+          &quot;doorstep_willingness&quot;: null,
+          &quot;receiver_acknowledgment&quot;: null,
+          &quot;unresolved_input_event_ids&quot;: [],
+          &quot;carrier_release_decision_ref&quot;: null,
+          &quot;handoff_evidence_ref&quot;: null,
+          &quot;label_for_recording&quot;: &quot;Fictional Myntra order scenario, prepaid INR 900. User-authored out-for-delivery status for 3 October 2026 is not a carrier event. No real merchant integration, consent grant or carrier approval.&quot;,
+          &quot;last_human_seq&quot;: 17,
+          &quot;profile&quot;: &quot;coordination_only&quot;,
+          &quot;outcome&quot;: null,
+          &quot;reason_code&quot;: null
+        },
+        &quot;state_version&quot;: 2,
+        &quot;run_profile&quot;: &quot;coordination_only&quot;,
+        &quot;messages&quot;: [
+          {
+            &quot;id&quot;: &quot;message-e55b13b4286d&quot;,
+            &quot;run&quot;: &quot;run-0652ea3cc96d&quot;,
+            &quot;recipient&quot;: &quot;DEMO-RECEIVER-01&quot;,
+            &quot;text&quot;: &quot;नमस्ते मीरा जी, आरव ने आपके लिए एक पार्सल की जानकारी साझा करने की मंज़ूरी दी है। यह एक डेमो है, क्या आप इस पार्सल की जानकारी में मदद चाहते हैं?&quot;,
+            &quot;purpose&quot;: &quot;invite&quot;,
+            &quot;response_kind&quot;: &quot;invitation&quot;,
+            &quot;created&quot;: &quot;2026-10-04T01:46:41.497073+00:00&quot;,
+            &quot;version&quot;: 1,
+            &quot;answered&quot;: &quot;Accept invitation&quot;,
+            &quot;read_at&quot;: null,
+            &quot;source_event&quot;: &quot;E-54775fbb78df&quot;,
+            &quot;trigger_seq&quot;: 2
+          }
+        ],
+        &quot;source_label&quot;: &quot;Fictional order; participant actions labelled separately&quot;,
+        &quot;pending_inputs&quot;: [],
+        &quot;evidence_refs&quot;: [
+          &quot;E-4694ac06591a&quot;,
+          &quot;E-885d4a18b6e7&quot;,
+          &quot;E-48ca84a790d0&quot;,
+          &quot;E-ff4a497d8548&quot;,
+          &quot;E-985a1d8ef22d&quot;,
+          &quot;E-73187f3a94b4&quot;,
+          &quot;E-5207f9962223&quot;,
+          &quot;E-efe58683e724&quot;,
+          &quot;E-58d01bc6ab31&quot;,
+          &quot;E-079fd3470e08&quot;,
+          &quot;E-d49e5da78a99&quot;,
+          &quot;E-54775fbb78df&quot;,
+          &quot;E-43aaac36d320&quot;,
+          &quot;E-743ecd90171b&quot;,
+          &quot;E-ca38b650fdc6&quot;,
+          &quot;E-f1aedcd6f77d&quot;,
+          &quot;E-198652623e80&quot;,
+          &quot;E-86bc4c7ebdb5&quot;,
+          &quot;E-9342565d9eab&quot;,
+          &quot;E-59e2af89ef2d&quot;,
+          &quot;E-6bde166bde96&quot;
+        ],
+        &quot;grant_valid_now&quot;: true,
+        &quot;now&quot;: &quot;2026-10-04T01:46:43.467297+00:00&quot;
+      }
+    }
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:46:43.473761+00:00 · connector_request · runtime</summary><pre>{
+  &quot;event_id&quot;: &quot;E-4d3792b35ecf&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 23,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:43.473761+00:00&quot;,
+  &quot;event_type&quot;: &quot;connector_request&quot;,
+  &quot;actor&quot;: &quot;runtime&quot;,
+  &quot;source_mode&quot;: &quot;LIVE_API&quot;,
+  &quot;payload&quot;: {
+    &quot;call_id&quot;: &quot;C004&quot;,
+    &quot;provider&quot;: &quot;Gemini&quot;,
+    &quot;method&quot;: &quot;POST&quot;,
+    &quot;url&quot;: &quot;https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent&quot;,
+    &quot;body&quot;: {
+      &quot;path&quot;: &quot;private/C004-request.body&quot;,
+      &quot;sha256&quot;: &quot;a0359bc5e233d3cc80a2cd068932ad056c3d9aa355c45f3abcc4fd8612676dc4&quot;,
+      &quot;bytes&quot;: 24413
+    },
+    &quot;json&quot;: null,
+    &quot;form_fields&quot;: null
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:46:45.275469+00:00 · connector_response · provider</summary><pre>{
+  &quot;event_id&quot;: &quot;E-946cc8d20af1&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 24,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:45.275469+00:00&quot;,
+  &quot;event_type&quot;: &quot;connector_response&quot;,
+  &quot;actor&quot;: &quot;provider&quot;,
+  &quot;source_mode&quot;: &quot;LIVE_API&quot;,
+  &quot;payload&quot;: {
+    &quot;call_id&quot;: &quot;C004&quot;,
+    &quot;provider&quot;: &quot;Gemini&quot;,
+    &quot;status_code&quot;: 200,
+    &quot;elapsed_ms&quot;: 1800,
+    &quot;content_type&quot;: &quot;application/json; charset=UTF-8&quot;,
+    &quot;response_body&quot;: {
+      &quot;path&quot;: &quot;private/C004-response.body&quot;,
+      &quot;sha256&quot;: &quot;1063ba63a59a171dd086430169d0e71498f7047b19ab3c08db99f488cd2106f9&quot;,
+      &quot;bytes&quot;: 2263
+    }
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:46:45.276842+00:00 · model_output · model</summary><pre>{
+  &quot;event_id&quot;: &quot;E-98528f3b3021&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 25,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:45.276842+00:00&quot;,
+  &quot;event_type&quot;: &quot;model_output&quot;,
+  &quot;actor&quot;: &quot;model&quot;,
+  &quot;source_mode&quot;: &quot;LIVE_API&quot;,
+  &quot;payload&quot;: {
+    &quot;turn&quot;: 4,
+    &quot;model_version&quot;: &quot;gemini-3.8-flash&quot;,
+    &quot;usage&quot;: {
+      &quot;promptTokenCount&quot;: 6249,
+      &quot;candidatesTokenCount&quot;: 223,
+      &quot;totalTokenCount&quot;: 6472,
+      &quot;promptTokensDetails&quot;: [
+        {
+          &quot;modality&quot;: &quot;TEXT&quot;,
+          &quot;tokenCount&quot;: 6249
+        }
+      ],
+      &quot;serviceTier&quot;: &quot;standard&quot;
+    },
+    &quot;response_ref&quot;: {
+      &quot;path&quot;: &quot;model/turn-004.json&quot;,
+      &quot;sha256&quot;: &quot;77bca91eb3205e88bc3a0091b55297017934b28c69800f33ed526a5d49f3d4bd&quot;,
+      &quot;bytes&quot;: 1957
+    },
+    &quot;function_names&quot;: [
+      &quot;send_message&quot;,
+      &quot;wait_for_event&quot;
+    ]
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:46:45.277938+00:00 · model_tool_request · model</summary><pre>{
+  &quot;event_id&quot;: &quot;E-2c592ee22c24&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 26,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:45.277938+00:00&quot;,
+  &quot;event_type&quot;: &quot;model_tool_request&quot;,
+  &quot;actor&quot;: &quot;model&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;decision_id&quot;: &quot;D-ffbeac70bcb0&quot;,
+    &quot;tool_call_id&quot;: &quot;tool-3260c0f3739c&quot;,
+    &quot;name&quot;: &quot;send_message&quot;,
+    &quot;arguments&quot;: {
+      &quot;case_id&quot;: &quot;DEMO-CASE-001&quot;,
+      &quot;response_kind&quot;: &quot;text&quot;,
+      &quot;expected_state_version&quot;: 2,
+      &quot;purpose&quot;: &quot;explain&quot;,
+      &quot;rule_id&quot;: &quot;R06&quot;,
+      &quot;recipient_id&quot;: &quot;DEMO-RECEIVER-01&quot;,
+      &quot;text&quot;: &quot;यह Myntra से बेडशीट का एक डेमो पार्सल है और इसका भुगतान हो चुका है। डिलीवरी कंपनी अपनी सामान्य प्रक्रिया अपनाएगी, क्या आपका कोई सवाल है?&quot;,
+      &quot;reason&quot;: &quot;Explain parcel details and limitations in coordination_only mode, giving chance to ask questions&quot;
+    }
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:46:45.278361+00:00 · tool_result · runtime</summary><pre>{
+  &quot;event_id&quot;: &quot;E-fbf14d7a4cd3&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 27,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:45.278361+00:00&quot;,
+  &quot;event_type&quot;: &quot;tool_result&quot;,
+  &quot;actor&quot;: &quot;runtime&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;tool_call_id&quot;: &quot;tool-3260c0f3739c&quot;,
+    &quot;tool_name&quot;: &quot;send_message&quot;,
+    &quot;response&quot;: {
+      &quot;ok&quot;: false,
+      &quot;call_id&quot;: &quot;tool-3260c0f3739c&quot;,
+      &quot;state_version&quot;: 2,
+      &quot;error&quot;: {
+        &quot;code&quot;: &quot;INVALID_ARGUMENTS&quot;,
+        &quot;message&quot;: &quot;arguments: required field missing&quot;
+      }
+    }
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:46:45.279708+00:00 · model_tool_request · model</summary><pre>{
+  &quot;event_id&quot;: &quot;E-1189011d3b34&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 28,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:45.279708+00:00&quot;,
+  &quot;event_type&quot;: &quot;model_tool_request&quot;,
+  &quot;actor&quot;: &quot;model&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;decision_id&quot;: &quot;D-7ab0ddc63db5&quot;,
+    &quot;tool_call_id&quot;: &quot;tool-61af249ac9a8&quot;,
+    &quot;name&quot;: &quot;wait_for_event&quot;,
+    &quot;arguments&quot;: {
+      &quot;reason&quot;: &quot;Wait for receiver text or audio question&quot;,
+      &quot;timeout_seconds&quot;: 120,
+      &quot;rule_id&quot;: &quot;R12&quot;,
+      &quot;case_id&quot;: &quot;DEMO-CASE-001&quot;,
+      &quot;event_types&quot;: [
+        &quot;receiver_text_received&quot;,
+        &quot;receiver_audio_uploaded&quot;,
+        &quot;availability_changed&quot;,
+        &quot;buyer_revoked&quot;
+      ]
+    }
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:46:45.280140+00:00 · wait_registered · runtime</summary><pre>{
+  &quot;event_id&quot;: &quot;E-5656b61bd96a&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 29,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:45.280140+00:00&quot;,
+  &quot;event_type&quot;: &quot;wait_registered&quot;,
+  &quot;actor&quot;: &quot;runtime&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;event_types&quot;: [
+      &quot;receiver_text_received&quot;,
+      &quot;receiver_audio_uploaded&quot;,
+      &quot;availability_changed&quot;,
+      &quot;buyer_revoked&quot;
+    ],
+    &quot;deadline&quot;: &quot;2026-10-04T01:48:45.280067+00:00&quot;,
+    &quot;requested_by&quot;: &quot;tool-61af249ac9a8&quot;,
+    &quot;pending_inputs&quot;: 0
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:46:45.280781+00:00 · tool_result · runtime</summary><pre>{
+  &quot;event_id&quot;: &quot;E-3d7c885a72df&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 30,
+  &quot;received_at&quot;: &quot;2026-10-04T01:46:45.280781+00:00&quot;,
+  &quot;event_type&quot;: &quot;tool_result&quot;,
+  &quot;actor&quot;: &quot;runtime&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;tool_call_id&quot;: &quot;tool-61af249ac9a8&quot;,
+    &quot;tool_name&quot;: &quot;wait_for_event&quot;,
+    &quot;response&quot;: {
+      &quot;ok&quot;: true,
+      &quot;call_id&quot;: &quot;tool-61af249ac9a8&quot;,
+      &quot;state_version&quot;: 2,
+      &quot;result&quot;: {
+        &quot;waiting&quot;: true,
+        &quot;deadline&quot;: &quot;2026-10-04T01:48:45.280067+00:00&quot;,
+        &quot;queued_input_will_resume&quot;: false,
+        &quot;evidence_ref&quot;: &quot;E-5656b61bd96a&quot;
+      }
+    }
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:48:47.025807+00:00 · timer_expired · runtime</summary><pre>{
+  &quot;event_id&quot;: &quot;E-4d33744eb9fe&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 31,
+  &quot;received_at&quot;: &quot;2026-10-04T01:48:47.025807+00:00&quot;,
+  &quot;event_type&quot;: &quot;timer_expired&quot;,
+  &quot;actor&quot;: &quot;runtime&quot;,
+  &quot;source_mode&quot;: &quot;APP_CLOCK&quot;,
+  &quot;payload&quot;: {
+    &quot;deadline&quot;: &quot;2026-10-04T01:48:45.280067+00:00&quot;
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:48:47.029622+00:00 · connector_request · runtime</summary><pre>{
+  &quot;event_id&quot;: &quot;E-3135bd0ec9f3&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 32,
+  &quot;received_at&quot;: &quot;2026-10-04T01:48:47.029622+00:00&quot;,
+  &quot;event_type&quot;: &quot;connector_request&quot;,
+  &quot;actor&quot;: &quot;runtime&quot;,
+  &quot;source_mode&quot;: &quot;LIVE_API&quot;,
+  &quot;payload&quot;: {
+    &quot;call_id&quot;: &quot;C005&quot;,
+    &quot;provider&quot;: &quot;Gemini&quot;,
+    &quot;method&quot;: &quot;POST&quot;,
+    &quot;url&quot;: &quot;https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent&quot;,
+    &quot;body&quot;: {
+      &quot;path&quot;: &quot;private/C005-request.body&quot;,
+      &quot;sha256&quot;: &quot;930a9f223817fa22197b0955b25f2eeb26dd91586b8a80b6df95a9b4258b1275&quot;,
+      &quot;bytes&quot;: 27146
+    },
+    &quot;json&quot;: null,
+    &quot;form_fields&quot;: null
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:48:48.865840+00:00 · connector_response · provider</summary><pre>{
+  &quot;event_id&quot;: &quot;E-3b4ea39a0353&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 33,
+  &quot;received_at&quot;: &quot;2026-10-04T01:48:48.865840+00:00&quot;,
+  &quot;event_type&quot;: &quot;connector_response&quot;,
+  &quot;actor&quot;: &quot;provider&quot;,
+  &quot;source_mode&quot;: &quot;LIVE_API&quot;,
+  &quot;payload&quot;: {
+    &quot;call_id&quot;: &quot;C005&quot;,
+    &quot;provider&quot;: &quot;Gemini&quot;,
+    &quot;status_code&quot;: 200,
+    &quot;elapsed_ms&quot;: 1834,
+    &quot;content_type&quot;: &quot;application/json; charset=UTF-8&quot;,
+    &quot;response_body&quot;: {
+      &quot;path&quot;: &quot;private/C005-response.body&quot;,
+      &quot;sha256&quot;: &quot;b4c95d16071d0b4ee10356d8bc5642210dd9ff1d9527da0cdfdb8f015dab6848&quot;,
+      &quot;bytes&quot;: 1080
+    }
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:48:48.867886+00:00 · model_output · model</summary><pre>{
+  &quot;event_id&quot;: &quot;E-72ec1c24cb2f&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 34,
+  &quot;received_at&quot;: &quot;2026-10-04T01:48:48.867886+00:00&quot;,
+  &quot;event_type&quot;: &quot;model_output&quot;,
+  &quot;actor&quot;: &quot;model&quot;,
+  &quot;source_mode&quot;: &quot;LIVE_API&quot;,
+  &quot;payload&quot;: {
+    &quot;turn&quot;: 5,
+    &quot;model_version&quot;: &quot;gemini-3.8-flash&quot;,
+    &quot;usage&quot;: {
+      &quot;promptTokenCount&quot;: 6885,
+      &quot;candidatesTokenCount&quot;: 48,
+      &quot;totalTokenCount&quot;: 6933,
+      &quot;promptTokensDetails&quot;: [
+        {
+          &quot;modality&quot;: &quot;TEXT&quot;,
+          &quot;tokenCount&quot;: 6885
+        }
+      ],
+      &quot;serviceTier&quot;: &quot;standard&quot;
+    },
+    &quot;response_ref&quot;: {
+      &quot;path&quot;: &quot;model/turn-005.json&quot;,
+      &quot;sha256&quot;: &quot;e1209acabcacbabc935a0d18b9ae03e0bb043df75df99acf847b00bbe65460d3&quot;,
+      &quot;bytes&quot;: 866
+    },
+    &quot;function_names&quot;: [
+      &quot;get_parcel_context&quot;
+    ]
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:48:48.869273+00:00 · model_tool_request · model</summary><pre>{
+  &quot;event_id&quot;: &quot;E-ce4cc61e1080&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 35,
+  &quot;received_at&quot;: &quot;2026-10-04T01:48:48.869273+00:00&quot;,
+  &quot;event_type&quot;: &quot;model_tool_request&quot;,
+  &quot;actor&quot;: &quot;model&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;decision_id&quot;: &quot;D-7fedf1fa13d1&quot;,
+    &quot;tool_call_id&quot;: &quot;tool-ca3ffe362c8e&quot;,
+    &quot;name&quot;: &quot;get_parcel_context&quot;,
+    &quot;arguments&quot;: {
+      &quot;reason&quot;: &quot;Check current parcel context and parameters&quot;,
+      &quot;case_id&quot;: &quot;DEMO-CASE-001&quot;,
+      &quot;rule_id&quot;: &quot;R03&quot;
+    }
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:48:48.870323+00:00 · tool_result · runtime</summary><pre>{
+  &quot;event_id&quot;: &quot;E-fced72d22414&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 36,
+  &quot;received_at&quot;: &quot;2026-10-04T01:48:48.870323+00:00&quot;,
+  &quot;event_type&quot;: &quot;tool_result&quot;,
+  &quot;actor&quot;: &quot;runtime&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;tool_call_id&quot;: &quot;tool-ca3ffe362c8e&quot;,
+    &quot;tool_name&quot;: &quot;get_parcel_context&quot;,
+    &quot;response&quot;: {
+      &quot;ok&quot;: true,
+      &quot;call_id&quot;: &quot;tool-ca3ffe362c8e&quot;,
+      &quot;state_version&quot;: 2,
+      &quot;result&quot;: {
+        &quot;case&quot;: {
+          &quot;schema_version&quot;: &quot;0.3-draft&quot;,
+          &quot;case_id&quot;: &quot;DEMO-CASE-001&quot;,
+          &quot;source&quot;: {
+            &quot;mode&quot;: &quot;FICTIONAL_DEVELOPMENT_FIXTURE&quot;,
+            &quot;reference&quot;: &quot;User confirmed fictional Myntra order in chat on 3 October 2026; see phase-02/inputs/confirmed-2026-10-03/input-register.json.&quot;,
+            &quot;fictional_case&quot;: true
+          },
+          &quot;state_version&quot;: 2,
+          &quot;case_state&quot;: &quot;coordinating&quot;,
+          &quot;buyer&quot;: {
+            &quot;id&quot;: &quot;DEMO-BUYER-01&quot;,
+            &quot;alias&quot;: &quot;Aarav&quot;
+          },
+          &quot;receiver&quot;: {
+            &quot;id&quot;: &quot;DEMO-RECEIVER-01&quot;,
+            &quot;alias&quot;: &quot;Meera&quot;,
+            &quot;relationship_in_scenario&quot;: &quot;mother&quot;,
+            &quot;adult_in_scenario&quot;: true
+          },
+          &quot;merchant&quot;: {
+            &quot;name&quot;: &quot;Myntra&quot;,
+            &quot;fictional&quot;: false
+          },
+          &quot;order&quot;: {
+            &quot;reference&quot;: &quot;DEMO-ORDER-001&quot;,
+            &quot;parcel_id&quot;: &quot;DEMO-PARCEL-001&quot;,
+            &quot;description&quot;: &quot;Bedsheet&quot;,
+            &quot;payment_type&quot;: &quot;prepaid&quot;,
+            &quot;value_inr&quot;: 900,
+            &quot;address_reference&quot;: &quot;DEMO-HOME-01&quot;,
+            &quot;fictional&quot;: true
+          },
+          &quot;carrier&quot;: {
+            &quot;proposed_partner&quot;: &quot;Delhivery&quot;,
+            &quot;waybill&quot;: null,
+            &quot;delegated_release_support&quot;: &quot;unverified&quot;
+          },
+          &quot;policy_reference&quot;: null,
+          &quot;buyer_grant&quot;: {
+            &quot;grant_id&quot;: &quot;grant-081bae45145a&quot;,
+            &quot;version&quot;: 1,
+            &quot;buyer_id&quot;: &quot;DEMO-BUYER-01&quot;,
+            &quot;receiver_id&quot;: &quot;DEMO-RECEIVER-01&quot;,
+            &quot;order_id&quot;: &quot;DEMO-ORDER-001&quot;,
+            &quot;parcel_id&quot;: &quot;DEMO-PARCEL-001&quot;,
+            &quot;address_id&quot;: &quot;DEMO-HOME-01&quot;,
+            &quot;scope&quot;: &quot;receive_only&quot;,
+            &quot;value_cap_inr&quot;: 900,
+            &quot;starts_at&quot;: &quot;2026-10-04T01:46:37.808804+00:00&quot;,
+            &quot;expires_at&quot;: &quot;2026-10-04T02:16:37.808804+00:00&quot;,
+            &quot;revoked_at&quot;: null,
+            &quot;source_event_id&quot;: &quot;E-885d4a18b6e7&quot;
+          },
+          &quot;invitation&quot;: {
+            &quot;choice&quot;: &quot;Accept invitation&quot;,
+            &quot;event_id&quot;: &quot;E-198652623e80&quot;,
+            &quot;recorded_at&quot;: &quot;2026-10-04T01:46:41.843128+00:00&quot;
+          },
+          &quot;receiver_availability&quot;: null,
+          &quot;active_attempt&quot;: null,
+          &quot;doorstep_willingness&quot;: null,
+          &quot;receiver_acknowledgment&quot;: null,
+          &quot;unresolved_input_event_ids&quot;: [],
+          &quot;carrier_release_decision_ref&quot;: null,
+          &quot;handoff_evidence_ref&quot;: null,
+          &quot;label_for_recording&quot;: &quot;Fictional Myntra order scenario, prepaid INR 900. User-authored out-for-delivery status for 3 October 2026 is not a carrier event. No real merchant integration, consent grant or carrier approval.&quot;,
+          &quot;last_human_seq&quot;: 17,
+          &quot;profile&quot;: &quot;coordination_only&quot;,
+          &quot;outcome&quot;: null,
+          &quot;reason_code&quot;: null
+        },
+        &quot;state_version&quot;: 2,
+        &quot;run_profile&quot;: &quot;coordination_only&quot;,
+        &quot;messages&quot;: [
+          {
+            &quot;id&quot;: &quot;message-e55b13b4286d&quot;,
+            &quot;run&quot;: &quot;run-0652ea3cc96d&quot;,
+            &quot;recipient&quot;: &quot;DEMO-RECEIVER-01&quot;,
+            &quot;text&quot;: &quot;नमस्ते मीरा जी, आरव ने आपके लिए एक पार्सल की जानकारी साझा करने की मंज़ूरी दी है। यह एक डेमो है, क्या आप इस पार्सल की जानकारी में मदद चाहते हैं?&quot;,
+            &quot;purpose&quot;: &quot;invite&quot;,
+            &quot;response_kind&quot;: &quot;invitation&quot;,
+            &quot;created&quot;: &quot;2026-10-04T01:46:41.497073+00:00&quot;,
+            &quot;version&quot;: 1,
+            &quot;answered&quot;: &quot;Accept invitation&quot;,
+            &quot;read_at&quot;: null,
+            &quot;source_event&quot;: &quot;E-54775fbb78df&quot;,
+            &quot;trigger_seq&quot;: 2
+          }
+        ],
+        &quot;source_label&quot;: &quot;Fictional order; participant actions labelled separately&quot;,
+        &quot;pending_inputs&quot;: [],
+        &quot;evidence_refs&quot;: [
+          &quot;E-4694ac06591a&quot;,
+          &quot;E-885d4a18b6e7&quot;,
+          &quot;E-48ca84a790d0&quot;,
+          &quot;E-ff4a497d8548&quot;,
+          &quot;E-985a1d8ef22d&quot;,
+          &quot;E-73187f3a94b4&quot;,
+          &quot;E-5207f9962223&quot;,
+          &quot;E-efe58683e724&quot;,
+          &quot;E-58d01bc6ab31&quot;,
+          &quot;E-079fd3470e08&quot;,
+          &quot;E-d49e5da78a99&quot;,
+          &quot;E-54775fbb78df&quot;,
+          &quot;E-43aaac36d320&quot;,
+          &quot;E-743ecd90171b&quot;,
+          &quot;E-ca38b650fdc6&quot;,
+          &quot;E-f1aedcd6f77d&quot;,
+          &quot;E-198652623e80&quot;,
+          &quot;E-86bc4c7ebdb5&quot;,
+          &quot;E-9342565d9eab&quot;,
+          &quot;E-59e2af89ef2d&quot;,
+          &quot;E-6bde166bde96&quot;,
+          &quot;E-ab6e311269ae&quot;,
+          &quot;E-4d3792b35ecf&quot;,
+          &quot;E-946cc8d20af1&quot;,
+          &quot;E-98528f3b3021&quot;,
+          &quot;E-2c592ee22c24&quot;,
+          &quot;E-fbf14d7a4cd3&quot;,
+          &quot;E-1189011d3b34&quot;,
+          &quot;E-5656b61bd96a&quot;,
+          &quot;E-3d7c885a72df&quot;,
+          &quot;E-4d33744eb9fe&quot;,
+          &quot;E-3135bd0ec9f3&quot;,
+          &quot;E-3b4ea39a0353&quot;,
+          &quot;E-72ec1c24cb2f&quot;,
+          &quot;E-ce4cc61e1080&quot;
+        ],
+        &quot;grant_valid_now&quot;: true,
+        &quot;now&quot;: &quot;2026-10-04T01:48:48.870168+00:00&quot;
+      }
+    }
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:48:48.877346+00:00 · connector_request · runtime</summary><pre>{
+  &quot;event_id&quot;: &quot;E-ade1b159aedd&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 37,
+  &quot;received_at&quot;: &quot;2026-10-04T01:48:48.877346+00:00&quot;,
+  &quot;event_type&quot;: &quot;connector_request&quot;,
+  &quot;actor&quot;: &quot;runtime&quot;,
+  &quot;source_mode&quot;: &quot;LIVE_API&quot;,
+  &quot;payload&quot;: {
+    &quot;call_id&quot;: &quot;C006&quot;,
+    &quot;provider&quot;: &quot;Gemini&quot;,
+    &quot;method&quot;: &quot;POST&quot;,
+    &quot;url&quot;: &quot;https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent&quot;,
+    &quot;body&quot;: {
+      &quot;path&quot;: &quot;private/C006-request.body&quot;,
+      &quot;sha256&quot;: &quot;cb7316a71649ab2f936e57229d1712929950047026e186cd553f2af1e78f84e7&quot;,
+      &quot;bytes&quot;: 31607
+    },
+    &quot;json&quot;: null,
+    &quot;form_fields&quot;: null
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:48:50.272064+00:00 · connector_response · provider</summary><pre>{
+  &quot;event_id&quot;: &quot;E-9c632b9a2b10&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 38,
+  &quot;received_at&quot;: &quot;2026-10-04T01:48:50.272064+00:00&quot;,
+  &quot;event_type&quot;: &quot;connector_response&quot;,
+  &quot;actor&quot;: &quot;provider&quot;,
+  &quot;source_mode&quot;: &quot;LIVE_API&quot;,
+  &quot;payload&quot;: {
+    &quot;call_id&quot;: &quot;C006&quot;,
+    &quot;provider&quot;: &quot;Gemini&quot;,
+    &quot;status_code&quot;: 200,
+    &quot;elapsed_ms&quot;: 1392,
+    &quot;content_type&quot;: &quot;application/json; charset=UTF-8&quot;,
+    &quot;response_body&quot;: {
+      &quot;path&quot;: &quot;private/C006-response.body&quot;,
+      &quot;sha256&quot;: &quot;875e81cda8f7b247d06706e686ba6e359cd075c3aff5b77e516ced435a96d8cb&quot;,
+      &quot;bytes&quot;: 2239
+    }
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:48:50.274287+00:00 · model_output · model</summary><pre>{
+  &quot;event_id&quot;: &quot;E-a1ececc89941&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 39,
+  &quot;received_at&quot;: &quot;2026-10-04T01:48:50.274287+00:00&quot;,
+  &quot;event_type&quot;: &quot;model_output&quot;,
+  &quot;actor&quot;: &quot;model&quot;,
+  &quot;source_mode&quot;: &quot;LIVE_API&quot;,
+  &quot;payload&quot;: {
+    &quot;turn&quot;: 6,
+    &quot;model_version&quot;: &quot;gemini-3.8-flash&quot;,
+    &quot;usage&quot;: {
+      &quot;promptTokenCount&quot;: 8475,
+      &quot;candidatesTokenCount&quot;: 217,
+      &quot;totalTokenCount&quot;: 8692,
+      &quot;promptTokensDetails&quot;: [
+        {
+          &quot;modality&quot;: &quot;TEXT&quot;,
+          &quot;tokenCount&quot;: 8475
+        }
+      ],
+      &quot;serviceTier&quot;: &quot;standard&quot;
+    },
+    &quot;response_ref&quot;: {
+      &quot;path&quot;: &quot;model/turn-006.json&quot;,
+      &quot;sha256&quot;: &quot;280c0be1759feca2f5017cae1a91cf447b4310e04d74996e6c70544f1532d5ff&quot;,
+      &quot;bytes&quot;: 1929
+    },
+    &quot;function_names&quot;: [
+      &quot;send_message&quot;,
+      &quot;wait_for_event&quot;
+    ]
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:48:50.275629+00:00 · model_tool_request · model</summary><pre>{
+  &quot;event_id&quot;: &quot;E-947330ef8999&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 40,
+  &quot;received_at&quot;: &quot;2026-10-04T01:48:50.275629+00:00&quot;,
+  &quot;event_type&quot;: &quot;model_tool_request&quot;,
+  &quot;actor&quot;: &quot;model&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;decision_id&quot;: &quot;D-66837ebc6a66&quot;,
+    &quot;tool_call_id&quot;: &quot;tool-bb22f89cd849&quot;,
+    &quot;name&quot;: &quot;send_message&quot;,
+    &quot;arguments&quot;: {
+      &quot;response_kind&quot;: &quot;text&quot;,
+      &quot;expected_state_version&quot;: 2,
+      &quot;attempt_id&quot;: null,
+      &quot;case_id&quot;: &quot;DEMO-CASE-001&quot;,
+      &quot;text&quot;: &quot;यह Myntra से बेडशीट का एक डेमो पार्सल है और इसका भुगतान हो चुका है। डिलीवरी कंपनी अपनी सामान्य प्रक्रिया अपनाएगी, क्या आपका कोई सवाल है?&quot;,
+      &quot;rule_id&quot;: &quot;R06&quot;,
+      &quot;recipient_id&quot;: &quot;DEMO-RECEIVER-01&quot;,
+      &quot;purpose&quot;: &quot;explain&quot;,
+      &quot;reason&quot;: &quot;Explain parcel details and limitations to receiver&quot;
+    }
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:48:50.276134+00:00 · message_stored · model</summary><pre>{
+  &quot;event_id&quot;: &quot;E-90d2ed69330f&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 41,
+  &quot;received_at&quot;: &quot;2026-10-04T01:48:50.276134+00:00&quot;,
+  &quot;event_type&quot;: &quot;message_stored&quot;,
+  &quot;actor&quot;: &quot;model&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;message_id&quot;: &quot;message-5f2091321110&quot;,
+    &quot;recipient_id&quot;: &quot;DEMO-RECEIVER-01&quot;,
+    &quot;text&quot;: &quot;यह Myntra से बेडशीट का एक डेमो पार्सल है और इसका भुगतान हो चुका है। डिलीवरी कंपनी अपनी सामान्य प्रक्रिया अपनाएगी, क्या आपका कोई सवाल है?&quot;,
+    &quot;purpose&quot;: &quot;explain&quot;,
+    &quot;response_kind&quot;: &quot;text&quot;,
+    &quot;choices&quot;: [],
+    &quot;delivery_status&quot;: &quot;stored_in_app&quot;,
+    &quot;tool_call_id&quot;: &quot;tool-bb22f89cd849&quot;
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:48:50.276655+00:00 · tool_result · runtime</summary><pre>{
+  &quot;event_id&quot;: &quot;E-788194c28e23&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 42,
+  &quot;received_at&quot;: &quot;2026-10-04T01:48:50.276655+00:00&quot;,
+  &quot;event_type&quot;: &quot;tool_result&quot;,
+  &quot;actor&quot;: &quot;runtime&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;tool_call_id&quot;: &quot;tool-bb22f89cd849&quot;,
+    &quot;tool_name&quot;: &quot;send_message&quot;,
+    &quot;response&quot;: {
+      &quot;ok&quot;: true,
+      &quot;call_id&quot;: &quot;tool-bb22f89cd849&quot;,
+      &quot;state_version&quot;: 2,
+      &quot;result&quot;: {
+        &quot;message_id&quot;: &quot;message-5f2091321110&quot;,
+        &quot;persisted_at&quot;: &quot;2026-10-04T01:48:50.276045+00:00&quot;,
+        &quot;delivery_status&quot;: &quot;stored_in_app&quot;,
+        &quot;read_at&quot;: null,
+        &quot;evidence_ref&quot;: &quot;E-90d2ed69330f&quot;,
+        &quot;choices&quot;: []
+      }
+    }
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:48:50.278123+00:00 · model_tool_request · model</summary><pre>{
+  &quot;event_id&quot;: &quot;E-45648f536f34&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 43,
+  &quot;received_at&quot;: &quot;2026-10-04T01:48:50.278123+00:00&quot;,
+  &quot;event_type&quot;: &quot;model_tool_request&quot;,
+  &quot;actor&quot;: &quot;model&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;decision_id&quot;: &quot;D-2ec00f41c856&quot;,
+    &quot;tool_call_id&quot;: &quot;tool-e92384142dc7&quot;,
+    &quot;name&quot;: &quot;wait_for_event&quot;,
+    &quot;arguments&quot;: {
+      &quot;case_id&quot;: &quot;DEMO-CASE-001&quot;,
+      &quot;reason&quot;: &quot;Wait for receiver question&quot;,
+      &quot;event_types&quot;: [
+        &quot;receiver_text_received&quot;,
+        &quot;receiver_audio_uploaded&quot;,
+        &quot;availability_changed&quot;,
+        &quot;buyer_revoked&quot;
+      ],
+      &quot;rule_id&quot;: &quot;R12&quot;,
+      &quot;timeout_seconds&quot;: 120
+    }
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:48:50.278559+00:00 · wait_registered · runtime</summary><pre>{
+  &quot;event_id&quot;: &quot;E-621d7bf63f31&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 44,
+  &quot;received_at&quot;: &quot;2026-10-04T01:48:50.278559+00:00&quot;,
+  &quot;event_type&quot;: &quot;wait_registered&quot;,
+  &quot;actor&quot;: &quot;runtime&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;event_types&quot;: [
+      &quot;receiver_text_received&quot;,
+      &quot;receiver_audio_uploaded&quot;,
+      &quot;availability_changed&quot;,
+      &quot;buyer_revoked&quot;
+    ],
+    &quot;deadline&quot;: &quot;2026-10-04T01:50:50.278447+00:00&quot;,
+    &quot;requested_by&quot;: &quot;tool-e92384142dc7&quot;,
+    &quot;pending_inputs&quot;: 0
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:48:50.279024+00:00 · tool_result · runtime</summary><pre>{
+  &quot;event_id&quot;: &quot;E-f96a863d852c&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 45,
+  &quot;received_at&quot;: &quot;2026-10-04T01:48:50.279024+00:00&quot;,
+  &quot;event_type&quot;: &quot;tool_result&quot;,
+  &quot;actor&quot;: &quot;runtime&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;tool_call_id&quot;: &quot;tool-e92384142dc7&quot;,
+    &quot;tool_name&quot;: &quot;wait_for_event&quot;,
+    &quot;response&quot;: {
+      &quot;ok&quot;: true,
+      &quot;call_id&quot;: &quot;tool-e92384142dc7&quot;,
+      &quot;state_version&quot;: 2,
+      &quot;result&quot;: {
+        &quot;waiting&quot;: true,
+        &quot;deadline&quot;: &quot;2026-10-04T01:50:50.278447+00:00&quot;,
+        &quot;queued_input_will_resume&quot;: false,
+        &quot;evidence_ref&quot;: &quot;E-621d7bf63f31&quot;
+      }
+    }
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details><details><summary>2026-10-04T01:48:54.048081+00:00 · technical_halt · runtime</summary><pre>{
+  &quot;event_id&quot;: &quot;E-d5c82098532b&quot;,
+  &quot;run_id&quot;: &quot;run-0652ea3cc96d&quot;,
+  &quot;sequence&quot;: 46,
+  &quot;received_at&quot;: &quot;2026-10-04T01:48:54.048081+00:00&quot;,
+  &quot;event_type&quot;: &quot;technical_halt&quot;,
+  &quot;actor&quot;: &quot;runtime&quot;,
+  &quot;source_mode&quot;: &quot;APP_INTERNAL&quot;,
+  &quot;payload&quot;: {
+    &quot;message&quot;: &quot;Superseded development check stopped before final verification. Original events and outputs retained.&quot;,
+    &quot;agent_outcome_claimed&quot;: false
+  },
+  &quot;state_version_before&quot;: 2,
+  &quot;state_version_after&quot;: 2
+}</pre></details>

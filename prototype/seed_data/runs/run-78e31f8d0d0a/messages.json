@@ -1,0 +1,58 @@
+[
+  {
+    "id": "message-33e9c3126ffe",
+    "run": "run-78e31f8d0d0a",
+    "recipient": "DEMO-RECEIVER-01",
+    "text": "नमस्ते मीरा जी, यह एक डेमो पार्सल की जानकारी है। आरव ने आपके लिए बेडशीट का पार्सल रिसीव करने की मंज़ूरी दी है, क्या आप इसमें मदद चाहती हैं?",
+    "purpose": "invite",
+    "response_kind": "invitation",
+    "created": "2026-10-04T01:48:19.403353+00:00",
+    "version": 1,
+    "answered": "Accept invitation",
+    "read_at": null,
+    "source_event": "E-5f6d5408c5d6",
+    "trigger_seq": 2
+  },
+  {
+    "id": "message-63bde5659435",
+    "run": "run-78e31f8d0d0a",
+    "recipient": "DEMO-RECEIVER-01",
+    "text": "यह पार्सल प्रीपेड बेडशीट का है। डिलीवरी कंपनी अपनी प्रक्रिया से ही पार्सल देगी। क्या आप इसे लेने के लिए उपलब्ध हैं या कोई सवाल पूछना चाहती हैं?",
+    "purpose": "explain",
+    "response_kind": "availability",
+    "created": "2026-10-04T01:48:23.809564+00:00",
+    "version": 2,
+    "answered": "I can receive",
+    "read_at": null,
+    "source_event": "E-8c8faed295d2",
+    "trigger_seq": 15
+  },
+  {
+    "id": "message-38d96b4779f1",
+    "run": "run-78e31f8d0d0a",
+    "recipient": "DEMO-RECEIVER-01",
+    "text": "आरव का यह पार्सल मिंत्रा से बेडशीट का है और इसके पैसे पहले ही दिए जा चुके हैं। SaunpDo कभी भी आपसे OTP नहीं मांगता और डिलीवरी कंपनी अपनी सामान्य प्रक्रिया से ही पार्सल देगी।",
+    "purpose": "explain",
+    "response_kind": "none",
+    "created": "2026-10-04T01:48:32.495676+00:00",
+    "version": 4,
+    "answered": null,
+    "read_at": null,
+    "source_event": "E-cce770d17a92",
+    "trigger_seq": 40
+  },
+  {
+    "id": "message-92d95824c3b4",
+    "run": "run-78e31f8d0d0a",
+    "recipient": "DEMO-BUYER-01",
+    "text": "Meera was informed about your prepaid bedsheet parcel and that SaunpDo does not ask for OTP. Direct carrier release integration is unavailable in this coordination mode.",
+    "purpose": "update",
+    "response_kind": "none",
+    "created": "2026-10-04T01:48:33.885829+00:00",
+    "version": 4,
+    "answered": null,
+    "read_at": "2026-10-04T01:49:18.039561+00:00",
+    "source_event": "E-faa6552a2230",
+    "trigger_seq": 40
+  }
+]

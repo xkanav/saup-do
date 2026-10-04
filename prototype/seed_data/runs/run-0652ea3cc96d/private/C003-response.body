@@ -1,0 +1,40 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "name": "get_parcel_context",
+              "args": {
+                "reason": "Fetch updated parcel context after invitation accepted",
+                "rule_id": "R03",
+                "case_id": "DEMO-CASE-001"
+              },
+              "id": "call_1702234"
+            },
+            "thoughtSignature": "EmkKZwFpFH0TkdZO2SPoXBLbQZg8YjZkdvieI4UaNQqQK04I7olwSXKIE+OdrFn68s4xfrJXQCLlh/XiMi9AQRBbqj0O3+lFl+g7Nxz0zN0GVxo4ENmi/MKO5lDk1VI0JycL+5Oi3SayyDU="
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0,
+      "finishMessage": "Model generated function call(s)."
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 4876,
+    "candidatesTokenCount": 49,
+    "totalTokenCount": 4925,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 4876
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "ArDBavfjDrqfjuMP-J_k6Ak"
+}

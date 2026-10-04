@@ -1,0 +1,41 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "wait_for_event",
+          "args": {
+            "case_id": "DEMO-CASE-001",
+            "event_types": [
+              "availability_changed",
+              "receiver_text_received",
+              "receiver_audio_uploaded",
+              "buyer_revoked"
+            ],
+            "reason": "Wait for receiver availability response or further questions",
+            "timeout_seconds": 120,
+            "rule_id": "R12"
+          },
+          "id": "call_1491958"
+        },
+        "thoughtSignature": "EmkKZwFpFH0TQPjKKJmjxz1RR2pmF9YIBOnDVqMGVsp8/fvosokKNnw9ftrZXoMVMYGH4C+j0n3lKcewH5QkVCgY3B9YCbe4SS57LIvYPc6JbI6wfeWK9DUpcwBD7DsyD7ob+S+uKUcKYiI="
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 10294,
+      "candidatesTokenCount": 91,
+      "totalTokenCount": 10385,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 10294
+        }
+      ],
+      "serviceTier": "standard"
+    }
+  }
+}

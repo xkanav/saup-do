@@ -1,0 +1,57 @@
+{
+  "call_id": "C005",
+  "provider": "Gemini",
+  "status_code": 200,
+  "elapsed_ms": 1421,
+  "content_type": "application/json; charset=UTF-8",
+  "response_body": {
+    "path": "private/C005-response.body",
+    "sha256": "9e10423968ad5a72726bce665c9f24f883f35288abf0507f685d17bae12ff522",
+    "bytes": 1704
+  },
+  "json": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "name": "send_message",
+                "args": {
+                  "purpose": "explain",
+                  "rule_id": "R06",
+                  "case_id": "DEMO-CASE-001",
+                  "text": "यह पार्सल प्रीपेड बेडशीट का है। डिलीवरी कंपनी अपनी प्रक्रिया से ही पार्सल देगी। क्या आप इसे लेने के लिए उपलब्ध हैं या कोई सवाल पूछना चाहती हैं?",
+                  "expected_state_version": 2,
+                  "reason": "Explain coordination mode limitations and ask if receiver has questions or is available",
+                  "recipient_id": "DEMO-RECEIVER-01",
+                  "response_kind": "availability"
+                },
+                "id": "call_2046401"
+              },
+              "thoughtSignature": "EmkKZwFpFH0Tz36X8xzyNN6Ey6Lt4/BqdmIHdQ+1SwePneWb6Q7tNHpl9v3cMug9yPbrtHiv2vsrSBf2mX8PjSvTquYK4sRrDo4rh5msgmIiUK0KRZ4N/wwAJXS84jfvj9MzzyN7v5Zf5XU="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "finishMessage": "Model generated function call(s)."
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 6287,
+      "candidatesTokenCount": 132,
+      "totalTokenCount": 6419,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 6287
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.8-flash",
+    "responseId": "ZrDBauy2LJ7-4-EPnKCn4Ak"
+  }
+}

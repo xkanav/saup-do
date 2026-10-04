@@ -1,0 +1,41 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "get_parcel_context",
+          "args": {
+            "reason": "Fetch state to confirm version and facts before answering receiver question",
+            "case_id": "DEMO-CASE-001",
+            "rule_id": "R03"
+          },
+          "id": "call_2551544"
+        },
+        "thoughtSignature": "EmkKZwFpFH0TGO8x/TlUS6YJBUVJVQ/tU7ZWD+Te+AtMPA7b9EY2iRhV4Qa0Z9B5HqSbsGpsX7lXRhQqAxWI+w7F6ww4IpxRWZkofmsiCkOBpKLGlS7dk1lds8JbkOvg3oWjohxCkB0lyyI="
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 7745,
+      "candidatesTokenCount": 53,
+      "totalTokenCount": 7798,
+      "cachedContentTokenCount": 4016,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 7745
+        }
+      ],
+      "cacheTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 4016
+        }
+      ],
+      "serviceTier": "standard"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "get_parcel_context",
+          "args": {
+            "case_id": "DEMO-CASE-001",
+            "reason": "Read updated context to refresh state_version before closing case",
+            "rule_id": "R03"
+          },
+          "id": "call_1944992"
+        },
+        "thoughtSignature": "EmkKZwFpFH0Tc2koi77Ud3INPe76L9ijdMrYAfvVfsUJZ15oLp4VSOMk+USedNJ3oQ98HCwUblRzZa3atKUh32Re+63/dyquZFlB5XfxTBKz00u3elIkO6Ex4yHRX4rpGLs9JtMktvAdOKM="
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 14908,
+      "candidatesTokenCount": 53,
+      "totalTokenCount": 14961,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 14908
+        }
+      ],
+      "serviceTier": "standard"
+    }
+  }
+}

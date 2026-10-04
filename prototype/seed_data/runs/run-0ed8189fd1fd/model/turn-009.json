@@ -1,0 +1,41 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "send_message",
+          "args": {
+            "reason": "Acknowledge receiver refusal and confirm completion of coordination assistance.",
+            "recipient_id": "DEMO-RECEIVER-01",
+            "attempt_id": null,
+            "purpose": "update",
+            "expected_state_version": 4,
+            "response_kind": "none",
+            "text": "आपकी बात समझ आ गई है। SaunpDo की सहायता यहीं समाप्त की जाती है।",
+            "case_id": "DEMO-CASE-001",
+            "rule_id": "R05"
+          },
+          "id": "call_270331"
+        },
+        "thoughtSignature": "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"
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 20259,
+      "candidatesTokenCount": 120,
+      "totalTokenCount": 21046,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 20259
+        }
+      ],
+      "thoughtsTokenCount": 667,
+      "serviceTier": "standard"
+    }
+  }
+}

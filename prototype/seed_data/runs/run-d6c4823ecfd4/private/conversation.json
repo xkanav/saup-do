@@ -1,0 +1,704 @@
+[
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "{\"run_profile\":\"coordination_only\",\"interaction_mode\":\"practice\",\"case_id\":\"DEMO-CASE-001\",\"events\":[{\"event_id\":\"E-0b46444cf1a5\",\"run_id\":\"run-d6c4823ecfd4\",\"sequence\":2,\"received_at\":\"2026-10-04T01:39:11.377911+00:00\",\"event_type\":\"buyer_granted\",\"actor\":\"buyer\",\"source_mode\":\"OPERATOR_TEST_ACTION\",\"payload\":{\"grant\":{\"grant_id\":\"grant-580e4b812d25\",\"version\":1,\"buyer_id\":\"DEMO-BUYER-01\",\"receiver_id\":\"DEMO-RECEIVER-01\",\"order_id\":\"DEMO-ORDER-001\",\"parcel_id\":\"DEMO-PARCEL-001\",\"address_id\":\"DEMO-HOME-01\",\"scope\":\"receive_only\",\"value_cap_inr\":900,\"starts_at\":\"2026-10-04T01:39:11.377843+00:00\",\"expires_at\":\"2026-10-04T02:09:11.377843+00:00\",\"revoked_at\":null,\"source_event_id\":null},\"request\":\"Help my mother understand this test parcel and answer her questions. Carrier release support is unavailable.\"},\"state_version_before\":0,\"state_version_after\":1}],\"available_tools\":[\"get_parcel_context\",\"transcribe_receiver_audio\",\"send_message\",\"wait_for_event\",\"close_case\"],\"now\":\"2026-10-04T01:39:11.378415+00:00\"}"
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "get_parcel_context",
+          "args": {
+            "reason": "Read current state version and enrolled participant facts before contacting receiver.",
+            "rule_id": "R03",
+            "case_id": "DEMO-CASE-001"
+          },
+          "id": "call_1885899"
+        },
+        "thoughtSignature": "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"
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "functionResponse": {
+          "name": "get_parcel_context",
+          "response": {
+            "ok": true,
+            "call_id": "tool-1db48623d66b",
+            "state_version": 1,
+            "result": {
+              "case": {
+                "schema_version": "0.3-draft",
+                "case_id": "DEMO-CASE-001",
+                "source": {
+                  "mode": "FICTIONAL_DEVELOPMENT_FIXTURE",
+                  "reference": "User confirmed fictional Myntra order in chat on 3 October 2026; see phase-02/inputs/confirmed-2026-10-03/input-register.json.",
+                  "fictional_case": true
+                },
+                "state_version": 1,
+                "case_state": "awaiting_receiver",
+                "buyer": {
+                  "id": "DEMO-BUYER-01",
+                  "alias": "Aarav"
+                },
+                "receiver": {
+                  "id": "DEMO-RECEIVER-01",
+                  "alias": "Meera",
+                  "relationship_in_scenario": "mother",
+                  "adult_in_scenario": true
+                },
+                "merchant": {
+                  "name": "Myntra",
+                  "fictional": false
+                },
+                "order": {
+                  "reference": "DEMO-ORDER-001",
+                  "parcel_id": "DEMO-PARCEL-001",
+                  "description": "Bedsheet",
+                  "payment_type": "prepaid",
+                  "value_inr": 900,
+                  "address_reference": "DEMO-HOME-01",
+                  "fictional": true
+                },
+                "carrier": {
+                  "proposed_partner": "Delhivery",
+                  "waybill": null,
+                  "delegated_release_support": "unverified"
+                },
+                "policy_reference": null,
+                "buyer_grant": {
+                  "grant_id": "grant-580e4b812d25",
+                  "version": 1,
+                  "buyer_id": "DEMO-BUYER-01",
+                  "receiver_id": "DEMO-RECEIVER-01",
+                  "order_id": "DEMO-ORDER-001",
+                  "parcel_id": "DEMO-PARCEL-001",
+                  "address_id": "DEMO-HOME-01",
+                  "scope": "receive_only",
+                  "value_cap_inr": 900,
+                  "starts_at": "2026-10-04T01:39:11.377843+00:00",
+                  "expires_at": "2026-10-04T02:09:11.377843+00:00",
+                  "revoked_at": null,
+                  "source_event_id": "E-0b46444cf1a5"
+                },
+                "invitation": null,
+                "receiver_availability": null,
+                "active_attempt": null,
+                "doorstep_willingness": null,
+                "receiver_acknowledgment": null,
+                "unresolved_input_event_ids": [],
+                "carrier_release_decision_ref": null,
+                "handoff_evidence_ref": null,
+                "label_for_recording": "Fictional Myntra order scenario, prepaid INR 900. User-authored out-for-delivery status for 3 October 2026 is not a carrier event. No real merchant integration, consent grant or carrier approval.",
+                "last_human_seq": 2,
+                "profile": "coordination_only",
+                "outcome": null,
+                "reason_code": null
+              },
+              "state_version": 1,
+              "run_profile": "coordination_only",
+              "messages": [],
+              "source_label": "Fictional order; participant actions labelled separately",
+              "pending_inputs": [],
+              "evidence_refs": [
+                "E-feed17f665e7",
+                "E-0b46444cf1a5",
+                "E-81698adbcb60",
+                "E-6a658c53064c",
+                "E-17a5af01ba71",
+                "E-946b13b63b28"
+              ],
+              "grant_valid_now": true,
+              "now": "2026-10-04T01:39:14.837410+00:00"
+            }
+          },
+          "id": "call_1885899"
+        }
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "send_message",
+          "args": {
+            "rule_id": "R07",
+            "text": "नमस्ते मीरा जी, आरव ने एक बेडशीट पार्सल की डेमो जानकारी साझा की है। डिलीवरी कंपनी अपनी जांच खुद करेगी, क्या आप पार्सल की जानकारी में मदद चाहती हैं?",
+            "recipient_id": "DEMO-RECEIVER-01",
+            "reason": "Invite receiver Meera to coordinate parcel info with clear demo limitation.",
+            "response_kind": "invitation",
+            "case_id": "DEMO-CASE-001",
+            "purpose": "invite",
+            "expected_state_version": 1,
+            "attempt_id": null
+          },
+          "id": "call_2017557"
+        },
+        "thoughtSignature": "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"
+      },
+      {
+        "functionCall": {
+          "name": "wait_for_event",
+          "args": {
+            "timeout_seconds": 120,
+            "reason": "Wait for receiver Meera to respond to the invitation or send input.",
+            "event_types": [
+              "invitation_responded",
+              "receiver_audio_uploaded",
+              "receiver_text_received",
+              "buyer_revoked"
+            ],
+            "case_id": "DEMO-CASE-001",
+            "rule_id": "R12"
+          },
+          "id": "call_2017558"
+        }
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "functionResponse": {
+          "name": "send_message",
+          "response": {
+            "ok": true,
+            "call_id": "tool-71f0cabb451e",
+            "state_version": 1,
+            "result": {
+              "message_id": "message-1963372c0b53",
+              "persisted_at": "2026-10-04T01:39:18.776828+00:00",
+              "delivery_status": "stored_in_app",
+              "read_at": null,
+              "evidence_ref": "E-074c10f0f918",
+              "choices": [
+                "Accept invitation",
+                "Decline invitation"
+              ]
+            }
+          },
+          "id": "call_2017557"
+        }
+      },
+      {
+        "functionResponse": {
+          "name": "wait_for_event",
+          "response": {
+            "ok": true,
+            "call_id": "tool-b59834fca730",
+            "state_version": 1,
+            "result": {
+              "waiting": true,
+              "deadline": "2026-10-04T01:41:18.779808+00:00",
+              "queued_input_will_resume": false,
+              "evidence_ref": "E-78936f38ccb1"
+            }
+          },
+          "id": "call_2017558"
+        }
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "{\"run_profile\":\"coordination_only\",\"interaction_mode\":\"practice\",\"case_id\":\"DEMO-CASE-001\",\"events\":[{\"event_id\":\"E-fb24ce014ddf\",\"run_id\":\"run-d6c4823ecfd4\",\"sequence\":17,\"received_at\":\"2026-10-04T01:39:19.448260+00:00\",\"event_type\":\"invitation_responded\",\"actor\":\"receiver\",\"source_mode\":\"OPERATOR_TEST_ACTION\",\"payload\":{\"choice\":\"Accept invitation\",\"message_id\":\"message-1963372c0b53\"},\"state_version_before\":1,\"state_version_after\":2}],\"available_tools\":[\"get_parcel_context\",\"transcribe_receiver_audio\",\"send_message\",\"wait_for_event\",\"close_case\"],\"now\":\"2026-10-04T01:39:19.458529+00:00\"}"
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "get_parcel_context",
+          "args": {
+            "rule_id": "R03",
+            "case_id": "DEMO-CASE-001",
+            "reason": "Refresh parcel context and verify state version after receiver accepted invitation."
+          },
+          "id": "call_2916648"
+        },
+        "thoughtSignature": "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"
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "functionResponse": {
+          "name": "get_parcel_context",
+          "response": {
+            "ok": true,
+            "call_id": "tool-79ecff1fdab7",
+            "state_version": 2,
+            "result": {
+              "case": {
+                "schema_version": "0.3-draft",
+                "case_id": "DEMO-CASE-001",
+                "source": {
+                  "mode": "FICTIONAL_DEVELOPMENT_FIXTURE",
+                  "reference": "User confirmed fictional Myntra order in chat on 3 October 2026; see phase-02/inputs/confirmed-2026-10-03/input-register.json.",
+                  "fictional_case": true
+                },
+                "state_version": 2,
+                "case_state": "coordinating",
+                "buyer": {
+                  "id": "DEMO-BUYER-01",
+                  "alias": "Aarav"
+                },
+                "receiver": {
+                  "id": "DEMO-RECEIVER-01",
+                  "alias": "Meera",
+                  "relationship_in_scenario": "mother",
+                  "adult_in_scenario": true
+                },
+                "merchant": {
+                  "name": "Myntra",
+                  "fictional": false
+                },
+                "order": {
+                  "reference": "DEMO-ORDER-001",
+                  "parcel_id": "DEMO-PARCEL-001",
+                  "description": "Bedsheet",
+                  "payment_type": "prepaid",
+                  "value_inr": 900,
+                  "address_reference": "DEMO-HOME-01",
+                  "fictional": true
+                },
+                "carrier": {
+                  "proposed_partner": "Delhivery",
+                  "waybill": null,
+                  "delegated_release_support": "unverified"
+                },
+                "policy_reference": null,
+                "buyer_grant": {
+                  "grant_id": "grant-580e4b812d25",
+                  "version": 1,
+                  "buyer_id": "DEMO-BUYER-01",
+                  "receiver_id": "DEMO-RECEIVER-01",
+                  "order_id": "DEMO-ORDER-001",
+                  "parcel_id": "DEMO-PARCEL-001",
+                  "address_id": "DEMO-HOME-01",
+                  "scope": "receive_only",
+                  "value_cap_inr": 900,
+                  "starts_at": "2026-10-04T01:39:11.377843+00:00",
+                  "expires_at": "2026-10-04T02:09:11.377843+00:00",
+                  "revoked_at": null,
+                  "source_event_id": "E-0b46444cf1a5"
+                },
+                "invitation": {
+                  "choice": "Accept invitation",
+                  "event_id": "E-fb24ce014ddf",
+                  "recorded_at": "2026-10-04T01:39:19.448114+00:00"
+                },
+                "receiver_availability": null,
+                "active_attempt": null,
+                "doorstep_willingness": null,
+                "receiver_acknowledgment": null,
+                "unresolved_input_event_ids": [],
+                "carrier_release_decision_ref": null,
+                "handoff_evidence_ref": null,
+                "label_for_recording": "Fictional Myntra order scenario, prepaid INR 900. User-authored out-for-delivery status for 3 October 2026 is not a carrier event. No real merchant integration, consent grant or carrier approval.",
+                "last_human_seq": 17,
+                "profile": "coordination_only",
+                "outcome": null,
+                "reason_code": null
+              },
+              "state_version": 2,
+              "run_profile": "coordination_only",
+              "messages": [
+                {
+                  "id": "message-1963372c0b53",
+                  "run": "run-d6c4823ecfd4",
+                  "recipient": "DEMO-RECEIVER-01",
+                  "text": "नमस्ते मीरा जी, आरव ने एक बेडशीट पार्सल की डेमो जानकारी साझा की है। डिलीवरी कंपनी अपनी जांच खुद करेगी, क्या आप पार्सल की जानकारी में मदद चाहती हैं?",
+                  "purpose": "invite",
+                  "response_kind": "invitation",
+                  "created": "2026-10-04T01:39:18.776828+00:00",
+                  "version": 1,
+                  "answered": "Accept invitation",
+                  "read_at": null,
+                  "source_event": "E-074c10f0f918",
+                  "trigger_seq": 2
+                }
+              ],
+              "source_label": "Fictional order; participant actions labelled separately",
+              "pending_inputs": [],
+              "evidence_refs": [
+                "E-feed17f665e7",
+                "E-0b46444cf1a5",
+                "E-81698adbcb60",
+                "E-6a658c53064c",
+                "E-17a5af01ba71",
+                "E-946b13b63b28",
+                "E-9139ba826dac",
+                "E-0705ac486b7b",
+                "E-75601ba05b90",
+                "E-de7d082434af",
+                "E-534bc7cced96",
+                "E-074c10f0f918",
+                "E-9d1eb28db1e0",
+                "E-c15504c164fc",
+                "E-78936f38ccb1",
+                "E-3861c1e36c0f",
+                "E-fb24ce014ddf",
+                "E-58cfadf1e2f7",
+                "E-adf98b4af91c",
+                "E-4d9eb26cd244",
+                "E-14bb88b69f10"
+              ],
+              "grant_valid_now": true,
+              "now": "2026-10-04T01:39:21.814326+00:00"
+            }
+          },
+          "id": "call_2916648"
+        }
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "send_message",
+          "args": {
+            "reason": "Provide demo parcel details and give receiver an opportunity to ask questions.",
+            "purpose": "clarify",
+            "case_id": "DEMO-CASE-001",
+            "response_kind": "text",
+            "expected_state_version": 2,
+            "recipient_id": "DEMO-RECEIVER-01",
+            "text": "यह मिंत्रा से बेडशीट का डेमो पार्सल है और इसका भुगतान हो चुका है। क्या आपका इस पार्सल को लेकर कोई सवाल है?",
+            "attempt_id": null,
+            "rule_id": "R07"
+          },
+          "id": "call_2693799"
+        },
+        "thoughtSignature": "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"
+      },
+      {
+        "functionCall": {
+          "name": "wait_for_event",
+          "args": {
+            "timeout_seconds": 120,
+            "rule_id": "R12",
+            "case_id": "DEMO-CASE-001",
+            "reason": "Wait for receiver question or input.",
+            "event_types": [
+              "receiver_text_received",
+              "receiver_audio_uploaded",
+              "availability_changed",
+              "buyer_revoked"
+            ]
+          },
+          "id": "call_2693800"
+        }
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "functionResponse": {
+          "name": "send_message",
+          "response": {
+            "ok": true,
+            "call_id": "tool-6f25c40eac77",
+            "state_version": 2,
+            "result": {
+              "message_id": "message-fd4e65e41dda",
+              "persisted_at": "2026-10-04T01:39:25.137132+00:00",
+              "delivery_status": "stored_in_app",
+              "read_at": null,
+              "evidence_ref": "E-9d5de011c5c0",
+              "choices": []
+            }
+          },
+          "id": "call_2693799"
+        }
+      },
+      {
+        "functionResponse": {
+          "name": "wait_for_event",
+          "response": {
+            "ok": true,
+            "call_id": "tool-628ea09e5276",
+            "state_version": 2,
+            "result": {
+              "waiting": true,
+              "deadline": "2026-10-04T01:41:25.142921+00:00",
+              "queued_input_will_resume": false,
+              "evidence_ref": "E-00508016f883"
+            }
+          },
+          "id": "call_2693800"
+        }
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "{\"run_profile\":\"coordination_only\",\"interaction_mode\":\"practice\",\"case_id\":\"DEMO-CASE-001\",\"events\":[{\"event_id\":\"E-89d0165d768e\",\"run_id\":\"run-d6c4823ecfd4\",\"sequence\":32,\"received_at\":\"2026-10-04T01:39:25.518699+00:00\",\"event_type\":\"receiver_audio_uploaded\",\"actor\":\"receiver\",\"source_mode\":\"OPERATOR_TEST_ACTION\",\"payload\":{\"audio_id\":\"sample-19a2acf29199db0c\",\"filename\":\"receiver-question.m4a\",\"sha256\":\"19a2acf29199db0c04ba9ce1fa3760e962bf7691c9428636750096262b14ed3c\",\"duration_seconds\":8.192,\"recording_source\":\"USER_SUPPLIED_RECORDING\",\"transcript\":null},\"state_version_before\":2,\"state_version_after\":3}],\"available_tools\":[\"get_parcel_context\",\"transcribe_receiver_audio\",\"send_message\",\"wait_for_event\",\"close_case\"],\"now\":\"2026-10-04T01:39:25.521040+00:00\"}"
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "transcribe_receiver_audio",
+          "args": {
+            "case_id": "DEMO-CASE-001",
+            "reason": "Transcribe receiver audio to understand her parcel question.",
+            "audio_id": "sample-19a2acf29199db0c",
+            "rule_id": "R02"
+          },
+          "id": "call_2577442"
+        },
+        "thoughtSignature": "EsQFCsEFAWkUfRPBQdF9B+c6WclqlzmcWmhDQMFv9I72cNR2ZLJN9DxjA8EWKfvR1ufMV3z3cHJJhOLydUyeWQqj45/9T7TsjoOj/MqZPGvdPaD8DkToDTqscQJGkFYF6imZ+wIoeJC/Mmqbke+RQAJeCdwK8q2leBMQGgfIiVzSv7po2YdkM/mE/S3dQq+LG5gk0Jdrgl9jKqwylenBvJxcMfW3OzIYFKWSfZO896skJwg1W66gF5aIKaOF+M2MDCnSgSTMFToUXIyg+J3XPuLEyljazNrZBIL4x7dsmi8GNpSMBYfn3M+efUejHwU+UXZQXqQXik35H9Y13dLL0WGP/H5tPcEPrabMKJUnKMjzCoTOUtVcySdZS23tO2YffzKls719DI35a2whMi0Za9fiNPWiIzXFtt1M2dpE5wWeoGRAjz1d8p97buhtnDokaK/5xSsdcfY/Xelu4LxDpZHTTLhJTNsQJOEvrFv6604y3giISglWKBNplz0D+oLsI7ShOhH5sN3pB55GGUllHkEWAWcW7hXwG+7Ph4QASd7oyDmSTa3pN+ds3kHrQSYZIVCPPmyXlkiO8eAKrY8dkLX4fABhsinJblcbyKV3aZQyUyd9XjwemZFTL6Ob2BaF3Q7NPCrVkb0vzDmAEAcc8OnnrRSDs1Xpv7L6fuO+BAXWEUchk6P9U2CXLK9Vz4ReZUUef+zfUn7QoeMLyXswopbQ8ttHIGg1H33OxNr8rUUc/zGUFM4lr1GjremO64gFJDd5U6nl8Iwsooel/VfHqmdrG00HmvTqdBV4DiRzXsNT7X/Pe8cd1NKYV8rLuj00PjAbXzaLzQCgvKfPkV2teOIfeGthlIv8y67fFp/ceL1eYBdOuaRmmNXuV+iMFK1in2niPywKLHknSLeK0jyz/OSOHd+rsgu1td6ZibHJfpdQBuGoPqgD"
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "functionResponse": {
+          "name": "transcribe_receiver_audio",
+          "response": {
+            "ok": true,
+            "call_id": "tool-543a4bfb202c",
+            "state_version": 3,
+            "result": {
+              "api_result": {
+                "source_mode": "LIVE_GNANI_API",
+                "api_response": {
+                  "success": true,
+                  "request_id": "01a10490-ee12-7825-b121-0b19e3a424c1",
+                  "transcript": "आरव के लिए कौन सा पार्सल आ रहा है, क्या उसके पैसे पहले ही दिए जा चुके हैं, मैं किसी अनजान व्यक्ति को ओ टी पी नहीं बताना चाहती",
+                  "model": "gnani-prisma-v2.5",
+                  "processing_time": 0.3877298831939697,
+                  "end_to_end_latency": 0.3894977569580078
+                },
+                "call_id": "C006",
+                "audio_sha256": "19a2acf29199db0c04ba9ce1fa3760e962bf7691c9428636750096262b14ed3c"
+              },
+              "original_tool_call_id": "tool-543a4bfb202c",
+              "cache_reused": false
+            }
+          },
+          "id": "call_2577442"
+        }
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "get_parcel_context",
+          "args": {
+            "reason": "Read parcel context to verify state_version and details before answering receiver question.",
+            "rule_id": "R03",
+            "case_id": "DEMO-CASE-001"
+          },
+          "id": "call_2633050"
+        },
+        "thoughtSignature": "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"
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "functionResponse": {
+          "name": "get_parcel_context",
+          "response": {
+            "ok": true,
+            "call_id": "tool-3f8736259af0",
+            "state_version": 3,
+            "result": {
+              "case": {
+                "schema_version": "0.3-draft",
+                "case_id": "DEMO-CASE-001",
+                "source": {
+                  "mode": "FICTIONAL_DEVELOPMENT_FIXTURE",
+                  "reference": "User confirmed fictional Myntra order in chat on 3 October 2026; see phase-02/inputs/confirmed-2026-10-03/input-register.json.",
+                  "fictional_case": true
+                },
+                "state_version": 3,
+                "case_state": "coordinating",
+                "buyer": {
+                  "id": "DEMO-BUYER-01",
+                  "alias": "Aarav"
+                },
+                "receiver": {
+                  "id": "DEMO-RECEIVER-01",
+                  "alias": "Meera",
+                  "relationship_in_scenario": "mother",
+                  "adult_in_scenario": true
+                },
+                "merchant": {
+                  "name": "Myntra",
+                  "fictional": false
+                },
+                "order": {
+                  "reference": "DEMO-ORDER-001",
+                  "parcel_id": "DEMO-PARCEL-001",
+                  "description": "Bedsheet",
+                  "payment_type": "prepaid",
+                  "value_inr": 900,
+                  "address_reference": "DEMO-HOME-01",
+                  "fictional": true
+                },
+                "carrier": {
+                  "proposed_partner": "Delhivery",
+                  "waybill": null,
+                  "delegated_release_support": "unverified"
+                },
+                "policy_reference": null,
+                "buyer_grant": {
+                  "grant_id": "grant-580e4b812d25",
+                  "version": 1,
+                  "buyer_id": "DEMO-BUYER-01",
+                  "receiver_id": "DEMO-RECEIVER-01",
+                  "order_id": "DEMO-ORDER-001",
+                  "parcel_id": "DEMO-PARCEL-001",
+                  "address_id": "DEMO-HOME-01",
+                  "scope": "receive_only",
+                  "value_cap_inr": 900,
+                  "starts_at": "2026-10-04T01:39:11.377843+00:00",
+                  "expires_at": "2026-10-04T02:09:11.377843+00:00",
+                  "revoked_at": null,
+                  "source_event_id": "E-0b46444cf1a5"
+                },
+                "invitation": {
+                  "choice": "Accept invitation",
+                  "event_id": "E-fb24ce014ddf",
+                  "recorded_at": "2026-10-04T01:39:19.448114+00:00"
+                },
+                "receiver_availability": null,
+                "active_attempt": null,
+                "doorstep_willingness": null,
+                "receiver_acknowledgment": null,
+                "unresolved_input_event_ids": [
+                  "E-89d0165d768e"
+                ],
+                "carrier_release_decision_ref": null,
+                "handoff_evidence_ref": null,
+                "label_for_recording": "Fictional Myntra order scenario, prepaid INR 900. User-authored out-for-delivery status for 3 October 2026 is not a carrier event. No real merchant integration, consent grant or carrier approval.",
+                "last_human_seq": 32,
+                "profile": "coordination_only",
+                "outcome": null,
+                "reason_code": null
+              },
+              "state_version": 3,
+              "run_profile": "coordination_only",
+              "messages": [
+                {
+                  "id": "message-1963372c0b53",
+                  "run": "run-d6c4823ecfd4",
+                  "recipient": "DEMO-RECEIVER-01",
+                  "text": "नमस्ते मीरा जी, आरव ने एक बेडशीट पार्सल की डेमो जानकारी साझा की है। डिलीवरी कंपनी अपनी जांच खुद करेगी, क्या आप पार्सल की जानकारी में मदद चाहती हैं?",
+                  "purpose": "invite",
+                  "response_kind": "invitation",
+                  "created": "2026-10-04T01:39:18.776828+00:00",
+                  "version": 1,
+                  "answered": "Accept invitation",
+                  "read_at": null,
+                  "source_event": "E-074c10f0f918",
+                  "trigger_seq": 2
+                },
+                {
+                  "id": "message-fd4e65e41dda",
+                  "run": "run-d6c4823ecfd4",
+                  "recipient": "DEMO-RECEIVER-01",
+                  "text": "यह मिंत्रा से बेडशीट का डेमो पार्सल है और इसका भुगतान हो चुका है। क्या आपका इस पार्सल को लेकर कोई सवाल है?",
+                  "purpose": "clarify",
+                  "response_kind": "text",
+                  "created": "2026-10-04T01:39:25.137132+00:00",
+                  "version": 2,
+                  "answered": null,
+                  "read_at": null,
+                  "source_event": "E-9d5de011c5c0",
+                  "trigger_seq": 17
+                }
+              ],
+              "source_label": "Fictional order; participant actions labelled separately",
+              "pending_inputs": [],
+              "evidence_refs": [
+                "E-feed17f665e7",
+                "E-0b46444cf1a5",
+                "E-81698adbcb60",
+                "E-6a658c53064c",
+                "E-17a5af01ba71",
+                "E-946b13b63b28",
+                "E-9139ba826dac",
+                "E-0705ac486b7b",
+                "E-75601ba05b90",
+                "E-de7d082434af",
+                "E-534bc7cced96",
+                "E-074c10f0f918",
+                "E-9d1eb28db1e0",
+                "E-c15504c164fc",
+                "E-78936f38ccb1",
+                "E-3861c1e36c0f",
+                "E-fb24ce014ddf",
+                "E-58cfadf1e2f7",
+                "E-adf98b4af91c",
+                "E-4d9eb26cd244",
+                "E-14bb88b69f10",
+                "E-7864e37f7cdd",
+                "E-1e9ff326098d",
+                "E-232e458998aa",
+                "E-68398492a81b",
+                "E-882595257b40",
+                "E-9d5de011c5c0",
+                "E-979db8626a67",
+                "E-c319c37d2f6b",
+                "E-00508016f883",
+                "E-eaa284c32943",
+                "E-89d0165d768e",
+                "E-1e4e1fa899bd",
+                "E-9e619c90160e",
+                "E-b47cb1e86426",
+                "E-622989fcf82e",
+                "E-6d584dd01cd4",
+                "E-276b4e2327c3",
+                "E-d1da2db7fbd1",
+                "E-2a6026f22ba1",
+                "E-0c057f05e0c6",
+                "E-a7cbd667d9a2",
+                "E-38eb33c146c3"
+              ],
+              "grant_valid_now": true,
+              "now": "2026-10-04T01:39:32.505864+00:00"
+            }
+          },
+          "id": "call_2633050"
+        }
+      }
+    ]
+  }
+]

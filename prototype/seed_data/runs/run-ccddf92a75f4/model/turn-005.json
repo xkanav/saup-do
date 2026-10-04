@@ -1,0 +1,40 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "send_message",
+          "args": {
+            "expected_state_version": 1,
+            "purpose": "update",
+            "rule_id": "R07",
+            "reason": "Notify receiver Meera that the invitation has timed out.",
+            "response_kind": "none",
+            "recipient_id": "DEMO-RECEIVER-01",
+            "case_id": "DEMO-CASE-001",
+            "text": "निमंत्रण का समय समाप्त हो गया है। डिलीवरी कंपनी अपनी सामान्य प्रक्रिया जारी रखेगी।"
+          },
+          "id": "call_2584242"
+        },
+        "thoughtSignature": "EpwICpkIAWkUfRM4Ce6Lw2DSjdsO3eyytgU6n4Z5cjNIlJNR57v7FB0N4sPdMDGkBxl0UixB6YPMR+yrAomb5ktqgKoT2PRA4lxphyV+SjeWXD8gCVsTnAIN4uGCG5oaW1gXw1M2/5+MgtBDFPwQnYahyVttk9H5HEMLEOkrXjwMLoRcdQNscpws1+x7cxiJy1etkBm8hewcPAAzin8pPvisemqZzQ1sTeVvT0jlH7umsST2qTNUHW1gwD8jwyhWVLGnEkAI0vECdMxgQpxvv4vg5fs54dttPqH3sjr+HmQGcMVBKziZYdWDVFhFe+kpcz7K/7IgV0/cUDgKXnMezexORRZm/UvMouUZDIaJWG8BOIB/zUVI43GrFPRny45tnaxCw7NrlIVsXkf4znAbiw14oXIWpITinkfOd3oZYNE+WQ8ZxsxqLQZVZntQVSxfLE/yi2153BAt9Givf8KXoP0Msn2Gh0LC2OF3raaTKxMzuzgplegm2pgGffjL5tFKtuByAJ5Snso3/FN8gD9HnjEs0/vuXRFYm8s5Lalm4G1fugOjO2uwRYf6X2VfaQOrk4CtQnoYPq1W/t7HX6bL57jUpmf2KZ+W/fKAP67cMUvI9pgdNYtjBQJvLwdkxuGyCpaFaYKnrFpZGzsVoLj/danUlDvDuaSejxAP6DlveJYnH2eyUXjk6bz8uWCC9q1fXRik4VuDTLwEAhnknd8JnElDI6akM6Dd5wS2c8USBMCJEsDjtAXYsZJM7y/Z+jB5Mfq/FxuFxikNQ9d/caF9kdghI5uhPRw+3lfSTgB25zbXWJ1ojTk5vDM19vVPLOKmf20hVAbw4sxYMZ5QqNpFlZ67jJtQlgq3IM2XzyMg/VaE95VKSIdrBRXbvl/4S9yEdh7QObNkCwRRVvdrLkrsfjJc4W4m4CVaC+bksEfylHn2MpR+i/SSYB9pvRSKrrPNlNfkmDhNblAeu2Y0NjmcOb7esTXLHal6HsfbXi/zCBsRtpxkvpr8LH+LAjzwt3y1mFUOqeuIXuo8kBccCOYUe4g9oUwykHS40vHGDxm9OsB5Lfjld9nc3BApZh+icmaeJORmwRgO8MEiVjGGNiTS2Y5hq+ZEi5OCWLDUeD2kugmB4TkD1/FE24Xs4Jz9Ga57pRGc+YIPA2Znk7tVn4LeuC3hPkUQM0Pofd59rkQPIQmJWyiRUu6r+Y1qEebZLD0WTuF6XFJ453w9OcZfpe2U3V8/9WQ4ui/u2nWBWwCZkQRAq+qwCoTWY1XZtss2rW61g5afOX9te8r0YnWsl+rKOO0+QpGosoOv9g89QVJ7s6Jnsz9tkPHwyhwc7gqauZtyXPJ6ZeoJtEu0HZbhTY/B7rJI/jni0vsQiLO1DoWziy96ugbw20BFG3BrHtY4BDQ="
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 9336,
+      "candidatesTokenCount": 112,
+      "totalTokenCount": 9654,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 9336
+        }
+      ],
+      "thoughtsTokenCount": 206,
+      "serviceTier": "standard"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "send_message",
+          "args": {
+            "case_id": "DEMO-CASE-001",
+            "expected_state_version": 4,
+            "reason": "Notify buyer about completed coordination and receiver availability",
+            "response_kind": "none",
+            "purpose": "update",
+            "text": "Meera has confirmed she is available to receive the demo bedsheet parcel. Delivery will follow standard carrier verification.",
+            "rule_id": "R07",
+            "recipient_id": "DEMO-BUYER-01"
+          },
+          "id": "call_1523178"
+        },
+        "thoughtSignature": "EmkKZwFpFH0TA3WDeUuP8+rBgT7QCyIfUZ4gYLLL5dbQ0ycowiZhdDCz25iTdTLB5x23DkfgtbGTu6LrIpM48MlDsB9D7OaHEftUvnyrDhUaC29LOfMAEa5O9E7RpKMVZIgnjCwi86TMNO4="
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 14025,
+      "candidatesTokenCount": 112,
+      "totalTokenCount": 14137,
+      "cachedContentTokenCount": 8057,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 14025
+        }
+      ],
+      "cacheTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 8057
+        }
+      ],
+      "serviceTier": "standard"
+    }
+  }
+}

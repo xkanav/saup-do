@@ -1,0 +1,34 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "get_parcel_context",
+          "args": {
+            "rule_id": "R03",
+            "case_id": "DEMO-CASE-001",
+            "reason": "Read current case facts and enrolled participants after buyer grant"
+          },
+          "id": "call_2656187"
+        },
+        "thoughtSignature": "EmkKZwFpFH0Tl0/UAbPGQHGQ+nKSMBtRYgHOU1DJRVCJs7O3RpiWRSul2MmcegHC/caTE5vG3ffJtADANyGdy8bV3FymnKemYxFTYjxx7D5YOnia21hz4VhQv2cqKxRxsY30C07KveLfw/I="
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 3252,
+      "candidatesTokenCount": 52,
+      "totalTokenCount": 3304,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 3252
+        }
+      ],
+      "serviceTier": "standard"
+    }
+  }
+}

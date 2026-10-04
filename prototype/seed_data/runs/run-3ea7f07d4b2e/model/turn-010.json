@@ -1,0 +1,39 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "send_message",
+          "args": {
+            "reason": "Answer receiver's questions about parcel contents, prepaid status, and OTP policy",
+            "response_kind": "availability",
+            "expected_state_version": 3,
+            "rule_id": "R09",
+            "text": "यह आरव का Myntra से बेडशीट का डेमो पार्सल है और इसके ₹900 पहले से प्रीपेड हैं। SaunpDo कभी ओ टी पी नहीं मांगता, और डिलीवरी कंपनी अपने नियमों के अनुसार ही डिलीवरी करेगी। क्या आप इसे रिसीव करने के लिए उपलब्ध हैं?",
+            "purpose": "explain",
+            "case_id": "DEMO-CASE-001",
+            "recipient_id": "DEMO-RECEIVER-01"
+          },
+          "id": "call_2887566"
+        },
+        "thoughtSignature": "EmkKZwFpFH0T0OdBzEueLdsK/LCKPh6scO3iQwW1nkibWiZZgtQOivx6yF/Tc8dcKYCDQY9zE+rAQ4yR+ehOxyfYayO8p7vSPtjDO7VfNb2M+m43Gg6IWNDsLUXYGoF74lg9XFbEjt3ImJw="
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 9775,
+      "candidatesTokenCount": 158,
+      "totalTokenCount": 9933,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 9775
+        }
+      ],
+      "serviceTier": "standard"
+    }
+  }
+}

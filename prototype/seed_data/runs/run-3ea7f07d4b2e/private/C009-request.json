@@ -1,0 +1,24 @@
+{
+  "provider": "Gnani STT",
+  "method": "POST",
+  "url": "https://api.vachana.ai/stt/v3",
+  "headers": {
+    "User-Agent": "python-requests/2.33.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "X-API-Key-ID": "[REDACTED]",
+    "Content-Length": "75974",
+    "Content-Type": "multipart/form-data; boundary=5331a68a802fa02ec0970c6a900f9f3e"
+  },
+  "body": {
+    "path": "private/C009-request.body",
+    "sha256": "d6d65901f5ecc7258919eab315c4e905fe14e4ff9059bf6a318d6a5c73fdc07b",
+    "bytes": 75974
+  },
+  "json": null,
+  "form_fields": {
+    "language_code": "hi-IN",
+    "format": "verbatim"
+  }
+}

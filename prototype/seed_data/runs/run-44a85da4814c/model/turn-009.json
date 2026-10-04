@@ -1,0 +1,45 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "close_case",
+          "args": {
+            "outcome": "declined",
+            "case_id": "DEMO-CASE-001",
+            "reason_code": "receiver_refused_parcel",
+            "rule_id": "R14",
+            "expected_state_version": 4,
+            "reason": "Receiver stated in transcribed audio that she does not want to receive the parcel.",
+            "evidence_refs": [
+              "E-40148a303497",
+              "tool-ae6d5d35af58",
+              "message-81798090307b",
+              "E-2a645aaab477",
+              "message-51dad8ebe030",
+              "E-8f55a017b440"
+            ]
+          },
+          "id": "call_2344747"
+        },
+        "thoughtSignature": "EmkKZwFpFH0TQBgWzplyScjTxO4Lv6y2Ar1YMJDSUkdjCrCMJy5x0TagthkC4l0k9P0FRTPiOG6lwEma29LjjArSylVcJU/1ivBf19SlNafxNOyv+ImYapYYcvMRywWIcEVb1ARLPO8dtPg="
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 10360,
+      "candidatesTokenCount": 181,
+      "totalTokenCount": 10541,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 10360
+        }
+      ],
+      "serviceTier": "standard"
+    }
+  }
+}

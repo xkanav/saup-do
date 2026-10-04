@@ -1,0 +1,41 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "name": "get_parcel_context",
+              "args": {
+                "case_id": "DEMO-CASE-001",
+                "reason": "Refresh parcel context after availability change.",
+                "rule_id": "R03"
+              },
+              "id": "call_1781977"
+            },
+            "thoughtSignature": "EssCCsgCAWkUfRP1pxsgFGzGLt6S235Cu0+XRKOA6IfTL/awglj2P+OmiMYDIIHo/HpokI1OiiCpx2/XM5eEgu470qPcVEW9/UwZA/SW3zRYS6Kw1Jge5IMOlX1cOFChKSK/SsTwUqZW1/dAQTppvtlWcOqLLnn5e/kahdMOtcuWslD0jM/T1Yvff0yeyhNUzTALGt19I+5NV9dwhnTvtOQ1rhlx86nJ7mXr19grXG3G1C+OvcoC69b059J/XMlND/4txhgc/VsvQQ51UZ8SZ422/6vh7Xamr8e9SJl/KzIB+ZacPQ35WER9zy0ZULo32tcOahWiCkEaNfrzPK//1xAUTq4oyrV5nPFRK86OCdYKE5UBjVYTNz7QN/tvhwSBYBP6FfF63MNmo9gnIqhMT38Zo6kbp9eqF0UbR6y+DAzI5asR11mmX4A/tZzV8g=="
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0,
+      "finishMessage": "Model generated function call(s)."
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 10541,
+    "candidatesTokenCount": 49,
+    "totalTokenCount": 10651,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 10541
+      }
+    ],
+    "thoughtsTokenCount": 61,
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "1WrBatnCDorD4-EP6O3PmQU"
+}

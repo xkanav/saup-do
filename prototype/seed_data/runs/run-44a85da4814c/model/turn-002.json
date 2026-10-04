@@ -1,0 +1,58 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "send_message",
+          "args": {
+            "text": "नमस्ते मीरा जी, यह एक डेमो पार्सल की जानकारी है। आरव ने एक चादर का पार्सल आपके नाम से जोड़ने की मंज़ूरी दी है। क्या आप इस पार्सल की जानकारी में मदद चाहती हैं?",
+            "expected_state_version": 1,
+            "case_id": "DEMO-CASE-001",
+            "attempt_id": null,
+            "response_kind": "invitation",
+            "recipient_id": "DEMO-RECEIVER-01",
+            "rule_id": "R07",
+            "reason": "Invite receiver Meera to coordinate parcel information under coordination_only mode.",
+            "purpose": "invite"
+          },
+          "id": "call_1968284"
+        },
+        "thoughtSignature": "EmkKZwFpFH0ThkcSKPoUoEHE84iAP6pkxwMcnNYHRxeljqCXLVCbJxP+WSJi/DysN/H4prmrczEepUfKwqX2PAHPXGvBcKgF3V0FYAgnBoj4sCIbrAvVG/SMDu4DCAaJFgjM7KrkXcsrAKw="
+      },
+      {
+        "functionCall": {
+          "name": "wait_for_event",
+          "args": {
+            "event_types": [
+              "invitation_responded",
+              "receiver_text_received",
+              "receiver_audio_uploaded",
+              "buyer_revoked"
+            ],
+            "timeout_seconds": 120,
+            "rule_id": "R12",
+            "reason": "Wait for receiver response to invitation.",
+            "case_id": "DEMO-CASE-001"
+          },
+          "id": "call_1968285"
+        }
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 4141,
+      "candidatesTokenCount": 243,
+      "totalTokenCount": 4384,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 4141
+        }
+      ],
+      "serviceTier": "standard"
+    }
+  }
+}

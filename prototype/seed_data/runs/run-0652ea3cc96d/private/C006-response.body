@@ -1,0 +1,64 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "name": "send_message",
+              "args": {
+                "response_kind": "text",
+                "expected_state_version": 2,
+                "attempt_id": null,
+                "case_id": "DEMO-CASE-001",
+                "text": "यह Myntra से बेडशीट का एक डेमो पार्सल है और इसका भुगतान हो चुका है। डिलीवरी कंपनी अपनी सामान्य प्रक्रिया अपनाएगी, क्या आपका कोई सवाल है?",
+                "rule_id": "R06",
+                "recipient_id": "DEMO-RECEIVER-01",
+                "purpose": "explain",
+                "reason": "Explain parcel details and limitations to receiver"
+              },
+              "id": "call_3422410"
+            },
+            "thoughtSignature": "EmkKZwFpFH0TfYzAHKGvTQCJymYOCUizE7cGGttHh7O2/NmU6ZMOInsSeGW2ioEZH87ud+LZ0n4+cVmwuq0+KrhqxiazL3MGZdlnznsKlywmBDKadhlcRy+ZRD55SOqHV/TJeJDWbX0Dv7U="
+          },
+          {
+            "functionCall": {
+              "name": "wait_for_event",
+              "args": {
+                "case_id": "DEMO-CASE-001",
+                "reason": "Wait for receiver question",
+                "event_types": [
+                  "receiver_text_received",
+                  "receiver_audio_uploaded",
+                  "availability_changed",
+                  "buyer_revoked"
+                ],
+                "rule_id": "R12",
+                "timeout_seconds": 120
+              },
+              "id": "call_3422411"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0,
+      "finishMessage": "Model generated function call(s)."
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 8475,
+    "candidatesTokenCount": 217,
+    "totalTokenCount": 8692,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 8475
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "gbDBap75Df3dqfkP282l4QQ"
+}

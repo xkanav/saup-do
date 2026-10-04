@@ -1,0 +1,58 @@
+{
+  "call_id": "C012",
+  "provider": "Gemini",
+  "status_code": 200,
+  "elapsed_ms": 1924,
+  "content_type": "application/json; charset=UTF-8",
+  "response_body": {
+    "path": "private/C012-response.body",
+    "sha256": "863084644206d27fda02f162bc42691d7800f8ec1ed6f49994c1affe1ab5c610",
+    "bytes": 1873
+  },
+  "json": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "name": "send_message",
+                "args": {
+                  "recipient_id": "DEMO-RECEIVER-01",
+                  "attempt_id": null,
+                  "expected_state_version": 3,
+                  "case_id": "DEMO-CASE-001",
+                  "purpose": "explain",
+                  "text": "यह आरव का Myntra से बेडशीट का डेमो पार्सल है और इसके ₹900 पहले से प्रीपेड हैं। SaunpDo कभी ओ टी पी नहीं मांगता, और डिलीवरी कंपनी अपने नियमों के अनुसार ही डिलीवरी करेगी। क्या आप इसे रिसीव करने के लिए उपलब्ध हैं?",
+                  "rule_id": "R09",
+                  "reason": "Answer receiver questions regarding parcel details, prepaid status, and OTP policy",
+                  "response_kind": "availability"
+                },
+                "id": "call_2847864"
+              },
+              "thoughtSignature": "EmkKZwFpFH0TaWKEfdg1ZAL9SlZvMsnaWi07K0P+G8S2yy565bqksRIX1ZbYpux0e93i88WNQScwc3NzH4YnYBZsDEK5NXXm92xlVHpf8rQ4u15/BUM6+JgA9uDw0iF82CHC/SFIx296vP4="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "finishMessage": "Model generated function call(s)."
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 9988,
+      "candidatesTokenCount": 162,
+      "totalTokenCount": 10150,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 9988
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.8-flash",
+    "responseId": "0q7Bao-XJOe_g8UPzqHM6QQ"
+  }
+}

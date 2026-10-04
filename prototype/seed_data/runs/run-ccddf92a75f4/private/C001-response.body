@@ -1,0 +1,41 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "name": "get_parcel_context",
+              "args": {
+                "rule_id": "R03",
+                "case_id": "DEMO-CASE-001",
+                "reason": "Read current case context and enrolled participants before taking action."
+              },
+              "id": "call_1567426"
+            },
+            "thoughtSignature": "EucHCuQHAWkUfRPysXq6okumyr/ySYxdvvPv54b8m+DQKIJyVsK+G7wa5zW81Hxn+p9xYwU4eVVozY+cSpTLTNz+b2Vxg3+bVv4x9RAVjMJF6YpfDIs/UFBH7FqbXxzJ+9XgSEYTf7kHJYJ9YKYWFprpQMtvE8SYpLYafPsjMX2tAdW7e1liKkHXqTU0H0Cm/IYOEwQVXvEjdyfwtV9hT/trHWq1sz+71ZpdF7CjbROanHCG7pEVYO3+1PUQfOarsI3GHdd/GnNLlfT7AnoRSuqeDKLluhR8G9IAJTG9I90EdL2PMuAcBhSvp0IuKi4y9LYKQyVCsqZxi6+ngl/5JUP66FpTwi1VbyUtTUXjppgoJ6osooe8yZeyPJTSaLKn7hB6LGdbJ1/jWOmLyKfTcNwST4CFOkxhR5YkoFm6o2ntr0d7X6VoHf7g0MNZiODfiCRlozU0FYCMiSNZhrtlLKYrm7PMa870jLPYAM+rwcHB+oFZa/l/x7sAiXEf2c3Y7Okjnq2aIP4xSsja+ElsPyznvA+Ij4Z1LfHT9q6Yd5yax6GyKnN8wmWyVkI1zwCvfWK96ZmASyns3LlAv6C2HAYQrcyL6Op0JxZTZPlYRfpXuywlSGfAEKzJhIHXOb5s7dqOp4P9HsyaiFYVYp/Xpw9hVVm3BhTQeVsJxGEopAzbsX/7bBblK5+tGS2pKQgXHaX+otIQci6+U0CBSghYil2dY/YQe0y4/VcSeVCgTsYXWfx+3anh0nZSXPj9p3bPHQlxEINLBqS7RSTT9w9pyCtNcUxyVrbmQgy/kZEyIzpLJnTFRvGKwYrn4kv5xeEYIGpjNNapx9JL6ijETQB7MHUgoAapXtw/VdjG4QCUbXAozep1mo3xX480/TQWXzW86/Y6O7pyj9tb2xjFMoW7cTv75Z745MScFauBt6soDCpcENhJnH2+Nas7kYDYeFH/EIxymjNMTrXP1xcecusW0fg8X+AhAOApPOuPgVTD+CEhBmvMpKBhjzNM5bHJBfp4/+EMHgcFDTJ1KrZ2/+yOcWcJ5GOToiF32ubkdJ2aoVwtl85MOSRUggaDOSUwYGU02g+8yVvEQ2HXqyAJmM67y68RBbOSDmJSWlybpl8OwTxsihJmmOwm9CPo+oS5ciJjW8TH+bdqgjcsO8/bbvrfRcbIWOWOB2BBlUWeU9onEQwGDLb1MC6JukogKYVThBYfZV8dGIXf6rjPnAkm+fzAE5AdAn3EJjRK80Dy9ubb8BF5onC1iSvE6vV/6CLkOi+PDF9q+V+6MAnMndEaSyr9QqWkI7yf7F8qSgbhJYECjlJAf7dco1Hag6Xj"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0,
+      "finishMessage": "Model generated function call(s)."
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 3144,
+    "candidatesTokenCount": 53,
+    "totalTokenCount": 3459,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 3144
+      }
+    ],
+    "thoughtsTokenCount": 262,
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "gkLBavueFImkqfkP_eSo6AQ"
+}

@@ -1,0 +1,16 @@
+{
+  "profile": "coordination_only",
+  "interaction_mode": "practice",
+  "model": "gemini-3.8-flash",
+  "source": "FICTIONAL_DEVELOPMENT_FIXTURE",
+  "max_model_turns_per_event": 8,
+  "max_tool_calls_per_event": 12,
+  "max_model_calls_per_run": 40,
+  "max_consecutive_clock_wakes": 2,
+  "source_hashes": {
+    "server.py": "1ae5f278a7a64b6668d385ea8729f741b702bd2f77980ca723ab1ce3734bf16f",
+    "schema_check.py": "4d83cbf214b89ce0652048524be916db6dd5b8495f216552a41d0902e67e2463",
+    "storage.py": "c281dd2f036872cb0af000344020d97c95236e92b5054d1524aaa6b04a4e9a26",
+    "app.py": "56ae704821a5281d0b56a727d514ee79573bdffec0f62edada300be4ca1cc8dd"
+  }
+}

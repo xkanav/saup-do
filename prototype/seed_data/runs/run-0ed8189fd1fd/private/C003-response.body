@@ -1,0 +1,41 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "name": "get_parcel_context",
+              "args": {
+                "reason": "Refresh parcel context after invitation acceptance.",
+                "case_id": "DEMO-CASE-001",
+                "rule_id": "R03"
+              },
+              "id": "call_1870914"
+            },
+            "thoughtSignature": "Eo0ECooEAWkUfRMdip9m+2lddzh3cfT7h/Wjkxa8lnYeS/cjeJ+JrYzDNedO8+gd2DqJEe8eavAhog0DtmEg7WzT7edqA11UggPxfZLPfNmQlefcRzdTvL4bqkmhtNg/1uxAhQ7YB5Dnbt9VIgxiufJuMAi/0VUcCCaGx407oIrd+rM6ZRFrRFxEAdrV54C6LXadj9l86dJj0qEPut4XEi5U71e7mxXlnMdWXfUz3m/QyWEcDzb19sm1sFiHzI6rLABvf1/5DKzyUllb98ngiIxn79wkoTg0Cyw5iJVMR0Tnc4R/feXUKHY2+Ej6085YdWLC11pZIKrmfNQ/raTopaJMJF20qFU3R/lbTDyXw45MOSSZKkYaPtRgQ+U5f4pXnTv9WyEV1oFVGZbm3c2eTA7dHvMxDIwLCYR1vDGYMNyaTAEpH9ad23TBbB6FxH189JirmkobEF+MXURpGWx4GE5xHvlE9UG7bO/IqE50+bRzU9j6RytgmsQc22eHN1+eg3h4yxkGTfKhgQO6av5whOUKgVTdmyzOym4Zp4BcCX8tEYYwGmU58LP0E1yEkXedQzlq6cxZkNDfly9iWsHro/78FQeti4lZM16jzFWi3YMQ7aUkyvZJfXtnGITNHuLjqM7krWOsEzpr3OwkEdMphKhkZffrz/HwcycExjJEFmWlN7HE91GOzxSt2wn4DHuN"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0,
+      "finishMessage": "Model generated function call(s)."
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 6756,
+    "candidatesTokenCount": 49,
+    "totalTokenCount": 6914,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 6756
+      }
+    ],
+    "thoughtsTokenCount": 109,
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "tWrBarDdHdjVqfkPx8eSgAo"
+}

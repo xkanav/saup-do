@@ -1,0 +1,47 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "name": "send_message",
+              "args": {
+                "rule_id": "R07",
+                "purpose": "invite",
+                "case_id": "DEMO-CASE-001",
+                "response_kind": "invitation",
+                "recipient_id": "DEMO-RECEIVER-01",
+                "reason": "Invite enrolled receiver Meera with coordination_only limitations explained",
+                "expected_state_version": 1,
+                "attempt_id": null,
+                "text": "नमस्ते मीरा जी, आरव की मंज़ूरी से हम इस पार्सल (बेडशीट) की जानकारी में आपकी मदद कर सकते हैं, यह एक डेमो है। डिलीवरी कंपनी अपनी सामान्य प्रक्रिया से ही पार्सल देगी—क्या आप सहायता चाहती हैं?"
+              },
+              "id": "call_2023319"
+            },
+            "thoughtSignature": "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"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0,
+      "finishMessage": "Model generated function call(s)."
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 4213,
+    "candidatesTokenCount": 153,
+    "totalTokenCount": 5227,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 4213
+      }
+    ],
+    "thoughtsTokenCount": 861,
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "T2jBau7AFazSqfkP3LXDgAo"
+}

@@ -1,0 +1,34 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "get_parcel_context",
+          "args": {
+            "rule_id": "R03",
+            "reason": "Read updated facts following receiver availability choice",
+            "case_id": "DEMO-CASE-001"
+          },
+          "id": "call_2893238"
+        },
+        "thoughtSignature": "EmkKZwFpFH0Tmv6n10ceBUHTUiAJmhilSuzASUTOvsl6xyo6cz4G9U+lavwJQ21V3p0qNqmzJTQOogDkf5a3GFDaqHUETROgESN0+W9TCZS3xYdK3g7eXkrhpLvfO2UybXntgtJmKq9Pu/Q="
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 10735,
+      "candidatesTokenCount": 49,
+      "totalTokenCount": 10784,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 10735
+        }
+      ],
+      "serviceTier": "standard"
+    }
+  }
+}

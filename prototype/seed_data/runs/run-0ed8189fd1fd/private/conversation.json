@@ -1,0 +1,1148 @@
+[
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "{\"run_profile\":\"coordination_only\",\"interaction_mode\":\"practice\",\"case_id\":\"DEMO-CASE-001\",\"events\":[{\"event_id\":\"E-884cc462157b\",\"run_id\":\"run-0ed8189fd1fd\",\"sequence\":2,\"received_at\":\"2026-10-03T20:50:03.366137+00:00\",\"event_type\":\"buyer_granted\",\"actor\":\"buyer\",\"source_mode\":\"OPERATOR_TEST_ACTION\",\"payload\":{\"grant\":{\"grant_id\":\"grant-fee9a22923d0\",\"version\":1,\"buyer_id\":\"DEMO-BUYER-01\",\"receiver_id\":\"DEMO-RECEIVER-01\",\"order_id\":\"DEMO-ORDER-001\",\"parcel_id\":\"DEMO-PARCEL-001\",\"address_id\":\"DEMO-HOME-01\",\"scope\":\"receive_only\",\"value_cap_inr\":900,\"starts_at\":\"2026-10-03T20:50:03.364686+00:00\",\"expires_at\":\"2026-10-03T21:20:03.364686+00:00\",\"revoked_at\":null,\"source_event_id\":null},\"request\":\"Help my mother understand this test parcel and answer her questions. Carrier release support is unavailable.\"},\"state_version_before\":0,\"state_version_after\":1}],\"available_tools\":[\"get_parcel_context\",\"transcribe_receiver_audio\",\"send_message\",\"wait_for_event\",\"close_case\"],\"now\":\"2026-10-03T20:50:03.368314+00:00\"}"
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "get_parcel_context",
+          "args": {
+            "reason": "Read current case facts and enrolled participants before taking action.",
+            "rule_id": "R03",
+            "case_id": "DEMO-CASE-001"
+          },
+          "id": "call_2136917"
+        },
+        "thoughtSignature": "EsgFCsUFAWkUfRMJkvLfz7L6+SsFtpXn5y5D/8RqF8pZq8qTJo2w5ieJ5LzDBuACyeNwTvxUgbfmRqBbnncC5pEKJCLhAFdUnQtEObUIdO6AO46fmK/FK/X3wikQ9mP2weX6nlcC91P0r4vvwBBAClIqPVcRS+m9sM785PwIPQm+lf8c4DPakDNSRACk7pUN2lV3nFtzfCp6kA1q+OjwV/u4/hIqfLAuca19an4MPBeYZeko2JtuOWocUvATHno8/bGxG75dunBLFHFgMmuWpZ1hBwlsKAuUjNEJM0a3l1FiqoTzL+EIZdEBgz+Dib1LFyaXD351Azi/eY3vNLm1BW2mIlr63WS4PQA/QDYk+EeRG0ZOuYSF/KBr8whEdMsuJO4/SpLDATu4z6PhLeZd1yV3RAUA4AOfL3WTG/wInBlBq537HrMjrtSny9b4EjVImNCSTJCirIxW8g/7g5Nf1l4/NTl+EP+vBgSLRIlyCNs358rcapEns36fBlSXMh46Wg84kFIRjiwigqje0Hj79+h3YKOPlFe7Ja9sUhVEFceTqB4bGtUflREyPOjC7KmEw+MCiZpsaWWO0V9z7vWaMP7u+hATj+t5fSxgYISO/NhJETsOJaCnE0jVSSDFqvwc+/Qz0AHfGlUhZbggrKFtQ5WN4T0hIc+DKicUHfZABffTyeIfuEHmZGYnyrBTlSLyRj6hJLaRtcUFH2IdURgUB2MxpQ/X1bGF7VI2IiJmqKYAs2a5svyjdElXPPbmt/PEltn55FS4neD1dN+8E2/SkXnzTVrdcpwWET4ogRA5vbWN6LNkvvzTH7q7LMcO4AISfIEehqLZ0Z/gVO2Bsk8sAJwH8yZbBAnFkC686KyGoq9WW0wk6S3gsSVANblT0MAwUWJJyUJ6aUSOgoXBMIXKNEblZTV3IfXcBLd2II5iqpLrEjvVYse1rA/IiQ=="
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "functionResponse": {
+          "name": "get_parcel_context",
+          "response": {
+            "ok": true,
+            "call_id": "tool-73c998079a26",
+            "state_version": 1,
+            "result": {
+              "case": {
+                "schema_version": "0.3-draft",
+                "case_id": "DEMO-CASE-001",
+                "source": {
+                  "mode": "FICTIONAL_DEVELOPMENT_FIXTURE",
+                  "reference": "User confirmed fictional Myntra order in chat on 3 October 2026; see phase-02/inputs/confirmed-2026-10-03/input-register.json.",
+                  "fictional_case": true
+                },
+                "state_version": 1,
+                "case_state": "awaiting_receiver",
+                "buyer": {
+                  "id": "DEMO-BUYER-01",
+                  "alias": "Aarav"
+                },
+                "receiver": {
+                  "id": "DEMO-RECEIVER-01",
+                  "alias": "Meera",
+                  "relationship_in_scenario": "mother",
+                  "adult_in_scenario": true
+                },
+                "merchant": {
+                  "name": "Myntra",
+                  "fictional": false
+                },
+                "order": {
+                  "reference": "DEMO-ORDER-001",
+                  "parcel_id": "DEMO-PARCEL-001",
+                  "description": "Bedsheet",
+                  "payment_type": "prepaid",
+                  "value_inr": 900,
+                  "address_reference": "DEMO-HOME-01",
+                  "fictional": true
+                },
+                "carrier": {
+                  "proposed_partner": "Delhivery",
+                  "waybill": null,
+                  "delegated_release_support": "unverified"
+                },
+                "policy_reference": null,
+                "buyer_grant": {
+                  "grant_id": "grant-fee9a22923d0",
+                  "version": 1,
+                  "buyer_id": "DEMO-BUYER-01",
+                  "receiver_id": "DEMO-RECEIVER-01",
+                  "order_id": "DEMO-ORDER-001",
+                  "parcel_id": "DEMO-PARCEL-001",
+                  "address_id": "DEMO-HOME-01",
+                  "scope": "receive_only",
+                  "value_cap_inr": 900,
+                  "starts_at": "2026-10-03T20:50:03.364686+00:00",
+                  "expires_at": "2026-10-03T21:20:03.364686+00:00",
+                  "revoked_at": null,
+                  "source_event_id": "E-884cc462157b"
+                },
+                "invitation": null,
+                "receiver_availability": null,
+                "active_attempt": null,
+                "doorstep_willingness": null,
+                "receiver_acknowledgment": null,
+                "unresolved_input_event_ids": [],
+                "carrier_release_decision_ref": null,
+                "handoff_evidence_ref": null,
+                "label_for_recording": "Fictional Myntra order scenario, prepaid INR 900. User-authored out-for-delivery status for 3 October 2026 is not a carrier event. No real merchant integration, consent grant or carrier approval.",
+                "last_human_seq": 2,
+                "profile": "coordination_only",
+                "outcome": null,
+                "reason_code": null
+              },
+              "state_version": 1,
+              "run_profile": "coordination_only",
+              "messages": [],
+              "source_label": "Fictional order; participant actions labelled separately",
+              "pending_inputs": [],
+              "evidence_refs": [
+                "E-9487658ce56e",
+                "E-884cc462157b",
+                "E-be1a5e4dab1e",
+                "E-500edf1ba3ad",
+                "E-f2c475e61a77",
+                "E-943eae419692"
+              ],
+              "grant_valid_now": true,
+              "now": "2026-10-03T20:50:05.510774+00:00"
+            }
+          },
+          "id": "call_2136917"
+        }
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "send_message",
+          "args": {
+            "rule_id": "R07",
+            "expected_state_version": 1,
+            "reason": "Invite the receiver to accept help for the fictional parcel demo with Aarav's permission.",
+            "text": "नमस्ते मीरा जी, यह एक डेमो है। आरव की मंज़ूरी से क्या आप पार्सल में मदद लेना चाहती हैं?",
+            "attempt_id": null,
+            "purpose": "invite",
+            "case_id": "DEMO-CASE-001",
+            "response_kind": "invitation",
+            "recipient_id": "DEMO-RECEIVER-01"
+          },
+          "id": "call_2129305"
+        },
+        "thoughtSignature": "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"
+      },
+      {
+        "functionCall": {
+          "name": "wait_for_event",
+          "args": {
+            "case_id": "DEMO-CASE-001",
+            "rule_id": "R12",
+            "event_types": [
+              "invitation_responded",
+              "receiver_text_received",
+              "receiver_audio_uploaded",
+              "buyer_revoked"
+            ],
+            "reason": "Wait for the receiver to respond to the invitation or send input.",
+            "timeout_seconds": 120
+          },
+          "id": "call_2129306"
+        }
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "functionResponse": {
+          "name": "send_message",
+          "response": {
+            "ok": true,
+            "call_id": "tool-ea70dfb8e104",
+            "state_version": 1,
+            "result": {
+              "message_id": "message-bea2fdf64727",
+              "persisted_at": "2026-10-03T20:50:12.582226+00:00",
+              "delivery_status": "stored_in_app",
+              "read_at": null,
+              "evidence_ref": "E-04acfaada7e8",
+              "choices": [
+                "Accept invitation",
+                "Decline invitation"
+              ]
+            }
+          },
+          "id": "call_2129305"
+        }
+      },
+      {
+        "functionResponse": {
+          "name": "wait_for_event",
+          "response": {
+            "ok": true,
+            "call_id": "tool-b43ec2052930",
+            "state_version": 1,
+            "result": {
+              "waiting": true,
+              "deadline": "2026-10-03T20:52:12.583941+00:00",
+              "queued_input_will_resume": false,
+              "evidence_ref": "E-ada24a8ab3c0"
+            }
+          },
+          "id": "call_2129306"
+        }
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "{\"run_profile\":\"coordination_only\",\"interaction_mode\":\"practice\",\"case_id\":\"DEMO-CASE-001\",\"events\":[{\"event_id\":\"E-2e10fe3633d7\",\"run_id\":\"run-0ed8189fd1fd\",\"sequence\":18,\"received_at\":\"2026-10-03T20:51:00.981501+00:00\",\"event_type\":\"invitation_responded\",\"actor\":\"receiver\",\"source_mode\":\"OPERATOR_TEST_ACTION\",\"payload\":{\"choice\":\"Accept invitation\",\"message_id\":\"message-bea2fdf64727\"},\"state_version_before\":1,\"state_version_after\":2}],\"available_tools\":[\"get_parcel_context\",\"transcribe_receiver_audio\",\"send_message\",\"wait_for_event\",\"close_case\"],\"now\":\"2026-10-03T20:51:00.983356+00:00\"}"
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "get_parcel_context",
+          "args": {
+            "reason": "Refresh parcel context after invitation acceptance.",
+            "case_id": "DEMO-CASE-001",
+            "rule_id": "R03"
+          },
+          "id": "call_1870914"
+        },
+        "thoughtSignature": "Eo0ECooEAWkUfRMdip9m+2lddzh3cfT7h/Wjkxa8lnYeS/cjeJ+JrYzDNedO8+gd2DqJEe8eavAhog0DtmEg7WzT7edqA11UggPxfZLPfNmQlefcRzdTvL4bqkmhtNg/1uxAhQ7YB5Dnbt9VIgxiufJuMAi/0VUcCCaGx407oIrd+rM6ZRFrRFxEAdrV54C6LXadj9l86dJj0qEPut4XEi5U71e7mxXlnMdWXfUz3m/QyWEcDzb19sm1sFiHzI6rLABvf1/5DKzyUllb98ngiIxn79wkoTg0Cyw5iJVMR0Tnc4R/feXUKHY2+Ej6085YdWLC11pZIKrmfNQ/raTopaJMJF20qFU3R/lbTDyXw45MOSSZKkYaPtRgQ+U5f4pXnTv9WyEV1oFVGZbm3c2eTA7dHvMxDIwLCYR1vDGYMNyaTAEpH9ad23TBbB6FxH189JirmkobEF+MXURpGWx4GE5xHvlE9UG7bO/IqE50+bRzU9j6RytgmsQc22eHN1+eg3h4yxkGTfKhgQO6av5whOUKgVTdmyzOym4Zp4BcCX8tEYYwGmU58LP0E1yEkXedQzlq6cxZkNDfly9iWsHro/78FQeti4lZM16jzFWi3YMQ7aUkyvZJfXtnGITNHuLjqM7krWOsEzpr3OwkEdMphKhkZffrz/HwcycExjJEFmWlN7HE91GOzxSt2wn4DHuN"
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "functionResponse": {
+          "name": "get_parcel_context",
+          "response": {
+            "ok": true,
+            "call_id": "tool-c4514c4dd6ba",
+            "state_version": 2,
+            "result": {
+              "case": {
+                "schema_version": "0.3-draft",
+                "case_id": "DEMO-CASE-001",
+                "source": {
+                  "mode": "FICTIONAL_DEVELOPMENT_FIXTURE",
+                  "reference": "User confirmed fictional Myntra order in chat on 3 October 2026; see phase-02/inputs/confirmed-2026-10-03/input-register.json.",
+                  "fictional_case": true
+                },
+                "state_version": 2,
+                "case_state": "coordinating",
+                "buyer": {
+                  "id": "DEMO-BUYER-01",
+                  "alias": "Aarav"
+                },
+                "receiver": {
+                  "id": "DEMO-RECEIVER-01",
+                  "alias": "Meera",
+                  "relationship_in_scenario": "mother",
+                  "adult_in_scenario": true
+                },
+                "merchant": {
+                  "name": "Myntra",
+                  "fictional": false
+                },
+                "order": {
+                  "reference": "DEMO-ORDER-001",
+                  "parcel_id": "DEMO-PARCEL-001",
+                  "description": "Bedsheet",
+                  "payment_type": "prepaid",
+                  "value_inr": 900,
+                  "address_reference": "DEMO-HOME-01",
+                  "fictional": true
+                },
+                "carrier": {
+                  "proposed_partner": "Delhivery",
+                  "waybill": null,
+                  "delegated_release_support": "unverified"
+                },
+                "policy_reference": null,
+                "buyer_grant": {
+                  "grant_id": "grant-fee9a22923d0",
+                  "version": 1,
+                  "buyer_id": "DEMO-BUYER-01",
+                  "receiver_id": "DEMO-RECEIVER-01",
+                  "order_id": "DEMO-ORDER-001",
+                  "parcel_id": "DEMO-PARCEL-001",
+                  "address_id": "DEMO-HOME-01",
+                  "scope": "receive_only",
+                  "value_cap_inr": 900,
+                  "starts_at": "2026-10-03T20:50:03.364686+00:00",
+                  "expires_at": "2026-10-03T21:20:03.364686+00:00",
+                  "revoked_at": null,
+                  "source_event_id": "E-884cc462157b"
+                },
+                "invitation": {
+                  "choice": "Accept invitation",
+                  "event_id": "E-2e10fe3633d7",
+                  "recorded_at": "2026-10-03T20:51:00.981227+00:00"
+                },
+                "receiver_availability": null,
+                "active_attempt": null,
+                "doorstep_willingness": null,
+                "receiver_acknowledgment": null,
+                "unresolved_input_event_ids": [],
+                "carrier_release_decision_ref": null,
+                "handoff_evidence_ref": null,
+                "label_for_recording": "Fictional Myntra order scenario, prepaid INR 900. User-authored out-for-delivery status for 3 October 2026 is not a carrier event. No real merchant integration, consent grant or carrier approval.",
+                "last_human_seq": 18,
+                "profile": "coordination_only",
+                "outcome": null,
+                "reason_code": null
+              },
+              "state_version": 2,
+              "run_profile": "coordination_only",
+              "messages": [
+                {
+                  "id": "message-bea2fdf64727",
+                  "run": "run-0ed8189fd1fd",
+                  "recipient": "DEMO-RECEIVER-01",
+                  "text": "नमस्ते मीरा जी, यह एक डेमो है। आरव की मंज़ूरी से क्या आप पार्सल में मदद लेना चाहती हैं?",
+                  "purpose": "invite",
+                  "response_kind": "invitation",
+                  "created": "2026-10-03T20:50:12.582226+00:00",
+                  "version": 1,
+                  "answered": "Accept invitation",
+                  "read_at": "2026-10-03T20:50:13.349808+00:00",
+                  "source_event": "E-04acfaada7e8",
+                  "trigger_seq": 2
+                }
+              ],
+              "source_label": "Fictional order; participant actions labelled separately",
+              "pending_inputs": [],
+              "evidence_refs": [
+                "E-9487658ce56e",
+                "E-884cc462157b",
+                "E-be1a5e4dab1e",
+                "E-500edf1ba3ad",
+                "E-f2c475e61a77",
+                "E-943eae419692",
+                "E-5a1984aec8f6",
+                "E-a13c4ff93707",
+                "E-e2efaa8523fc",
+                "E-e7adfb0e6e68",
+                "E-9772978c9da0",
+                "E-04acfaada7e8",
+                "E-d6bba1c7cd0c",
+                "E-642d3e61a104",
+                "E-ada24a8ab3c0",
+                "E-477cbb9d057f",
+                "E-e408332cf5da",
+                "E-2e10fe3633d7",
+                "E-9826b10bdb72",
+                "E-c788127ded69",
+                "E-e7f141bce416",
+                "E-95bca3e64fa5"
+              ],
+              "grant_valid_now": true,
+              "now": "2026-10-03T20:51:02.820286+00:00"
+            }
+          },
+          "id": "call_1870914"
+        }
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "send_message",
+          "args": {
+            "expected_state_version": 2,
+            "attempt_id": null,
+            "recipient_id": "DEMO-RECEIVER-01",
+            "rule_id": "R06",
+            "case_id": "DEMO-CASE-001",
+            "purpose": "explain",
+            "reason": "Explain demo parcel details and delivery company verification limitations, and invite questions.",
+            "text": "यह मायंट्रा से चादर का एक डेमो पार्सल है। डिलीवरी कंपनी अपनी जांच खुद करेगी, क्या आपका कोई सवाल है?",
+            "response_kind": "text"
+          },
+          "id": "call_2774420"
+        },
+        "thoughtSignature": "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"
+      },
+      {
+        "functionCall": {
+          "name": "wait_for_event",
+          "args": {
+            "timeout_seconds": 120,
+            "event_types": [
+              "receiver_text_received",
+              "receiver_audio_uploaded",
+              "availability_changed",
+              "buyer_revoked"
+            ],
+            "rule_id": "R12",
+            "reason": "Wait for receiver question or input.",
+            "case_id": "DEMO-CASE-001"
+          },
+          "id": "call_2774421"
+        }
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "functionResponse": {
+          "name": "send_message",
+          "response": {
+            "ok": true,
+            "call_id": "tool-bc57682c243b",
+            "state_version": 2,
+            "result": {
+              "message_id": "message-cba81908e4d5",
+              "persisted_at": "2026-10-03T20:51:08.719948+00:00",
+              "delivery_status": "stored_in_app",
+              "read_at": null,
+              "evidence_ref": "E-5637896285ac",
+              "choices": []
+            }
+          },
+          "id": "call_2774420"
+        }
+      },
+      {
+        "functionResponse": {
+          "name": "wait_for_event",
+          "response": {
+            "ok": true,
+            "call_id": "tool-8bcb381ebab4",
+            "state_version": 2,
+            "result": {
+              "waiting": true,
+              "deadline": "2026-10-03T20:53:08.722129+00:00",
+              "queued_input_will_resume": false,
+              "evidence_ref": "E-48e202a1aaa9"
+            }
+          },
+          "id": "call_2774421"
+        }
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "{\"run_profile\":\"coordination_only\",\"interaction_mode\":\"practice\",\"case_id\":\"DEMO-CASE-001\",\"events\":[{\"event_id\":\"E-9cbd7cfa4286\",\"run_id\":\"run-0ed8189fd1fd\",\"sequence\":34,\"received_at\":\"2026-10-03T20:51:32.788759+00:00\",\"event_type\":\"availability_changed\",\"actor\":\"receiver\",\"source_mode\":\"OPERATOR_TEST_ACTION\",\"payload\":{\"choice\":\"I can receive\",\"interface\":\"receiver_availability_form\"},\"state_version_before\":2,\"state_version_after\":3}],\"available_tools\":[\"get_parcel_context\",\"transcribe_receiver_audio\",\"send_message\",\"wait_for_event\",\"close_case\"],\"now\":\"2026-10-03T20:51:32.791012+00:00\"}"
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "get_parcel_context",
+          "args": {
+            "case_id": "DEMO-CASE-001",
+            "reason": "Refresh parcel context after availability change.",
+            "rule_id": "R03"
+          },
+          "id": "call_1781977"
+        },
+        "thoughtSignature": "EssCCsgCAWkUfRP1pxsgFGzGLt6S235Cu0+XRKOA6IfTL/awglj2P+OmiMYDIIHo/HpokI1OiiCpx2/XM5eEgu470qPcVEW9/UwZA/SW3zRYS6Kw1Jge5IMOlX1cOFChKSK/SsTwUqZW1/dAQTppvtlWcOqLLnn5e/kahdMOtcuWslD0jM/T1Yvff0yeyhNUzTALGt19I+5NV9dwhnTvtOQ1rhlx86nJ7mXr19grXG3G1C+OvcoC69b059J/XMlND/4txhgc/VsvQQ51UZ8SZ422/6vh7Xamr8e9SJl/KzIB+ZacPQ35WER9zy0ZULo32tcOahWiCkEaNfrzPK//1xAUTq4oyrV5nPFRK86OCdYKE5UBjVYTNz7QN/tvhwSBYBP6FfF63MNmo9gnIqhMT38Zo6kbp9eqF0UbR6y+DAzI5asR11mmX4A/tZzV8g=="
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "functionResponse": {
+          "name": "get_parcel_context",
+          "response": {
+            "ok": true,
+            "call_id": "tool-cf7b02730e3f",
+            "state_version": 3,
+            "result": {
+              "case": {
+                "schema_version": "0.3-draft",
+                "case_id": "DEMO-CASE-001",
+                "source": {
+                  "mode": "FICTIONAL_DEVELOPMENT_FIXTURE",
+                  "reference": "User confirmed fictional Myntra order in chat on 3 October 2026; see phase-02/inputs/confirmed-2026-10-03/input-register.json.",
+                  "fictional_case": true
+                },
+                "state_version": 3,
+                "case_state": "coordinating",
+                "buyer": {
+                  "id": "DEMO-BUYER-01",
+                  "alias": "Aarav"
+                },
+                "receiver": {
+                  "id": "DEMO-RECEIVER-01",
+                  "alias": "Meera",
+                  "relationship_in_scenario": "mother",
+                  "adult_in_scenario": true
+                },
+                "merchant": {
+                  "name": "Myntra",
+                  "fictional": false
+                },
+                "order": {
+                  "reference": "DEMO-ORDER-001",
+                  "parcel_id": "DEMO-PARCEL-001",
+                  "description": "Bedsheet",
+                  "payment_type": "prepaid",
+                  "value_inr": 900,
+                  "address_reference": "DEMO-HOME-01",
+                  "fictional": true
+                },
+                "carrier": {
+                  "proposed_partner": "Delhivery",
+                  "waybill": null,
+                  "delegated_release_support": "unverified"
+                },
+                "policy_reference": null,
+                "buyer_grant": {
+                  "grant_id": "grant-fee9a22923d0",
+                  "version": 1,
+                  "buyer_id": "DEMO-BUYER-01",
+                  "receiver_id": "DEMO-RECEIVER-01",
+                  "order_id": "DEMO-ORDER-001",
+                  "parcel_id": "DEMO-PARCEL-001",
+                  "address_id": "DEMO-HOME-01",
+                  "scope": "receive_only",
+                  "value_cap_inr": 900,
+                  "starts_at": "2026-10-03T20:50:03.364686+00:00",
+                  "expires_at": "2026-10-03T21:20:03.364686+00:00",
+                  "revoked_at": null,
+                  "source_event_id": "E-884cc462157b"
+                },
+                "invitation": {
+                  "choice": "Accept invitation",
+                  "event_id": "E-2e10fe3633d7",
+                  "recorded_at": "2026-10-03T20:51:00.981227+00:00"
+                },
+                "receiver_availability": {
+                  "choice": "I can receive",
+                  "event_id": "E-9cbd7cfa4286",
+                  "recorded_at": "2026-10-03T20:51:32.784699+00:00"
+                },
+                "active_attempt": null,
+                "doorstep_willingness": null,
+                "receiver_acknowledgment": null,
+                "unresolved_input_event_ids": [],
+                "carrier_release_decision_ref": null,
+                "handoff_evidence_ref": null,
+                "label_for_recording": "Fictional Myntra order scenario, prepaid INR 900. User-authored out-for-delivery status for 3 October 2026 is not a carrier event. No real merchant integration, consent grant or carrier approval.",
+                "last_human_seq": 34,
+                "profile": "coordination_only",
+                "outcome": null,
+                "reason_code": null
+              },
+              "state_version": 3,
+              "run_profile": "coordination_only",
+              "messages": [
+                {
+                  "id": "message-bea2fdf64727",
+                  "run": "run-0ed8189fd1fd",
+                  "recipient": "DEMO-RECEIVER-01",
+                  "text": "नमस्ते मीरा जी, यह एक डेमो है। आरव की मंज़ूरी से क्या आप पार्सल में मदद लेना चाहती हैं?",
+                  "purpose": "invite",
+                  "response_kind": "invitation",
+                  "created": "2026-10-03T20:50:12.582226+00:00",
+                  "version": 1,
+                  "answered": "Accept invitation",
+                  "read_at": "2026-10-03T20:50:13.349808+00:00",
+                  "source_event": "E-04acfaada7e8",
+                  "trigger_seq": 2
+                },
+                {
+                  "id": "message-cba81908e4d5",
+                  "run": "run-0ed8189fd1fd",
+                  "recipient": "DEMO-RECEIVER-01",
+                  "text": "यह मायंट्रा से चादर का एक डेमो पार्सल है। डिलीवरी कंपनी अपनी जांच खुद करेगी, क्या आपका कोई सवाल है?",
+                  "purpose": "explain",
+                  "response_kind": "text",
+                  "created": "2026-10-03T20:51:08.719948+00:00",
+                  "version": 2,
+                  "answered": null,
+                  "read_at": "2026-10-03T20:51:09.750431+00:00",
+                  "source_event": "E-5637896285ac",
+                  "trigger_seq": 18
+                }
+              ],
+              "source_label": "Fictional order; participant actions labelled separately",
+              "pending_inputs": [],
+              "evidence_refs": [
+                "E-9487658ce56e",
+                "E-884cc462157b",
+                "E-be1a5e4dab1e",
+                "E-500edf1ba3ad",
+                "E-f2c475e61a77",
+                "E-943eae419692",
+                "E-5a1984aec8f6",
+                "E-a13c4ff93707",
+                "E-e2efaa8523fc",
+                "E-e7adfb0e6e68",
+                "E-9772978c9da0",
+                "E-04acfaada7e8",
+                "E-d6bba1c7cd0c",
+                "E-642d3e61a104",
+                "E-ada24a8ab3c0",
+                "E-477cbb9d057f",
+                "E-e408332cf5da",
+                "E-2e10fe3633d7",
+                "E-9826b10bdb72",
+                "E-c788127ded69",
+                "E-e7f141bce416",
+                "E-95bca3e64fa5",
+                "E-4a82ffbedb2b",
+                "E-c891bd35d14e",
+                "E-063e5c58e24c",
+                "E-d48ec0e7d564",
+                "E-872b020b929e",
+                "E-5637896285ac",
+                "E-b97ebb226424",
+                "E-72622071be0e",
+                "E-48e202a1aaa9",
+                "E-d3c2a0b6a93b",
+                "E-0d51e811f5bf",
+                "E-9cbd7cfa4286",
+                "E-62f033ecd93e",
+                "E-b5a2a20c2e12",
+                "E-591369f48260",
+                "E-6840b5dbc573"
+              ],
+              "grant_valid_now": true,
+              "now": "2026-10-03T20:51:34.368502+00:00"
+            }
+          },
+          "id": "call_1781977"
+        }
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "wait_for_event",
+          "args": {
+            "event_types": [
+              "receiver_text_received",
+              "receiver_audio_uploaded",
+              "buyer_revoked"
+            ],
+            "case_id": "DEMO-CASE-001",
+            "rule_id": "R12",
+            "reason": "Wait briefly to see if receiver sends a question or audio after confirming availability.",
+            "timeout_seconds": 30
+          },
+          "id": "call_1814823"
+        },
+        "thoughtSignature": "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"
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "functionResponse": {
+          "name": "wait_for_event",
+          "response": {
+            "ok": true,
+            "call_id": "tool-5763050621cc",
+            "state_version": 4,
+            "result": {
+              "waiting": true,
+              "deadline": "2026-10-03T20:52:16.892487+00:00",
+              "queued_input_will_resume": true,
+              "evidence_ref": "E-5eebf3886da7"
+            }
+          },
+          "id": "call_1814823"
+        }
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "{\"run_profile\":\"coordination_only\",\"interaction_mode\":\"practice\",\"case_id\":\"DEMO-CASE-001\",\"events\":[{\"event_id\":\"E-60956065a06a\",\"run_id\":\"run-0ed8189fd1fd\",\"sequence\":41,\"received_at\":\"2026-10-03T20:51:40.282171+00:00\",\"event_type\":\"receiver_audio_uploaded\",\"actor\":\"receiver\",\"source_mode\":\"OPERATOR_TEST_ACTION\",\"payload\":{\"audio_id\":\"sample-d99e628e177c3bd5\",\"filename\":\"receiver-refusal.m4a\",\"sha256\":\"d99e628e177c3bd5085deac180c171adbafe73c79e72873ec3f61e2aa3d34f5b\",\"duration_seconds\":3.84,\"recording_source\":\"USER_SUPPLIED_RECORDING\",\"transcript\":null},\"state_version_before\":3,\"state_version_after\":4}],\"available_tools\":[\"get_parcel_context\",\"transcribe_receiver_audio\",\"send_message\",\"wait_for_event\",\"close_case\"],\"now\":\"2026-10-03T20:51:46.910067+00:00\"}"
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "transcribe_receiver_audio",
+          "args": {
+            "reason": "Transcribe receiver audio upload to understand the receiver input.",
+            "case_id": "DEMO-CASE-001",
+            "rule_id": "R02",
+            "audio_id": "sample-d99e628e177c3bd5"
+          },
+          "id": "call_1686108"
+        },
+        "thoughtSignature": "EpcHCpQHAWkUfROvqTdqHrNaa7psaphhNBs3zdVNGuPXCbzxjfn5u1VBu2PYC8rECIuJ7tgycT99mYMZXxmEx+aXbmuVWxXOL6GnziJIKhxq8OE0WhzTfmsnHCjPxeM61vxNv1TIX18tvXAYoNefLGMcbrO6eIZO/hz90j504H7hXEZPHMJ0g2+BHy+49s29eLvNlaI/cWdrEFqmpXgxFw13QLU8Uxp6dm4Qx5+GVg6wK9ERGF2PC1l0DuYrP+h4CSlQ/+89vk4+pqmGlw4FNE1gbguReEf3whl7uICEAWujI1pcirPJqRhejhQ5oWtyEogcKKPvMZaZRFEu2wWUD8I4AATLEw0LJrtXyHmQxGInekzXOf0AFo101YJVJYx7CzuhVmAbYsXOPCqNgjbhaiAXXumWFgDC4OQ66I4xV3BGnFMMQ8w7R0ro0Qd4YiFgUH4I8XCCXOC6Xq4qiNazr//4+Hsst1m/lLnA6XF7497bfYz3oiJNPW0tth57lt14eYQD5Wb+KLiBh/G9BqhjKcSnFCuMggHoYcv8Y1Bg/L6CIRAN3BrPJIwNMotaqYc+78S1Pwo3U9rNggnwi76wCzCoRBnXAXaPxUcqMkrdLbcK2yg1y73FhHCAeVlukl1SNQAFXCx7JXbwTqKmp6wMtXne09KaEJOe3j30Fv2P/DHGEZv5tVyB3vv8Pi+t/RcbGU4RYriQ9MGR4s4RdMWQg98umNZMrCQ1ENeSB/NOCLenSl1NjuMcWCAD7eAYRVKb/EdCacsbI4VvpAJAjT5MRuM84YisqR9oOVyxKV21m5qM4W4UwnZ0dSnEq6ON8crq+r7UXeEflEaYaBIh6Al9HPoxdimz4LPbnzQFWhanvfS8MLy3OxH+I8QDBzNDn7FvUTST1A/k1k9RbitDlMylczaUxGiaFcxjzpZxLYebAEmBrmTrCQzvH0iwWzkC9AwuqiY6pkTmRlVgBZePHeknbOZhJwlOWojcktQo3xNoQ/3IWYdfJv58k/UAWmSx11IaFzD7CiRSTWJEnbuEGQpwjC+cvhGuh3XVv6Bo6/i2gIPfOz4OKH4zs84KEkB/xgKDPvSw1x3f0xLlfAI/WWFZb3kStgow0Gj8cizRfwbXTdKV6ztYPRbOiLNWdFu14W7Gi4eJ/hDqeETi3wW1OBte84eQKhpdEvGWjzLZOs2qP2Fx5uS5i1a4yzWJcmaACPFS4Waq9Lm1EVgyyQ=="
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "functionResponse": {
+          "name": "transcribe_receiver_audio",
+          "response": {
+            "ok": true,
+            "call_id": "tool-e19aabbc7fac",
+            "state_version": 4,
+            "result": {
+              "api_result": {
+                "source_mode": "LIVE_GNANI_API",
+                "api_response": {
+                  "success": true,
+                  "request_id": "01a10389-8f9e-70fb-916e-8ab0938b50c9",
+                  "transcript": "मैंने पहले ही कहा था लेकिन अब मैं यह पार्सल नहीं लेना चाहती।",
+                  "model": "gnani-prisma-v2.5",
+                  "processing_time": 0.3083341121673584,
+                  "end_to_end_latency": 0.3098330497741699
+                },
+                "call_id": "C008",
+                "audio_sha256": "d99e628e177c3bd5085deac180c171adbafe73c79e72873ec3f61e2aa3d34f5b"
+              },
+              "original_tool_call_id": "tool-e19aabbc7fac",
+              "cache_reused": false
+            }
+          },
+          "id": "call_1686108"
+        }
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "get_parcel_context",
+          "args": {
+            "reason": "Refresh parcel context after audio transcription.",
+            "case_id": "DEMO-CASE-001",
+            "rule_id": "R03"
+          },
+          "id": "call_1761768"
+        },
+        "thoughtSignature": "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"
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "functionResponse": {
+          "name": "get_parcel_context",
+          "response": {
+            "ok": true,
+            "call_id": "tool-fc6d9e77cd63",
+            "state_version": 4,
+            "result": {
+              "case": {
+                "schema_version": "0.3-draft",
+                "case_id": "DEMO-CASE-001",
+                "source": {
+                  "mode": "FICTIONAL_DEVELOPMENT_FIXTURE",
+                  "reference": "User confirmed fictional Myntra order in chat on 3 October 2026; see phase-02/inputs/confirmed-2026-10-03/input-register.json.",
+                  "fictional_case": true
+                },
+                "state_version": 4,
+                "case_state": "coordinating",
+                "buyer": {
+                  "id": "DEMO-BUYER-01",
+                  "alias": "Aarav"
+                },
+                "receiver": {
+                  "id": "DEMO-RECEIVER-01",
+                  "alias": "Meera",
+                  "relationship_in_scenario": "mother",
+                  "adult_in_scenario": true
+                },
+                "merchant": {
+                  "name": "Myntra",
+                  "fictional": false
+                },
+                "order": {
+                  "reference": "DEMO-ORDER-001",
+                  "parcel_id": "DEMO-PARCEL-001",
+                  "description": "Bedsheet",
+                  "payment_type": "prepaid",
+                  "value_inr": 900,
+                  "address_reference": "DEMO-HOME-01",
+                  "fictional": true
+                },
+                "carrier": {
+                  "proposed_partner": "Delhivery",
+                  "waybill": null,
+                  "delegated_release_support": "unverified"
+                },
+                "policy_reference": null,
+                "buyer_grant": {
+                  "grant_id": "grant-fee9a22923d0",
+                  "version": 1,
+                  "buyer_id": "DEMO-BUYER-01",
+                  "receiver_id": "DEMO-RECEIVER-01",
+                  "order_id": "DEMO-ORDER-001",
+                  "parcel_id": "DEMO-PARCEL-001",
+                  "address_id": "DEMO-HOME-01",
+                  "scope": "receive_only",
+                  "value_cap_inr": 900,
+                  "starts_at": "2026-10-03T20:50:03.364686+00:00",
+                  "expires_at": "2026-10-03T21:20:03.364686+00:00",
+                  "revoked_at": null,
+                  "source_event_id": "E-884cc462157b"
+                },
+                "invitation": {
+                  "choice": "Accept invitation",
+                  "event_id": "E-2e10fe3633d7",
+                  "recorded_at": "2026-10-03T20:51:00.981227+00:00"
+                },
+                "receiver_availability": {
+                  "choice": "I can receive",
+                  "event_id": "E-9cbd7cfa4286",
+                  "recorded_at": "2026-10-03T20:51:32.784699+00:00"
+                },
+                "active_attempt": null,
+                "doorstep_willingness": null,
+                "receiver_acknowledgment": null,
+                "unresolved_input_event_ids": [
+                  "E-60956065a06a"
+                ],
+                "carrier_release_decision_ref": null,
+                "handoff_evidence_ref": null,
+                "label_for_recording": "Fictional Myntra order scenario, prepaid INR 900. User-authored out-for-delivery status for 3 October 2026 is not a carrier event. No real merchant integration, consent grant or carrier approval.",
+                "last_human_seq": 41,
+                "profile": "coordination_only",
+                "outcome": null,
+                "reason_code": null
+              },
+              "state_version": 4,
+              "run_profile": "coordination_only",
+              "messages": [
+                {
+                  "id": "message-bea2fdf64727",
+                  "run": "run-0ed8189fd1fd",
+                  "recipient": "DEMO-RECEIVER-01",
+                  "text": "नमस्ते मीरा जी, यह एक डेमो है। आरव की मंज़ूरी से क्या आप पार्सल में मदद लेना चाहती हैं?",
+                  "purpose": "invite",
+                  "response_kind": "invitation",
+                  "created": "2026-10-03T20:50:12.582226+00:00",
+                  "version": 1,
+                  "answered": "Accept invitation",
+                  "read_at": "2026-10-03T20:50:13.349808+00:00",
+                  "source_event": "E-04acfaada7e8",
+                  "trigger_seq": 2
+                },
+                {
+                  "id": "message-cba81908e4d5",
+                  "run": "run-0ed8189fd1fd",
+                  "recipient": "DEMO-RECEIVER-01",
+                  "text": "यह मायंट्रा से चादर का एक डेमो पार्सल है। डिलीवरी कंपनी अपनी जांच खुद करेगी, क्या आपका कोई सवाल है?",
+                  "purpose": "explain",
+                  "response_kind": "text",
+                  "created": "2026-10-03T20:51:08.719948+00:00",
+                  "version": 2,
+                  "answered": null,
+                  "read_at": "2026-10-03T20:51:09.750431+00:00",
+                  "source_event": "E-5637896285ac",
+                  "trigger_seq": 18
+                }
+              ],
+              "source_label": "Fictional order; participant actions labelled separately",
+              "pending_inputs": [],
+              "evidence_refs": [
+                "E-9487658ce56e",
+                "E-884cc462157b",
+                "E-be1a5e4dab1e",
+                "E-500edf1ba3ad",
+                "E-f2c475e61a77",
+                "E-943eae419692",
+                "E-5a1984aec8f6",
+                "E-a13c4ff93707",
+                "E-e2efaa8523fc",
+                "E-e7adfb0e6e68",
+                "E-9772978c9da0",
+                "E-04acfaada7e8",
+                "E-d6bba1c7cd0c",
+                "E-642d3e61a104",
+                "E-ada24a8ab3c0",
+                "E-477cbb9d057f",
+                "E-e408332cf5da",
+                "E-2e10fe3633d7",
+                "E-9826b10bdb72",
+                "E-c788127ded69",
+                "E-e7f141bce416",
+                "E-95bca3e64fa5",
+                "E-4a82ffbedb2b",
+                "E-c891bd35d14e",
+                "E-063e5c58e24c",
+                "E-d48ec0e7d564",
+                "E-872b020b929e",
+                "E-5637896285ac",
+                "E-b97ebb226424",
+                "E-72622071be0e",
+                "E-48e202a1aaa9",
+                "E-d3c2a0b6a93b",
+                "E-0d51e811f5bf",
+                "E-9cbd7cfa4286",
+                "E-62f033ecd93e",
+                "E-b5a2a20c2e12",
+                "E-591369f48260",
+                "E-6840b5dbc573",
+                "E-baf791612b77",
+                "E-652eb4d8c398",
+                "E-60956065a06a",
+                "E-6f8adcdd1e5c",
+                "E-a67b362f47d8",
+                "E-87ac18e899eb",
+                "E-5eebf3886da7",
+                "E-fcf40f3cb8f9",
+                "E-ecdb2c0e91f0",
+                "E-8ef57db606af",
+                "E-2b7702ca454e",
+                "E-fa75e7e64890",
+                "E-db96fbb8e994",
+                "E-0e3e41a633b6",
+                "E-5ececf2c517d",
+                "E-106339e1e4c7",
+                "E-de2772015dfa",
+                "E-279ed1c7cb43",
+                "E-d6f83e0f45bc"
+              ],
+              "grant_valid_now": true,
+              "now": "2026-10-03T20:51:51.992644+00:00"
+            }
+          },
+          "id": "call_1761768"
+        }
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "send_message",
+          "args": {
+            "reason": "Acknowledge receiver refusal and confirm completion of coordination assistance.",
+            "recipient_id": "DEMO-RECEIVER-01",
+            "attempt_id": null,
+            "purpose": "update",
+            "expected_state_version": 4,
+            "response_kind": "none",
+            "text": "आपकी बात समझ आ गई है। SaunpDo की सहायता यहीं समाप्त की जाती है।",
+            "case_id": "DEMO-CASE-001",
+            "rule_id": "R05"
+          },
+          "id": "call_270331"
+        },
+        "thoughtSignature": "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"
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "functionResponse": {
+          "name": "send_message",
+          "response": {
+            "ok": true,
+            "call_id": "tool-41a35c6620df",
+            "state_version": 4,
+            "result": {
+              "message_id": "message-02db57ba887a",
+              "persisted_at": "2026-10-03T20:51:56.077632+00:00",
+              "delivery_status": "stored_in_app",
+              "read_at": null,
+              "evidence_ref": "E-0e98f56bdfec",
+              "choices": []
+            }
+          },
+          "id": "call_270331"
+        }
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "send_message",
+          "args": {
+            "reason": "Inform buyer of receiver refusal and case closure.",
+            "rule_id": "R07",
+            "purpose": "update",
+            "response_kind": "none",
+            "recipient_id": "DEMO-BUYER-01",
+            "text": "Meera has declined to receive the demo parcel. Delegation coordination is now closed.",
+            "expected_state_version": 4,
+            "case_id": "DEMO-CASE-001"
+          },
+          "id": "call_2615257"
+        },
+        "thoughtSignature": "EtwGCtkGAWkUfRPwMqa0/spq8VMIT0JWxME7oUsFOEoBIKsr4u2beTkA3H9FV/5QvtkNYnFZAwp5dGILJWtJkPiRg7O6eKTN0/GO4RTK5miXHx9L75mBQH31nMkKZDIc/np+GOt8oQOCY+4dvfM6TYt8HDWe7ACwBpOEgH61ikPOsox5VfG3+YdSWuyp56PzqTGxTvnEW3q3kgMbBVUM7TOPt7qZrsOAvfGnDvI53OPIwZ1UIgn+hfWMFrs+wQ/I9jN9sXywSENzbGNZh0Zrm+7F2/BDXAprG6azOh6UV1bEA6B+XFnDOBa1uEUhZ59MDYrbcl8CKArPIDApv1oL31k35AGlfKwtT7CClIqqGkTNcts9C7gcYik7+Ulzz+EBIwIhtmaL3GVl3uF3LTNmj4yMXtv9DkUzjdf9Ip2v9KE2njvwH5sHwxethlbJkVObsQmoRrg0+vhIsbnQ5Cz2gBJ7EXJ6IXuLKkVTsMIQu5D8btx89B6IiE2QqwZlGMGEMBe/e4iJoUhymHOlVWqU6SRe9tJnv4BnwQPn6/nhSZN7hxdtEF/tegdV8zVvj8oDgeXyDa1fgylemWg/qkeXogmOWyYvTDL8qgk777OEaXOjKvTDV2UQCPPvQ9roBPZUd9H+nNAcqmNMu/1u5cFqsUGmWaG2gIvpr5B5mWljVAgXtun3uESz23+3zjTY6I6nCitxxtyPs441nbIsXPefDoeMNLCQx1L3bihBlREQx7fUjoEExOQZZzw/DotZ2e6pAm3hmNL2tsbH/x5ZZVJW7gq/gBRPNjhyqQqMSn46svJuxR5+70jvjI9x6JwpEJjk7F7ShogfNUf+4dSGisUwEfmpO0cPkSgjS4Fzk4q+cNtkwmgoB/Svv7c0izVFXFnbj41Lxs4Mt5KRBiYaVyXbJDpwAfTTfyfFc40sCNA6GsM6Zi1J7YM9Gz4M5oA8BXRDOgVQvaY/LFOjDPYXtVB8/5OE8EXUVl3JwjXMca2j6MZVMAbJY8RsI6FX3fTneQLlRebIzpK29SWPTGkUvh1qP2XLSGecA6D0XVraAe9qYlW9HZ6HUCh9DpbpyekgNASioQv0Ea2Yr4RTZWGiaJGHDk3JcB+Cm/fSPNxjXRxatznjD9e9FgaXZZwWA/e1s3o="
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "functionResponse": {
+          "name": "send_message",
+          "response": {
+            "ok": false,
+            "call_id": "tool-737bb72d9b80",
+            "state_version": 4,
+            "error": {
+              "code": "INVALID_ARGUMENTS",
+              "message": "arguments: required field missing"
+            }
+          },
+          "id": "call_2615257"
+        }
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "send_message",
+          "args": {
+            "text": "Meera has declined to receive the demo parcel. Delegation coordination is now closed.",
+            "recipient_id": "DEMO-BUYER-01",
+            "response_kind": "none",
+            "attempt_id": null,
+            "case_id": "DEMO-CASE-001",
+            "rule_id": "R07",
+            "expected_state_version": 4,
+            "reason": "Inform buyer that receiver declined the parcel.",
+            "purpose": "update"
+          },
+          "id": "call_1881875"
+        },
+        "thoughtSignature": "EuYHCuMHAWkUfRMPgtNSvVvsZh2HG6de3eidu/1p0rkJ1yif67LsfIPIqoG3uxzmbe/lSmX2n2GFjNLfqaVG3iLBWBNoP4TIfV7ppkylB4miS9Ab+/ARpYPyJ0pQImBxP41GB6273dbXqV6MhgwVPb7iUbG9LEg0T/qlIELrvkvZTNio4QAdkJDxueIjN4pXDjlajoFmC2SSnbpr+jlUT5DROVU9nvhMlMgkLUYXA+FedPcDw2o2HSK3KubmqnuMsATFo9qlPCB42IaFe2mZy7shWAj3P7sm15FF1O4VicRPdZ97sRrKdu8W7LBrK6Z2GRfI5kKDGALOFWmrQFxCkNo/7xeKujxXvWN8xMnGzHkHi2/M183OtVd0pNwvYsyu9w2SP1/e+4u7ezdeVSrSp3DnxHrTV7HpVKHA5wCK/TVXbMh/xHSOfpa0UAziDN4W+WZhvG4NX8mzB5ymx60ufWLI6l8OnPYJh4JiB4f/AUh38mAcGDX+ZMjLViTd0AO3mzd0lqIOH3PdIEhRWM0eny9Lxktbu1eAyDHz9zeZHCnDmFf+IJ8pEtHCD5QnnDeiDFg5SG4YQqB9pMOYkB8FVoGr3MJPVEf8XvzCtQmu3dNN6k9YNDAcv5nrypmuHLAJXAxVaUJnwAS11HaskQ/7oibR+q7kL8kAtwgCafo8guT8IrC0c6IFGQMy/WSPqEVFQ8hjYFU3c6Td+SN9iSNvtV6OQtP3PJLBlAdAbQ+d0p/KTy2KhYkF+U112rpQXrbkZW84ycFdqOmt39aZ73MMwcJRXeqU5u8MCw7WlDc4yOdAfl4siBfod3qXuhLVVHHxSUz/A7jmpHVc3BGI37UO7nEKC2Bj1Mp1UspCzRMv6byWHSR4QhQBL3BD14EgpYqb3ZAOkPgsoQgU6WtdGnAW9YwsQl7VDFOlYGoh6XG5lRlJmv3ZfrdUIrVrbSBCFzU9wW7xFMMt0SYIZQyo9wrEwVrrhtdtZTw2evcn8UGeLbf+sr1VGCcwwwu82DNePtkSUYPykL10I8W1QW3Mub8ehKS/LdOfw3keBqz1zXQFmK3tFmt3xit3sucEYZBWekT/w6LrtCd5hZsyY8rNt30QoDmxYnJYTeImaBYBxBr/JPFuzhr3ZMjXvkpaLdg7yKBs0XwpDJHTz2u27fs1lbbE0IuMHaBqO8PzqIXJgagcdsvooJrAy1irnu5A5CxgN1ryfq107MgdNG82LyHDeWuw92bkpV/S+M1iNXqPyszrR7wZI2xIM5spexuU6ehwGByYC0JP9TD8TMIllhJwImwZymfuDgJgFqGco7oqq0R+h7uKzHGc72TMC6A="
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "functionResponse": {
+          "name": "send_message",
+          "response": {
+            "ok": true,
+            "call_id": "tool-08729e99e20c",
+            "state_version": 4,
+            "result": {
+              "message_id": "message-2cee487fc109",
+              "persisted_at": "2026-10-03T20:52:00.742405+00:00",
+              "delivery_status": "stored_in_app",
+              "read_at": null,
+              "evidence_ref": "E-3245d22508e3",
+              "choices": []
+            }
+          },
+          "id": "call_1881875"
+        }
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "close_case",
+          "args": {
+            "reason_code": "receiver_declined",
+            "expected_state_version": 4,
+            "outcome": "declined",
+            "reason": "Receiver explicitly stated in uploaded audio that she does not want to receive this parcel.",
+            "rule_id": "R14",
+            "evidence_refs": [
+              "E-60956065a06a",
+              "E-0e98f56bdfec",
+              "message-02db57ba887a",
+              "E-3245d22508e3",
+              "message-2cee487fc109"
+            ],
+            "case_id": "DEMO-CASE-001"
+          },
+          "id": "call_2523931"
+        },
+        "thoughtSignature": "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"
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "functionResponse": {
+          "name": "close_case",
+          "response": {
+            "ok": true,
+            "call_id": "tool-c13de9838559",
+            "state_version": 5,
+            "result": {
+              "closed": true,
+              "outcome": "declined",
+              "evidence_ref": "E-caa20afc9e5f",
+              "delivery_completed": false
+            }
+          },
+          "id": "call_2523931"
+        }
+      }
+    ]
+  }
+]

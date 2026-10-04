@@ -1,0 +1,540 @@
+[
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "{\"run_profile\":\"coordination_only\",\"interaction_mode\":\"practice\",\"case_id\":\"DEMO-CASE-001\",\"events\":[{\"event_id\":\"E-b7a803ce6162\",\"run_id\":\"run-8206c436c2b4\",\"sequence\":2,\"received_at\":\"2026-10-04T01:45:11.929049+00:00\",\"event_type\":\"buyer_granted\",\"actor\":\"buyer\",\"source_mode\":\"OPERATOR_TEST_ACTION\",\"payload\":{\"grant\":{\"grant_id\":\"grant-82d8a10102d4\",\"version\":1,\"buyer_id\":\"DEMO-BUYER-01\",\"receiver_id\":\"DEMO-RECEIVER-01\",\"order_id\":\"DEMO-ORDER-001\",\"parcel_id\":\"DEMO-PARCEL-001\",\"address_id\":\"DEMO-HOME-01\",\"scope\":\"receive_only\",\"value_cap_inr\":900,\"starts_at\":\"2026-10-04T01:45:11.928989+00:00\",\"expires_at\":\"2026-10-04T02:15:11.928989+00:00\",\"revoked_at\":null,\"source_event_id\":null},\"request\":\"Help my mother understand this test parcel and answer her questions. Carrier release support is unavailable.\"},\"state_version_before\":0,\"state_version_after\":1}],\"available_tools\":[\"get_parcel_context\",\"transcribe_receiver_audio\",\"send_message\",\"wait_for_event\",\"close_case\"],\"now\":\"2026-10-04T01:45:11.929319+00:00\"}"
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "get_parcel_context",
+          "args": {
+            "case_id": "DEMO-CASE-001",
+            "rule_id": "R03",
+            "reason": "Read current parcel context and enrolled participants after buyer grant"
+          },
+          "id": "call_2163270"
+        },
+        "thoughtSignature": "EmkKZwFpFH0TO+6hHVcaYRIvNpD2RFdaEbZ06/xa+1K3KqwzRU+CG41iM8gc361yHdVen/l6dmfHLD4fcNtzpWW9xvUVN68DIWhBRrh851g2Apc6zIFJX0t+lNskf2ip9130c8zjX1OEtqg="
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "functionResponse": {
+          "name": "get_parcel_context",
+          "response": {
+            "ok": true,
+            "call_id": "tool-06701d36c8d8",
+            "state_version": 1,
+            "result": {
+              "case": {
+                "schema_version": "0.3-draft",
+                "case_id": "DEMO-CASE-001",
+                "source": {
+                  "mode": "FICTIONAL_DEVELOPMENT_FIXTURE",
+                  "reference": "User confirmed fictional Myntra order in chat on 3 October 2026; see phase-02/inputs/confirmed-2026-10-03/input-register.json.",
+                  "fictional_case": true
+                },
+                "state_version": 1,
+                "case_state": "awaiting_receiver",
+                "buyer": {
+                  "id": "DEMO-BUYER-01",
+                  "alias": "Aarav"
+                },
+                "receiver": {
+                  "id": "DEMO-RECEIVER-01",
+                  "alias": "Meera",
+                  "relationship_in_scenario": "mother",
+                  "adult_in_scenario": true
+                },
+                "merchant": {
+                  "name": "Myntra",
+                  "fictional": false
+                },
+                "order": {
+                  "reference": "DEMO-ORDER-001",
+                  "parcel_id": "DEMO-PARCEL-001",
+                  "description": "Bedsheet",
+                  "payment_type": "prepaid",
+                  "value_inr": 900,
+                  "address_reference": "DEMO-HOME-01",
+                  "fictional": true
+                },
+                "carrier": {
+                  "proposed_partner": "Delhivery",
+                  "waybill": null,
+                  "delegated_release_support": "unverified"
+                },
+                "policy_reference": null,
+                "buyer_grant": {
+                  "grant_id": "grant-82d8a10102d4",
+                  "version": 1,
+                  "buyer_id": "DEMO-BUYER-01",
+                  "receiver_id": "DEMO-RECEIVER-01",
+                  "order_id": "DEMO-ORDER-001",
+                  "parcel_id": "DEMO-PARCEL-001",
+                  "address_id": "DEMO-HOME-01",
+                  "scope": "receive_only",
+                  "value_cap_inr": 900,
+                  "starts_at": "2026-10-04T01:45:11.928989+00:00",
+                  "expires_at": "2026-10-04T02:15:11.928989+00:00",
+                  "revoked_at": null,
+                  "source_event_id": "E-b7a803ce6162"
+                },
+                "invitation": null,
+                "receiver_availability": null,
+                "active_attempt": null,
+                "doorstep_willingness": null,
+                "receiver_acknowledgment": null,
+                "unresolved_input_event_ids": [],
+                "carrier_release_decision_ref": null,
+                "handoff_evidence_ref": null,
+                "label_for_recording": "Fictional Myntra order scenario, prepaid INR 900. User-authored out-for-delivery status for 3 October 2026 is not a carrier event. No real merchant integration, consent grant or carrier approval.",
+                "last_human_seq": 2,
+                "profile": "coordination_only",
+                "outcome": null,
+                "reason_code": null
+              },
+              "state_version": 1,
+              "run_profile": "coordination_only",
+              "messages": [],
+              "source_label": "Fictional order; participant actions labelled separately",
+              "pending_inputs": [],
+              "evidence_refs": [
+                "E-5fe52d65ebea",
+                "E-b7a803ce6162",
+                "E-ccb0002f8faf",
+                "E-f8c266625b44",
+                "E-c1b9773a0899",
+                "E-bff3f12e8206"
+              ],
+              "grant_valid_now": true,
+              "now": "2026-10-04T01:45:14.723720+00:00"
+            }
+          },
+          "id": "call_2163270"
+        }
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "send_message",
+          "args": {
+            "case_id": "DEMO-CASE-001",
+            "response_kind": "invitation",
+            "text": "नमस्ते मीरा जी, यह एक डेमो पार्सल की जानकारी के लिए है। आरव ने आपको पार्सल समझने में मदद के लिए जोड़ा है, क्या आप इसमें शामिल होना चाहती हैं?",
+            "attempt_id": null,
+            "purpose": "invite",
+            "reason": "Invite Meera to participate in demo parcel coordination",
+            "expected_state_version": 1,
+            "recipient_id": "DEMO-RECEIVER-01",
+            "rule_id": "R07"
+          },
+          "id": "call_2024678"
+        },
+        "thoughtSignature": "EmkKZwFpFH0TPg4Je6sIoKsLLBQ8Me5ryYRFuHgUpEhzBa9erMfSH9J5XHBEqOL63U9vpwgF242pXaINJlySRxeK+W3OOpp7vVo6ct/I1vc3GheDOYxiWrNPWfnkgGNrqaIAzcR4IpmC7NA="
+      },
+      {
+        "functionCall": {
+          "name": "wait_for_event",
+          "args": {
+            "event_types": [
+              "invitation_responded",
+              "receiver_audio_uploaded",
+              "receiver_text_received",
+              "buyer_revoked"
+            ],
+            "reason": "Wait for receiver invitation response or audio/text input",
+            "timeout_seconds": 120,
+            "case_id": "DEMO-CASE-001",
+            "rule_id": "R12"
+          },
+          "id": "call_2024679"
+        }
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "functionResponse": {
+          "name": "send_message",
+          "response": {
+            "ok": true,
+            "call_id": "tool-4121fd5ece3c",
+            "state_version": 1,
+            "result": {
+              "message_id": "message-2ff1b8bc4bc0",
+              "persisted_at": "2026-10-04T01:45:16.411389+00:00",
+              "delivery_status": "stored_in_app",
+              "read_at": null,
+              "evidence_ref": "E-92f263491c0b",
+              "choices": [
+                "Accept invitation",
+                "Decline invitation"
+              ]
+            }
+          },
+          "id": "call_2024678"
+        }
+      },
+      {
+        "functionResponse": {
+          "name": "wait_for_event",
+          "response": {
+            "ok": true,
+            "call_id": "tool-cea697c9daa6",
+            "state_version": 1,
+            "result": {
+              "waiting": true,
+              "deadline": "2026-10-04T01:47:16.414720+00:00",
+              "queued_input_will_resume": false,
+              "evidence_ref": "E-f1ea902681f7"
+            }
+          },
+          "id": "call_2024679"
+        }
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "{\"run_profile\":\"coordination_only\",\"interaction_mode\":\"practice\",\"case_id\":\"DEMO-CASE-001\",\"events\":[{\"event_id\":\"E-02a3fca81b4b\",\"run_id\":\"run-8206c436c2b4\",\"sequence\":17,\"received_at\":\"2026-10-04T01:45:16.979412+00:00\",\"event_type\":\"invitation_responded\",\"actor\":\"receiver\",\"source_mode\":\"OPERATOR_TEST_ACTION\",\"payload\":{\"choice\":\"Accept invitation\",\"message_id\":\"message-2ff1b8bc4bc0\"},\"state_version_before\":1,\"state_version_after\":2}],\"available_tools\":[\"get_parcel_context\",\"transcribe_receiver_audio\",\"send_message\",\"wait_for_event\",\"close_case\"],\"now\":\"2026-10-04T01:45:16.981271+00:00\"}"
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "get_parcel_context",
+          "args": {
+            "reason": "Read updated context after invitation acceptance",
+            "rule_id": "R03",
+            "case_id": "DEMO-CASE-001"
+          },
+          "id": "call_2847732"
+        },
+        "thoughtSignature": "EmkKZwFpFH0T7+mjSFoOm/WL5uaIAFHqkbSjZ4yn5/0mdajXx0dcR4emZfUpRsf2J3apkneF/L3UgjR2snSFSIa0WBNDT9xRFF/x9n03QFNrbTVUGL2hwWAQENzOJ6mCvT3C2wEhMWm8iaU="
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "functionResponse": {
+          "name": "get_parcel_context",
+          "response": {
+            "ok": true,
+            "call_id": "tool-176524f128f0",
+            "state_version": 2,
+            "result": {
+              "case": {
+                "schema_version": "0.3-draft",
+                "case_id": "DEMO-CASE-001",
+                "source": {
+                  "mode": "FICTIONAL_DEVELOPMENT_FIXTURE",
+                  "reference": "User confirmed fictional Myntra order in chat on 3 October 2026; see phase-02/inputs/confirmed-2026-10-03/input-register.json.",
+                  "fictional_case": true
+                },
+                "state_version": 2,
+                "case_state": "coordinating",
+                "buyer": {
+                  "id": "DEMO-BUYER-01",
+                  "alias": "Aarav"
+                },
+                "receiver": {
+                  "id": "DEMO-RECEIVER-01",
+                  "alias": "Meera",
+                  "relationship_in_scenario": "mother",
+                  "adult_in_scenario": true
+                },
+                "merchant": {
+                  "name": "Myntra",
+                  "fictional": false
+                },
+                "order": {
+                  "reference": "DEMO-ORDER-001",
+                  "parcel_id": "DEMO-PARCEL-001",
+                  "description": "Bedsheet",
+                  "payment_type": "prepaid",
+                  "value_inr": 900,
+                  "address_reference": "DEMO-HOME-01",
+                  "fictional": true
+                },
+                "carrier": {
+                  "proposed_partner": "Delhivery",
+                  "waybill": null,
+                  "delegated_release_support": "unverified"
+                },
+                "policy_reference": null,
+                "buyer_grant": {
+                  "grant_id": "grant-82d8a10102d4",
+                  "version": 1,
+                  "buyer_id": "DEMO-BUYER-01",
+                  "receiver_id": "DEMO-RECEIVER-01",
+                  "order_id": "DEMO-ORDER-001",
+                  "parcel_id": "DEMO-PARCEL-001",
+                  "address_id": "DEMO-HOME-01",
+                  "scope": "receive_only",
+                  "value_cap_inr": 900,
+                  "starts_at": "2026-10-04T01:45:11.928989+00:00",
+                  "expires_at": "2026-10-04T02:15:11.928989+00:00",
+                  "revoked_at": null,
+                  "source_event_id": "E-b7a803ce6162"
+                },
+                "invitation": {
+                  "choice": "Accept invitation",
+                  "event_id": "E-02a3fca81b4b",
+                  "recorded_at": "2026-10-04T01:45:16.979256+00:00"
+                },
+                "receiver_availability": null,
+                "active_attempt": null,
+                "doorstep_willingness": null,
+                "receiver_acknowledgment": null,
+                "unresolved_input_event_ids": [],
+                "carrier_release_decision_ref": null,
+                "handoff_evidence_ref": null,
+                "label_for_recording": "Fictional Myntra order scenario, prepaid INR 900. User-authored out-for-delivery status for 3 October 2026 is not a carrier event. No real merchant integration, consent grant or carrier approval.",
+                "last_human_seq": 17,
+                "profile": "coordination_only",
+                "outcome": null,
+                "reason_code": null
+              },
+              "state_version": 2,
+              "run_profile": "coordination_only",
+              "messages": [
+                {
+                  "id": "message-2ff1b8bc4bc0",
+                  "run": "run-8206c436c2b4",
+                  "recipient": "DEMO-RECEIVER-01",
+                  "text": "नमस्ते मीरा जी, यह एक डेमो पार्सल की जानकारी के लिए है। आरव ने आपको पार्सल समझने में मदद के लिए जोड़ा है, क्या आप इसमें शामिल होना चाहती हैं?",
+                  "purpose": "invite",
+                  "response_kind": "invitation",
+                  "created": "2026-10-04T01:45:16.411389+00:00",
+                  "version": 1,
+                  "answered": "Accept invitation",
+                  "read_at": null,
+                  "source_event": "E-92f263491c0b",
+                  "trigger_seq": 2
+                }
+              ],
+              "source_label": "Fictional order; participant actions labelled separately",
+              "pending_inputs": [],
+              "evidence_refs": [
+                "E-5fe52d65ebea",
+                "E-b7a803ce6162",
+                "E-ccb0002f8faf",
+                "E-f8c266625b44",
+                "E-c1b9773a0899",
+                "E-bff3f12e8206",
+                "E-03d729ab4835",
+                "E-242106e8dd35",
+                "E-d9e24ccb0f84",
+                "E-56b25673873f",
+                "E-288e08ca351c",
+                "E-92f263491c0b",
+                "E-7b5584428c15",
+                "E-6b721309371d",
+                "E-f1ea902681f7",
+                "E-98bfc5ba14e4",
+                "E-02a3fca81b4b",
+                "E-f36434805104",
+                "E-06dc37954dc6",
+                "E-2d18c240fec6",
+                "E-533d222a2429"
+              ],
+              "grant_valid_now": true,
+              "now": "2026-10-04T01:45:18.100332+00:00"
+            }
+          },
+          "id": "call_2847732"
+        }
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "send_message",
+          "args": {
+            "case_id": "DEMO-CASE-001",
+            "response_kind": "text",
+            "text": "यह मिंत्रा से एक बेडशीट का डेमो पार्सल है जो पहले से प्रीपेड है। डिलीवरी कंपनी अपनी प्रक्रिया से जांच करेगी। क्या आप इस पार्सल के बारे में कुछ पूछना चाहती हैं?",
+            "expected_state_version": 2,
+            "rule_id": "R06",
+            "purpose": "explain",
+            "recipient_id": "DEMO-RECEIVER-01",
+            "reason": "Explain parcel details and limitations in coordination_only mode and ask for questions"
+          },
+          "id": "call_1696538"
+        },
+        "thoughtSignature": "EmkKZwFpFH0TVry2Gjj4K67AW1tOBfGmaKRjZ7UWR6BAuPZQ3MPQ8VrXgOw5/mbVWCJ/r5COmezXaXYqtZDm7M3Nbr6WS+TCvGxtiA+OjhorH5KEUemjhIujCO3GgpSi9Mh6hgXAV7TnVjo="
+      },
+      {
+        "functionCall": {
+          "name": "wait_for_event",
+          "args": {
+            "rule_id": "R12",
+            "reason": "Wait for receiver question or availability update",
+            "event_types": [
+              "receiver_audio_uploaded",
+              "receiver_text_received",
+              "availability_changed",
+              "buyer_revoked"
+            ],
+            "case_id": "DEMO-CASE-001",
+            "timeout_seconds": 120
+          },
+          "id": "call_1696539"
+        }
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "functionResponse": {
+          "name": "send_message",
+          "response": {
+            "ok": false,
+            "call_id": "tool-03f257a0f67c",
+            "state_version": 2,
+            "error": {
+              "code": "INVALID_ARGUMENTS",
+              "message": "arguments: required field missing"
+            }
+          },
+          "id": "call_1696538"
+        }
+      },
+      {
+        "functionResponse": {
+          "name": "wait_for_event",
+          "response": {
+            "ok": true,
+            "call_id": "tool-6726a1c20fa2",
+            "state_version": 2,
+            "result": {
+              "waiting": true,
+              "deadline": "2026-10-04T01:47:19.689729+00:00",
+              "queued_input_will_resume": false,
+              "evidence_ref": "E-5ece27433c25"
+            }
+          },
+          "id": "call_1696539"
+        }
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "{\"run_profile\":\"coordination_only\",\"interaction_mode\":\"practice\",\"case_id\":\"DEMO-CASE-001\",\"events\":[{\"event_id\":\"E-41c36124a5f2\",\"run_id\":\"run-8206c436c2b4\",\"sequence\":31,\"received_at\":\"2026-10-04T01:47:20.091763+00:00\",\"event_type\":\"timer_expired\",\"actor\":\"runtime\",\"source_mode\":\"APP_CLOCK\",\"payload\":{\"deadline\":\"2026-10-04T01:47:19.689729+00:00\"},\"state_version_before\":2,\"state_version_after\":2}],\"available_tools\":[\"get_parcel_context\",\"transcribe_receiver_audio\",\"send_message\",\"wait_for_event\",\"close_case\"],\"now\":\"2026-10-04T01:47:20.093040+00:00\"}"
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "send_message",
+          "args": {
+            "response_kind": "text",
+            "expected_state_version": 2,
+            "text": "यह मिंत्रा से एक बेडशीट का डेमो पार्सल है जो पहले से प्रीपेड है। डिलीवरी कंपनी अपनी प्रक्रिया से जांच करेगी। क्या आप इस पार्सल के बारे में कुछ पूछना चाहती हैं?",
+            "recipient_id": "DEMO-RECEIVER-01",
+            "case_id": "DEMO-CASE-001",
+            "attempt_id": null,
+            "rule_id": "R06",
+            "purpose": "explain",
+            "reason": "Explain parcel details and limitations in coordination_only mode and ask for questions"
+          },
+          "id": "call_2048577"
+        },
+        "thoughtSignature": "EmkKZwFpFH0TfbwSJp8gQPz5DKmCHurEKb61W/1o+rrQMgK9v7UJPIRYD8PxqVsvAbjKU+CIFoaLOMscJRFD4wmzJOfLAwH3C2ceD3FESnGp+qMnwLyv7ggv84ZYe3sMWxX/bRQ7WY+yFX8="
+      },
+      {
+        "functionCall": {
+          "name": "wait_for_event",
+          "args": {
+            "timeout_seconds": 120,
+            "event_types": [
+              "receiver_audio_uploaded",
+              "receiver_text_received",
+              "availability_changed",
+              "buyer_revoked"
+            ],
+            "reason": "Wait for receiver response or question",
+            "case_id": "DEMO-CASE-001",
+            "rule_id": "R12"
+          },
+          "id": "call_2048578"
+        }
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "functionResponse": {
+          "name": "send_message",
+          "response": {
+            "ok": true,
+            "call_id": "tool-c14b27184828",
+            "state_version": 2,
+            "result": {
+              "message_id": "message-01544444536e",
+              "persisted_at": "2026-10-04T01:47:21.955509+00:00",
+              "delivery_status": "stored_in_app",
+              "read_at": null,
+              "evidence_ref": "E-62093a1ab7a7",
+              "choices": []
+            }
+          },
+          "id": "call_2048577"
+        }
+      },
+      {
+        "functionResponse": {
+          "name": "wait_for_event",
+          "response": {
+            "ok": true,
+            "call_id": "tool-2169113ac3f5",
+            "state_version": 2,
+            "result": {
+              "waiting": true,
+              "deadline": "2026-10-04T01:49:21.958397+00:00",
+              "queued_input_will_resume": false,
+              "evidence_ref": "E-1ff497322199"
+            }
+          },
+          "id": "call_2048578"
+        }
+      }
+    ]
+  }
+]

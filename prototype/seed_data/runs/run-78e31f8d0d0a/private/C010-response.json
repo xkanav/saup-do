@@ -1,0 +1,57 @@
+{
+  "call_id": "C010",
+  "provider": "Gemini",
+  "status_code": 200,
+  "elapsed_ms": 1749,
+  "content_type": "application/json; charset=UTF-8",
+  "response_body": {
+    "path": "private/C010-response.body",
+    "sha256": "2e7701690ba6a60ee26652192e8e99298898351f52319b39e86dcde4aa6b534f",
+    "bytes": 1746
+  },
+  "json": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "name": "send_message",
+                "args": {
+                  "text": "आरव का यह पार्सल मिंत्रा से बेडशीट का है और इसके पैसे पहले ही दिए जा चुके हैं। SaunpDo कभी भी आपसे OTP नहीं मांगता और डिलीवरी कंपनी अपनी सामान्य प्रक्रिया से ही पार्सल देगी।",
+                  "purpose": "explain",
+                  "rule_id": "R09",
+                  "case_id": "DEMO-CASE-001",
+                  "recipient_id": "DEMO-RECEIVER-01",
+                  "reason": "Answer receiver questions regarding parcel item, payment status, and OTP policy",
+                  "response_kind": "none",
+                  "expected_state_version": 4
+                },
+                "id": "call_1927921"
+              },
+              "thoughtSignature": "EmkKZwFpFH0T27Cy9+d/7NDv9C1roOaYL134ClLKJRiCv1ScTMFETfaVMI849kAZ6MBrZvPL5Dy9op5iqGDFwtFSENlXFoUiE4E5wHl9Py5DlP9ACvUAqDyHGgQd527VvaTX+6mW+HwHL+8="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "finishMessage": "Model generated function call(s)."
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 9834,
+      "candidatesTokenCount": 144,
+      "totalTokenCount": 9978,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 9834
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.8-flash",
+    "responseId": "b7DBapmNCJW_g8UPt8im0AQ"
+  }
+}

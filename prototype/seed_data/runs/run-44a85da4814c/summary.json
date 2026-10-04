@@ -1,0 +1,89 @@
+{
+  "run_id": "run-44a85da4814c",
+  "profile": "coordination_only",
+  "interaction_mode": "practice",
+  "status": "closed",
+  "case": {
+    "schema_version": "0.3-draft",
+    "case_id": "DEMO-CASE-001",
+    "source": {
+      "mode": "FICTIONAL_DEVELOPMENT_FIXTURE",
+      "reference": "User confirmed fictional Myntra order in chat on 3 October 2026; see phase-02/inputs/confirmed-2026-10-03/input-register.json.",
+      "fictional_case": true
+    },
+    "state_version": 5,
+    "case_state": "declined",
+    "buyer": {
+      "id": "DEMO-BUYER-01",
+      "alias": "Aarav"
+    },
+    "receiver": {
+      "id": "DEMO-RECEIVER-01",
+      "alias": "Meera",
+      "relationship_in_scenario": "mother",
+      "adult_in_scenario": true
+    },
+    "merchant": {
+      "name": "Myntra",
+      "fictional": false
+    },
+    "order": {
+      "reference": "DEMO-ORDER-001",
+      "parcel_id": "DEMO-PARCEL-001",
+      "description": "Bedsheet",
+      "payment_type": "prepaid",
+      "value_inr": 900,
+      "address_reference": "DEMO-HOME-01",
+      "fictional": true
+    },
+    "carrier": {
+      "proposed_partner": "Delhivery",
+      "waybill": null,
+      "delegated_release_support": "unverified"
+    },
+    "policy_reference": null,
+    "buyer_grant": {
+      "grant_id": "grant-d4805ce5bd2e",
+      "version": 1,
+      "buyer_id": "DEMO-BUYER-01",
+      "receiver_id": "DEMO-RECEIVER-01",
+      "order_id": "DEMO-ORDER-001",
+      "parcel_id": "DEMO-PARCEL-001",
+      "address_id": "DEMO-HOME-01",
+      "scope": "receive_only",
+      "value_cap_inr": 900,
+      "starts_at": "2026-10-04T01:48:35.975508+00:00",
+      "expires_at": "2026-10-04T02:18:35.975508+00:00",
+      "revoked_at": null,
+      "source_event_id": "E-295b0b1af11e"
+    },
+    "invitation": {
+      "choice": "Accept invitation",
+      "event_id": "E-ab12333314c0",
+      "recorded_at": "2026-10-04T01:48:41.031844+00:00"
+    },
+    "receiver_availability": {
+      "choice": "I can receive",
+      "event_id": "E-bf9ab4610af4",
+      "recorded_at": "2026-10-04T01:48:45.070174+00:00"
+    },
+    "active_attempt": null,
+    "doorstep_willingness": null,
+    "receiver_acknowledgment": null,
+    "unresolved_input_event_ids": [
+      "E-40148a303497"
+    ],
+    "carrier_release_decision_ref": null,
+    "handoff_evidence_ref": null,
+    "label_for_recording": "Fictional Myntra order scenario, prepaid INR 900. User-authored out-for-delivery status for 3 October 2026 is not a carrier event. No real merchant integration, consent grant or carrier approval.",
+    "last_human_seq": 33,
+    "profile": "coordination_only",
+    "outcome": "declined",
+    "reason_code": "receiver_refused_parcel"
+  },
+  "model": "gemini-3.8-flash",
+  "model_calls": 10,
+  "failure": null,
+  "delivery_completed": false,
+  "exported_at": "2026-10-04T01:54:53.093113+00:00"
+}

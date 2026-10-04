@@ -1,0 +1,72 @@
+[
+  {
+    "id": "message-9f219dc11d5d",
+    "run": "run-3ea7f07d4b2e",
+    "recipient": "DEMO-RECEIVER-01",
+    "text": "नमस्ते मीरा जी, यह एक डेमो पार्सल की जानकारी है। आरव की मंज़ूरी से क्या आप इस पार्सल की जानकारी समझना चाहती हैं?",
+    "purpose": "invite",
+    "response_kind": "invitation",
+    "created": "2026-10-04T01:41:24.276475+00:00",
+    "version": 1,
+    "answered": "Accept invitation",
+    "read_at": "2026-10-04T01:42:17.197817+00:00",
+    "source_event": "E-4c5889bc7128",
+    "trigger_seq": 2
+  },
+  {
+    "id": "message-6635196b3d4b",
+    "run": "run-3ea7f07d4b2e",
+    "recipient": "DEMO-RECEIVER-01",
+    "text": "यह Myntra से बेडशीट का एक डेमो पार्सल है, जो पहले से प्रीपेड है। डिलीवरी कंपनी अपनी सामान्य प्रक्रिया से ही पार्सल देगी। क्या आपका कोई सवाल है?",
+    "purpose": "explain",
+    "response_kind": "text",
+    "created": "2026-10-04T01:41:30.662244+00:00",
+    "version": 2,
+    "answered": null,
+    "read_at": "2026-10-04T01:42:17.198587+00:00",
+    "source_event": "E-4c380eb899bd",
+    "trigger_seq": 15
+  },
+  {
+    "id": "message-bb4daa678aff",
+    "run": "run-3ea7f07d4b2e",
+    "recipient": "DEMO-RECEIVER-01",
+    "text": "यह आरव का Myntra से बेडशीट का डेमो पार्सल है और इसके ₹900 पहले से प्रीपेड हैं। SaunpDo कभी ओ टी पी नहीं मांगता, और डिलीवरी कंपनी अपने नियमों के अनुसार ही डिलीवरी करेगी। क्या आप इसे रिसीव करने के लिए उपलब्ध हैं?",
+    "purpose": "explain",
+    "response_kind": "availability",
+    "created": "2026-10-04T01:41:40.030872+00:00",
+    "version": 3,
+    "answered": "I can receive",
+    "read_at": "2026-10-04T01:42:17.199193+00:00",
+    "source_event": "E-61757a8725b2",
+    "trigger_seq": 43
+  },
+  {
+    "id": "message-aabf8a3160d4",
+    "run": "run-3ea7f07d4b2e",
+    "recipient": "DEMO-RECEIVER-01",
+    "text": "धन्यवाद। डिलीवरी कंपनी पार्सल देते समय अपने सामान्य नियमों के अनुसार सत्यापन करेगी।",
+    "purpose": "update",
+    "response_kind": "none",
+    "created": "2026-10-04T01:42:32.451354+00:00",
+    "version": 4,
+    "answered": null,
+    "read_at": "2026-10-04T01:42:32.814494+00:00",
+    "source_event": "E-05d6e32abb2a",
+    "trigger_seq": 76
+  },
+  {
+    "id": "message-b1059d909efb",
+    "run": "run-3ea7f07d4b2e",
+    "recipient": "DEMO-BUYER-01",
+    "text": "Meera is available to receive the bedsheet parcel. Delivery will proceed via standard carrier verification.",
+    "purpose": "update",
+    "response_kind": "none",
+    "created": "2026-10-04T01:42:36.915343+00:00",
+    "version": 4,
+    "answered": null,
+    "read_at": null,
+    "source_event": "E-2fc06fdc1f67",
+    "trigger_seq": 76
+  }
+]

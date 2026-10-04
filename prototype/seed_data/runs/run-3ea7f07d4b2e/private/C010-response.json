@@ -1,0 +1,52 @@
+{
+  "call_id": "C010",
+  "provider": "Gemini",
+  "status_code": 200,
+  "elapsed_ms": 1278,
+  "content_type": "application/json; charset=UTF-8",
+  "response_body": {
+    "path": "private/C010-response.body",
+    "sha256": "ef7c498c6e71b36b8d1f417e922578f5af3bfd2e88e6f1a1e088236144b85825",
+    "bytes": 1114
+  },
+  "json": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "name": "get_parcel_context",
+                "args": {
+                  "rule_id": "R03",
+                  "case_id": "DEMO-CASE-001",
+                  "reason": "Read current facts after receiving transcript to ensure correct state_version"
+                },
+                "id": "call_1983259"
+              },
+              "thoughtSignature": "EmkKZwFpFH0TAhp5aji6CNy/6DHThV+/9WkG1z97j6Sf68N/kXwd2F/EuVSihn2fTcr6X1falEP5Je0RLXHzqzO/E/gNoHouj1UvmUSkhlKTamOe+zW4kxEs2HpZlBMU7JjhnIZVuyE7ZCs="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "finishMessage": "Model generated function call(s)."
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 7696,
+      "candidatesTokenCount": 54,
+      "totalTokenCount": 7750,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 7696
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.8-flash",
+    "responseId": "z67Bau3FKazSqfkPpuz2kAQ"
+  }
+}

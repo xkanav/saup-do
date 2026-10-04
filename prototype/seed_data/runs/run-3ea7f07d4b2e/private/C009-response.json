@@ -1,0 +1,20 @@
+{
+  "call_id": "C009",
+  "provider": "Gnani STT",
+  "status_code": 200,
+  "elapsed_ms": 569,
+  "content_type": "application/json",
+  "response_body": {
+    "path": "private/C009-response.body",
+    "sha256": "db2efad0500c1be704e7ff3c270369623804699ea5bbfee9825b7ad969b6ab6a",
+    "bytes": 504
+  },
+  "json": {
+    "success": true,
+    "request_id": "01a10492-d820-76ce-9ba6-9c0214f75242",
+    "transcript": "आरव के लिए कौन सा पार्सल आ रहा है, क्या उसके पैसे पहले ही दिए जा चुके हैं, मैं किसी अनजान व्यक्ति को ओ टी पी नहीं बताना चाहती",
+    "model": "gnani-prisma-v2.5",
+    "processing_time": 0.3526484966278076,
+    "end_to_end_latency": 0.3540787696838379
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "name": "send_message",
+              "args": {
+                "case_id": "DEMO-CASE-001",
+                "rule_id": "R07",
+                "expected_state_version": 4,
+                "purpose": "update",
+                "reason": "Notify buyer about completed coordination and receiver availability",
+                "text": "Meera has confirmed she is available to receive the demo bedsheet parcel. Delivery will follow standard carrier verification.",
+                "recipient_id": "DEMO-BUYER-01",
+                "response_kind": "none"
+              },
+              "id": "call_2682592"
+            },
+            "thoughtSignature": "EmkKZwFpFH0TDInxFlDmNPHEPRvOLUzpJoYwm7MN1+4Hi6N8UwOZ6ZWzrM5CXtM6N0oX3J3/rA3s5+QZCiN54nt33SQ+YjRQ1+N19N7yQl4lPdcXGN0sHObd2nhiNki0wRn81CbZGa6ANxo="
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0,
+      "finishMessage": "Model generated function call(s)."
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 14195,
+    "candidatesTokenCount": 112,
+    "totalTokenCount": 14307,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 14195
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "Cq_Bau6DJYLCg8UP1qOf8AQ"
+}

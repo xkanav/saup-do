@@ -1,0 +1,66 @@
+{
+  "call_id": "C012",
+  "provider": "Gemini",
+  "status_code": 200,
+  "elapsed_ms": 2455,
+  "content_type": "application/json; charset=UTF-8",
+  "response_body": {
+    "path": "private/C012-response.body",
+    "sha256": "2c6fb2420bcd14a20880cf2050ff099ea42ae289bfaff94fbbd619222481d080",
+    "bytes": 2771
+  },
+  "json": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "name": "send_message",
+                "args": {
+                  "text": "Meera has declined to receive the demo parcel. Delegation coordination is now closed.",
+                  "recipient_id": "DEMO-BUYER-01",
+                  "response_kind": "none",
+                  "attempt_id": null,
+                  "case_id": "DEMO-CASE-001",
+                  "rule_id": "R07",
+                  "expected_state_version": 4,
+                  "reason": "Inform buyer that receiver declined the parcel.",
+                  "purpose": "update"
+                },
+                "id": "call_1881875"
+              },
+              "thoughtSignature": "EuYHCuMHAWkUfRMPgtNSvVvsZh2HG6de3eidu/1p0rkJ1yif67LsfIPIqoG3uxzmbe/lSmX2n2GFjNLfqaVG3iLBWBNoP4TIfV7ppkylB4miS9Ab+/ARpYPyJ0pQImBxP41GB6273dbXqV6MhgwVPb7iUbG9LEg0T/qlIELrvkvZTNio4QAdkJDxueIjN4pXDjlajoFmC2SSnbpr+jlUT5DROVU9nvhMlMgkLUYXA+FedPcDw2o2HSK3KubmqnuMsATFo9qlPCB42IaFe2mZy7shWAj3P7sm15FF1O4VicRPdZ97sRrKdu8W7LBrK6Z2GRfI5kKDGALOFWmrQFxCkNo/7xeKujxXvWN8xMnGzHkHi2/M183OtVd0pNwvYsyu9w2SP1/e+4u7ezdeVSrSp3DnxHrTV7HpVKHA5wCK/TVXbMh/xHSOfpa0UAziDN4W+WZhvG4NX8mzB5ymx60ufWLI6l8OnPYJh4JiB4f/AUh38mAcGDX+ZMjLViTd0AO3mzd0lqIOH3PdIEhRWM0eny9Lxktbu1eAyDHz9zeZHCnDmFf+IJ8pEtHCD5QnnDeiDFg5SG4YQqB9pMOYkB8FVoGr3MJPVEf8XvzCtQmu3dNN6k9YNDAcv5nrypmuHLAJXAxVaUJnwAS11HaskQ/7oibR+q7kL8kAtwgCafo8guT8IrC0c6IFGQMy/WSPqEVFQ8hjYFU3c6Td+SN9iSNvtV6OQtP3PJLBlAdAbQ+d0p/KTy2KhYkF+U112rpQXrbkZW84ycFdqOmt39aZ73MMwcJRXeqU5u8MCw7WlDc4yOdAfl4siBfod3qXuhLVVHHxSUz/A7jmpHVc3BGI37UO7nEKC2Bj1Mp1UspCzRMv6byWHSR4QhQBL3BD14EgpYqb3ZAOkPgsoQgU6WtdGnAW9YwsQl7VDFOlYGoh6XG5lRlJmv3ZfrdUIrVrbSBCFzU9wW7xFMMt0SYIZQyo9wrEwVrrhtdtZTw2evcn8UGeLbf+sr1VGCcwwwu82DNePtkSUYPykL10I8W1QW3Mub8ehKS/LdOfw3keBqz1zXQFmK3tFmt3xit3sucEYZBWekT/w6LrtCd5hZsyY8rNt30QoDmxYnJYTeImaBYBxBr/JPFuzhr3ZMjXvkpaLdg7yKBs0XwpDJHTz2u27fs1lbbE0IuMHaBqO8PzqIXJgagcdsvooJrAy1irnu5A5CxgN1ryfq107MgdNG82LyHDeWuw92bkpV/S+M1iNXqPyszrR7wZI2xIM5spexuU6ehwGByYC0JP9TD8TMIllhJwImwZymfuDgJgFqGco7oqq0R+h7uKzHGc72TMC6A="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "finishMessage": "Model generated function call(s)."
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 21543,
+      "candidatesTokenCount": 112,
+      "totalTokenCount": 21957,
+      "cachedContentTokenCount": 16233,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 21543
+        }
+      ],
+      "cacheTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 16233
+        }
+      ],
+      "thoughtsTokenCount": 302,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.8-flash",
+    "responseId": "7mrBaqD4OvSiqfkP1uq70AQ"
+  }
+}

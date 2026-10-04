@@ -1,0 +1,77 @@
+{
+  "call_id": "C002",
+  "provider": "Gemini",
+  "status_code": 200,
+  "elapsed_ms": 3929,
+  "content_type": "application/json; charset=UTF-8",
+  "response_body": {
+    "path": "private/C002-response.body",
+    "sha256": "d090a8c2775297c9493e2b2878b795009a49a2472a031afd915f6fff60646195",
+    "bytes": 6642
+  },
+  "json": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "name": "send_message",
+                "args": {
+                  "rule_id": "R07",
+                  "text": "नमस्ते मीरा जी, आरव ने एक बेडशीट पार्सल की डेमो जानकारी साझा की है। डिलीवरी कंपनी अपनी जांच खुद करेगी, क्या आप पार्सल की जानकारी में मदद चाहती हैं?",
+                  "recipient_id": "DEMO-RECEIVER-01",
+                  "reason": "Invite receiver Meera to coordinate parcel info with clear demo limitation.",
+                  "response_kind": "invitation",
+                  "case_id": "DEMO-CASE-001",
+                  "purpose": "invite",
+                  "expected_state_version": 1,
+                  "attempt_id": null
+                },
+                "id": "call_2017557"
+              },
+              "thoughtSignature": "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"
+            },
+            {
+              "functionCall": {
+                "name": "wait_for_event",
+                "args": {
+                  "timeout_seconds": 120,
+                  "reason": "Wait for receiver Meera to respond to the invitation or send input.",
+                  "event_types": [
+                    "invitation_responded",
+                    "receiver_audio_uploaded",
+                    "receiver_text_received",
+                    "buyer_revoked"
+                  ],
+                  "case_id": "DEMO-CASE-001",
+                  "rule_id": "R12"
+                },
+                "id": "call_2017558"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "finishMessage": "Model generated function call(s)."
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 4594,
+      "candidatesTokenCount": 240,
+      "totalTokenCount": 5527,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 4594
+        }
+      ],
+      "thoughtsTokenCount": 693,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.8-flash",
+    "responseId": "Q67BapvqEOe_g8UPzqHM6QQ"
+  }
+}

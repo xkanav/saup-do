@@ -1,0 +1,58 @@
+[
+  {
+    "id": "message-bea2fdf64727",
+    "run": "run-0ed8189fd1fd",
+    "recipient": "DEMO-RECEIVER-01",
+    "text": "नमस्ते मीरा जी, यह एक डेमो है। आरव की मंज़ूरी से क्या आप पार्सल में मदद लेना चाहती हैं?",
+    "purpose": "invite",
+    "response_kind": "invitation",
+    "created": "2026-10-03T20:50:12.582226+00:00",
+    "version": 1,
+    "answered": "Accept invitation",
+    "read_at": "2026-10-03T20:50:13.349808+00:00",
+    "source_event": "E-04acfaada7e8",
+    "trigger_seq": 2
+  },
+  {
+    "id": "message-cba81908e4d5",
+    "run": "run-0ed8189fd1fd",
+    "recipient": "DEMO-RECEIVER-01",
+    "text": "यह मायंट्रा से चादर का एक डेमो पार्सल है। डिलीवरी कंपनी अपनी जांच खुद करेगी, क्या आपका कोई सवाल है?",
+    "purpose": "explain",
+    "response_kind": "text",
+    "created": "2026-10-03T20:51:08.719948+00:00",
+    "version": 2,
+    "answered": null,
+    "read_at": "2026-10-03T20:51:09.750431+00:00",
+    "source_event": "E-5637896285ac",
+    "trigger_seq": 18
+  },
+  {
+    "id": "message-02db57ba887a",
+    "run": "run-0ed8189fd1fd",
+    "recipient": "DEMO-RECEIVER-01",
+    "text": "आपकी बात समझ आ गई है। SaunpDo की सहायता यहीं समाप्त की जाती है।",
+    "purpose": "update",
+    "response_kind": "none",
+    "created": "2026-10-03T20:51:56.077632+00:00",
+    "version": 4,
+    "answered": null,
+    "read_at": "2026-10-03T20:51:56.561080+00:00",
+    "source_event": "E-0e98f56bdfec",
+    "trigger_seq": 41
+  },
+  {
+    "id": "message-2cee487fc109",
+    "run": "run-0ed8189fd1fd",
+    "recipient": "DEMO-BUYER-01",
+    "text": "Meera has declined to receive the demo parcel. Delegation coordination is now closed.",
+    "purpose": "update",
+    "response_kind": "none",
+    "created": "2026-10-03T20:52:00.742405+00:00",
+    "version": 4,
+    "answered": null,
+    "read_at": "2026-10-04T01:39:32.485721+00:00",
+    "source_event": "E-3245d22508e3",
+    "trigger_seq": 41
+  }
+]

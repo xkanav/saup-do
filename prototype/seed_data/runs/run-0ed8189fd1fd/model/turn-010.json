@@ -1,0 +1,47 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "send_message",
+          "args": {
+            "reason": "Inform buyer of receiver refusal and case closure.",
+            "rule_id": "R07",
+            "purpose": "update",
+            "response_kind": "none",
+            "recipient_id": "DEMO-BUYER-01",
+            "text": "Meera has declined to receive the demo parcel. Delegation coordination is now closed.",
+            "expected_state_version": 4,
+            "case_id": "DEMO-CASE-001"
+          },
+          "id": "call_2615257"
+        },
+        "thoughtSignature": "EtwGCtkGAWkUfRPwMqa0/spq8VMIT0JWxME7oUsFOEoBIKsr4u2beTkA3H9FV/5QvtkNYnFZAwp5dGILJWtJkPiRg7O6eKTN0/GO4RTK5miXHx9L75mBQH31nMkKZDIc/np+GOt8oQOCY+4dvfM6TYt8HDWe7ACwBpOEgH61ikPOsox5VfG3+YdSWuyp56PzqTGxTvnEW3q3kgMbBVUM7TOPt7qZrsOAvfGnDvI53OPIwZ1UIgn+hfWMFrs+wQ/I9jN9sXywSENzbGNZh0Zrm+7F2/BDXAprG6azOh6UV1bEA6B+XFnDOBa1uEUhZ59MDYrbcl8CKArPIDApv1oL31k35AGlfKwtT7CClIqqGkTNcts9C7gcYik7+Ulzz+EBIwIhtmaL3GVl3uF3LTNmj4yMXtv9DkUzjdf9Ip2v9KE2njvwH5sHwxethlbJkVObsQmoRrg0+vhIsbnQ5Cz2gBJ7EXJ6IXuLKkVTsMIQu5D8btx89B6IiE2QqwZlGMGEMBe/e4iJoUhymHOlVWqU6SRe9tJnv4BnwQPn6/nhSZN7hxdtEF/tegdV8zVvj8oDgeXyDa1fgylemWg/qkeXogmOWyYvTDL8qgk777OEaXOjKvTDV2UQCPPvQ9roBPZUd9H+nNAcqmNMu/1u5cFqsUGmWaG2gIvpr5B5mWljVAgXtun3uESz23+3zjTY6I6nCitxxtyPs441nbIsXPefDoeMNLCQx1L3bihBlREQx7fUjoEExOQZZzw/DotZ2e6pAm3hmNL2tsbH/x5ZZVJW7gq/gBRPNjhyqQqMSn46svJuxR5+70jvjI9x6JwpEJjk7F7ShogfNUf+4dSGisUwEfmpO0cPkSgjS4Fzk4q+cNtkwmgoB/Svv7c0izVFXFnbj41Lxs4Mt5KRBiYaVyXbJDpwAfTTfyfFc40sCNA6GsM6Zi1J7YM9Gz4M5oA8BXRDOgVQvaY/LFOjDPYXtVB8/5OE8EXUVl3JwjXMca2j6MZVMAbJY8RsI6FX3fTneQLlRebIzpK29SWPTGkUvh1qP2XLSGecA6D0XVraAe9qYlW9HZ6HUCh9DpbpyekgNASioQv0Ea2Yr4RTZWGiaJGHDk3JcB+Cm/fSPNxjXRxatznjD9e9FgaXZZwWA/e1s3o="
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 21173,
+      "candidatesTokenCount": 107,
+      "totalTokenCount": 21484,
+      "cachedContentTokenCount": 16238,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 21173
+        }
+      ],
+      "cacheTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 16238
+        }
+      ],
+      "thoughtsTokenCount": 204,
+      "serviceTier": "standard"
+    }
+  }
+}

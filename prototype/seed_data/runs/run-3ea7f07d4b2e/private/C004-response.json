@@ -1,0 +1,52 @@
+{
+  "call_id": "C004",
+  "provider": "Gemini",
+  "status_code": 200,
+  "elapsed_ms": 1987,
+  "content_type": "application/json; charset=UTF-8",
+  "response_body": {
+    "path": "private/C004-response.body",
+    "sha256": "9c964b4392c4e3e24c644f858062e6c11177af967a93f1daff45feb2eee20745",
+    "bytes": 1090
+  },
+  "json": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "name": "get_parcel_context",
+                "args": {
+                  "reason": "Read current state after receiver accepted invitation",
+                  "rule_id": "R03",
+                  "case_id": "DEMO-CASE-001"
+                },
+                "id": "call_1966072"
+              },
+              "thoughtSignature": "EmkKZwFpFH0TQwVM0PNK0M3pU4zAPCkCAxf1MT7/mfjLSWRkgO7Qf8zWjj2lYOJiRoOMSvfvqDkmstnyZF0VtNkqRYNg7aS0nvtN+3jtsUiZJE7cO0WMjvQCi55LEb5hSqwSFmQ/HWyTAZs="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "finishMessage": "Model generated function call(s)."
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 4873,
+      "candidatesTokenCount": 49,
+      "totalTokenCount": 4922,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 4873
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.8-flash",
+    "responseId": "xq7BaqiGAZKzg8UP6sGw6AQ"
+  }
+}

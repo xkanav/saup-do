@@ -1,0 +1,53 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "name": "send_message",
+              "args": {
+                "expected_state_version": 4,
+                "attempt_id": null,
+                "response_kind": "none",
+                "purpose": "update",
+                "reason": "Notify buyer that Meera is available and carrier release support is unavailable",
+                "case_id": "DEMO-CASE-001",
+                "recipient_id": "DEMO-BUYER-01",
+                "text": "Meera is available to receive the bedsheet parcel. Delivery will proceed via standard carrier verification.",
+                "rule_id": "R07"
+              },
+              "id": "call_2053389"
+            },
+            "thoughtSignature": "EmkKZwFpFH0TgiyBFKG2owmbldmIO9pnqj8pWvEnSxGgt/29xwnl6X8uGDHTs6Ep7L48oVUliRlKEzrOo8JaK8wVFoZSkzv4fl+npbNsWlrGLGMKp9I1zpxjt8nYunW9wjG2ovpoScgv20U="
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0,
+      "finishMessage": "Model generated function call(s)."
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 14365,
+    "candidatesTokenCount": 120,
+    "totalTokenCount": 14485,
+    "cachedContentTokenCount": 4024,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 14365
+      }
+    ],
+    "cacheTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 4024
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "DK_Bas6IA9jVqfkPx8eSgAo"
+}

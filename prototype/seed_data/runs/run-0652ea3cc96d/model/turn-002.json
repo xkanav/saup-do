@@ -1,0 +1,58 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "send_message",
+          "args": {
+            "response_kind": "invitation",
+            "purpose": "invite",
+            "reason": "Invite Meera to participate in parcel coordination",
+            "case_id": "DEMO-CASE-001",
+            "rule_id": "R07",
+            "recipient_id": "DEMO-RECEIVER-01",
+            "expected_state_version": 1,
+            "text": "नमस्ते मीरा जी, आरव ने आपके लिए एक पार्सल की जानकारी साझा करने की मंज़ूरी दी है। यह एक डेमो है, क्या आप इस पार्सल की जानकारी में मदद चाहते हैं?",
+            "attempt_id": null
+          },
+          "id": "call_1983369"
+        },
+        "thoughtSignature": "EmkKZwFpFH0Td4ktdtPt7YnOJOI9RgyZOrO+iw6E9ynrmCSbgFjzW1QpUikjcWV+TTlhpKn/mK7GENLaI0i6ZgkPjxFTNmjiEJQjpfmg9D85Ynza/bouhhRjKfcxOuGyoHXI0SvMlytP/Kc="
+      },
+      {
+        "functionCall": {
+          "name": "wait_for_event",
+          "args": {
+            "timeout_seconds": 120,
+            "case_id": "DEMO-CASE-001",
+            "rule_id": "R12",
+            "reason": "Wait for receiver response to invitation or buyer revocation",
+            "event_types": [
+              "invitation_responded",
+              "receiver_audio_uploaded",
+              "receiver_text_received",
+              "buyer_revoked"
+            ]
+          },
+          "id": "call_1983370"
+        }
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 4149,
+      "candidatesTokenCount": 233,
+      "totalTokenCount": 4382,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 4149
+        }
+      ],
+      "serviceTier": "standard"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "send_message",
+          "args": {
+            "recipient_id": "DEMO-BUYER-01",
+            "case_id": "DEMO-CASE-001",
+            "rule_id": "R07",
+            "expected_state_version": 4,
+            "response_kind": "none",
+            "reason": "Notify buyer about receiver coordination and explanation in coordination_only mode",
+            "text": "Meera was informed about your prepaid bedsheet parcel and that SaunpDo does not ask for OTP. Direct carrier release integration is unavailable in this coordination mode.",
+            "purpose": "update"
+          },
+          "id": "call_3010018"
+        },
+        "thoughtSignature": "EmkKZwFpFH0T0DEPtgaMUegq8rws5tkutzR73RZ5E3xCvGlrvdbFKxDEshZiDqGEmB7vEXWK/PaQLYujRayCPPnX8qa0tePRB9XkeOQ9PCvY17g56WahiqYXn+T1Brx9CH7tav9eTFQ33wU="
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 10113,
+      "candidatesTokenCount": 127,
+      "totalTokenCount": 10240,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 10113
+        }
+      ],
+      "serviceTier": "standard"
+    }
+  }
+}

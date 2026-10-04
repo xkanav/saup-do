@@ -1,0 +1,39 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "send_message",
+          "args": {
+            "purpose": "explain",
+            "rule_id": "R06",
+            "case_id": "DEMO-CASE-001",
+            "text": "यह पार्सल प्रीपेड बेडशीट का है। डिलीवरी कंपनी अपनी प्रक्रिया से ही पार्सल देगी। क्या आप इसे लेने के लिए उपलब्ध हैं या कोई सवाल पूछना चाहती हैं?",
+            "expected_state_version": 2,
+            "reason": "Explain coordination mode limitations and ask if receiver has questions or is available",
+            "recipient_id": "DEMO-RECEIVER-01",
+            "response_kind": "availability"
+          },
+          "id": "call_2046401"
+        },
+        "thoughtSignature": "EmkKZwFpFH0Tz36X8xzyNN6Ey6Lt4/BqdmIHdQ+1SwePneWb6Q7tNHpl9v3cMug9yPbrtHiv2vsrSBf2mX8PjSvTquYK4sRrDo4rh5msgmIiUK0KRZ4N/wwAJXS84jfvj9MzzyN7v5Zf5XU="
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 6287,
+      "candidatesTokenCount": 132,
+      "totalTokenCount": 6419,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 6287
+        }
+      ],
+      "serviceTier": "standard"
+    }
+  }
+}

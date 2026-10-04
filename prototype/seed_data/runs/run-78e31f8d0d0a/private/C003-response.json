@@ -1,0 +1,59 @@
+{
+  "call_id": "C003",
+  "provider": "Gemini",
+  "status_code": 200,
+  "elapsed_ms": 1180,
+  "content_type": "application/json; charset=UTF-8",
+  "response_body": {
+    "path": "private/C003-response.body",
+    "sha256": "3d9e7fce9269bb63a874ff3574d727f88ccb5b5a1e9927c205dfd181405b5f59",
+    "bytes": 1343
+  },
+  "json": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "name": "wait_for_event",
+                "args": {
+                  "event_types": [
+                    "invitation_responded",
+                    "receiver_audio_uploaded",
+                    "receiver_text_received",
+                    "buyer_revoked"
+                  ],
+                  "reason": "Wait for receiver invitation response or direct input",
+                  "rule_id": "R12",
+                  "timeout_seconds": 120,
+                  "case_id": "DEMO-CASE-001"
+                },
+                "id": "call_1865213"
+              },
+              "thoughtSignature": "EmkKZwFpFH0TMDTVO/vwUaiqFxHymjH6Wcqw9WLLxPWP/BjZVwuit1RR7Dw7Gsy5KF8iTUMSxf5YDlS9JxdH2MyzgLklU5elDKWzlWyL7DIyCpzv2Cd+Jgz39d6OSIQ7zlTdMSTnQFleAuU="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "finishMessage": "Model generated function call(s)."
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 4419,
+      "candidatesTokenCount": 93,
+      "totalTokenCount": 4512,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 4419
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.8-flash",
+    "responseId": "Y7DBasLNL-e_g8UPzqHM6QQ"
+  }
+}

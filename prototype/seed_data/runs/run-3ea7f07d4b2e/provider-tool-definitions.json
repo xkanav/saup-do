@@ -1,0 +1,214 @@
+[
+  {
+    "name": "get_parcel_context",
+    "description": "Read the current case, enrolled people, sources and version.",
+    "parameters": {
+      "type": "OBJECT",
+      "required": [
+        "case_id",
+        "rule_id",
+        "reason"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "STRING"
+        },
+        "rule_id": {
+          "type": "STRING"
+        },
+        "reason": {
+          "type": "STRING"
+        }
+      }
+    }
+  },
+  {
+    "name": "transcribe_receiver_audio",
+    "description": "Send registered audio to real Gnani STT; preserve its exact response.",
+    "parameters": {
+      "type": "OBJECT",
+      "required": [
+        "case_id",
+        "rule_id",
+        "reason",
+        "audio_id"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "STRING"
+        },
+        "rule_id": {
+          "type": "STRING"
+        },
+        "reason": {
+          "type": "STRING"
+        },
+        "audio_id": {
+          "type": "STRING"
+        }
+      }
+    }
+  },
+  {
+    "name": "send_message",
+    "description": "Store exact text in an enrolled participant's app inbox; optionally request a human response.",
+    "parameters": {
+      "type": "OBJECT",
+      "required": [
+        "case_id",
+        "rule_id",
+        "reason",
+        "expected_state_version",
+        "recipient_id",
+        "text",
+        "purpose",
+        "response_kind",
+        "attempt_id"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "STRING"
+        },
+        "rule_id": {
+          "type": "STRING"
+        },
+        "reason": {
+          "type": "STRING"
+        },
+        "expected_state_version": {
+          "type": "INTEGER",
+          "minimum": 0
+        },
+        "recipient_id": {
+          "type": "STRING"
+        },
+        "text": {
+          "type": "STRING"
+        },
+        "purpose": {
+          "type": "STRING",
+          "enum": [
+            "invite",
+            "clarify",
+            "explain",
+            "update"
+          ]
+        },
+        "response_kind": {
+          "type": "STRING",
+          "enum": [
+            "none",
+            "text",
+            "invitation",
+            "availability",
+            "doorstep",
+            "receipt_ack"
+          ]
+        },
+        "attempt_id": {
+          "type": "STRING",
+          "nullable": true
+        }
+      }
+    }
+  },
+  {
+    "name": "wait_for_event",
+    "description": "Suspend for actual external input or an actual clock timeout.",
+    "parameters": {
+      "type": "OBJECT",
+      "required": [
+        "case_id",
+        "rule_id",
+        "reason",
+        "event_types",
+        "timeout_seconds"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "STRING"
+        },
+        "rule_id": {
+          "type": "STRING"
+        },
+        "reason": {
+          "type": "STRING"
+        },
+        "event_types": {
+          "type": "ARRAY",
+          "items": {
+            "type": "STRING",
+            "enum": [
+              "buyer_granted",
+              "buyer_revoked",
+              "invitation_responded",
+              "availability_changed",
+              "receiver_audio_uploaded",
+              "receiver_text_received",
+              "doorstep_choice",
+              "attempt_started",
+              "carrier_decision",
+              "carrier_consumed",
+              "handover_observed",
+              "receiver_acknowledged"
+            ]
+          }
+        },
+        "timeout_seconds": {
+          "type": "INTEGER",
+          "minimum": 5,
+          "maximum": 300
+        }
+      }
+    }
+  },
+  {
+    "name": "close_case",
+    "description": "Close only with supported outcome, evidence and notifications.",
+    "parameters": {
+      "type": "OBJECT",
+      "required": [
+        "case_id",
+        "rule_id",
+        "reason",
+        "expected_state_version",
+        "outcome",
+        "reason_code",
+        "evidence_refs"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "STRING"
+        },
+        "rule_id": {
+          "type": "STRING"
+        },
+        "reason": {
+          "type": "STRING"
+        },
+        "expected_state_version": {
+          "type": "INTEGER",
+          "minimum": 0
+        },
+        "outcome": {
+          "type": "STRING",
+          "enum": [
+            "unresolved",
+            "declined",
+            "cancelled",
+            "completed_simulated"
+          ]
+        },
+        "reason_code": {
+          "type": "STRING"
+        },
+        "evidence_refs": {
+          "type": "ARRAY",
+          "items": {
+            "type": "STRING"
+          }
+        }
+      }
+    }
+  }
+]

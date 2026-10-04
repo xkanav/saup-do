@@ -1,0 +1,59 @@
+{
+  "call_id": "C006",
+  "provider": "Gemini",
+  "status_code": 200,
+  "elapsed_ms": 3054,
+  "content_type": "application/json; charset=UTF-8",
+  "response_body": {
+    "path": "private/C006-response.body",
+    "sha256": "813759532c13d26bfdb120e132c1d878a13d34fb2e1255b09df0971645e879cd",
+    "bytes": 3283
+  },
+  "json": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "name": "send_message",
+                "args": {
+                  "case_id": "DEMO-CASE-001",
+                  "reason": "Notify receiver Meera that the invitation has timed out.",
+                  "text": "निमंत्रण का समय समाप्त हो गया है। डिलीवरी कंपनी अपनी सामान्य प्रक्रिया जारी रखेगी।",
+                  "expected_state_version": 1,
+                  "recipient_id": "DEMO-RECEIVER-01",
+                  "response_kind": "none",
+                  "purpose": "update",
+                  "rule_id": "R07",
+                  "attempt_id": null
+                },
+                "id": "call_2264104"
+              },
+              "thoughtSignature": "EuYKCuMKAWkUfRMLzDdGao1OW7VWRv7v7qJks2fN7H4//XQOCh5BbwgunVoQxKyiLpt2/g9H9nDSc97kg2bZbqLknVfgVOLDIFuyjK4qAds5wytVCwv9Qy1d+Ligio2BDnn1+jcIPZJptoB/e5oftrccsGMvY2VfxVR2KJ1PwD58yjW0t1l9cKC3/pHSbhurLRbmQ0Lc6Ymyc+G+lZ0ehnmvnAU8Uk+Z/f/4tqJ24GEqVafWxv32qBojQOtM9gpcplEeIzmEonYnWR4Ufsj8u0QRQbH609OtaBde8ouwK5D+u+TotW/+0fb5dyvg6FHgHoH/zvIEonTqm5+IF3FokVCtDMAGbhN/0GSrEIhNUDFSh8liSwLmj/gEfRmuwCZqWCxFYs5/Vqpk4ITeIRsEi7JrcmXgdldhowr9GV1sY58/F8Tf+8zR2OMQ68r74et59Bhao2WbSM0f5PLJ2ngaOo+apQuAJ3EMVJUqS1hVH1QS/oYPwUmbzdrH/DLPSRwTfU3ZWr6Riep9Hnw9OfLSfAw6+Vcv1ioChNnthSGTw0X2JDstUAjX3FlL0icIRC8qfaL57fGgUa/yRen8EjNzzTk8SnQXh4jaX9luDbhCy7htCgMfH5JrHRsyvVp/nVfwoYgY+jE5/ECS36Pz15yLSM+STdJmlIlAQCeceH7Q/ipxh2xiUatryxEgF7SIPzsPT2ptXrRv8wXK9clv5oimmek2LXGeFnKdLJGSk7P+wuO5i3L1EI8T06ftSwFMT+RmxlTIT98e5Ba4y2GvLUUPNXoMYjR2OGGC/C0NXkPb2jQeJO0xIB465c6OvNz7B+a6O936wu+b1LrRzoKF2J3QgrHshvDo9SxuQgeTrIrAy8oWPTuj0nQh1OumCHzNF+w+Vy/58Q/5xf7JUIKGp8zGCejz33djlJEqcboQmUmQboBoZesfDzF4U/J/nWuwDFCmllHTiME/+ygGWgnv/40fBkd328pc1o3rwTWks84HRAjwgDhI95Rt7RaSdVDnaIOJaeGTrhcjl/63yqp5Z6Fn9OUx0TMQRnVjHIYC1sUzVIJxgZjT8W1CY1AKg0assGSDvvntEcOGMNK9Urg3kvQmm0XxKYPPmsr8WKIPoV+xD8bJHjJ/tnMnIpz8HujPJkC3bWmblLVqxMy/SHcx4NgdCSU1dU09+wjJiGhgilAnsRC3S3l3Xo2w1Zc6RiluYkHL68Oo0V8UUzf2uL1/Z+6x5vd8zrXqpyIFJWhretJ7YPqBBzTzZrBDsgaXAHXeSJBD6Oi8/1L14sDi5OXV+7gfqrLvyCeKr0tT2ImMjljdYJp1Niqoc5BgRa772B0n0dj2gQii6iZPCJUSiP9dVPxGCZ5Wx6F8DV62sXapdLXGjAUWvYhNfP/kMeW/4HaalGrehqW1B5nmRM2SapElS7rYpFgQPNlADYMHtSQ3QiDyJSNaGyI7ZeE4nMpl/me3gxe+eebcejiB9puzUR6M4W5Sok+L563jMWrO4/5EgKn61qbB0CyH/+q/mxob2Tow1gyZEqyxAtLrWRseiZ6rxHrZmEs4DomLoQy8IZ5MboXnoJXSRLgxvGB9YUYEPVl/YmLDLlXNm7dzLWNEk1z3ANCS5PFBlvZhNPwZ5MTvTzKQgD/MGnDc8Lt+n+B94GffbvUKQIpkZS5frF6UTEBtgu+LWYAB1dbx5so+moFxz3p/HYe0gxg8VaBy/dQG3Z067YqKW/W8BdChKGs1OQv/A99zVtg0Q0fqOngnspX3neRBWH4BjNhVI8uX70t+riZ9HrKpQnm/wZ0yr+R+vLlUk/6I3IlAZGaa1Odw6d9/3LJSwek0z4nVGor98GQ="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "finishMessage": "Model generated function call(s)."
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 9714,
+      "candidatesTokenCount": 118,
+      "totalTokenCount": 10316,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 9714
+        }
+      ],
+      "thoughtsTokenCount": 484,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.8-flash",
+    "responseId": "DEPBatqjCqO1g8UPk4bkuQo"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "name": "send_message",
+              "args": {
+                "recipient_id": "DEMO-RECEIVER-01",
+                "response_kind": "none",
+                "text": "धन्यवाद। डिलीवरी कंपनी पार्सल देते समय अपने सामान्य नियमों के अनुसार सत्यापन करेगी।",
+                "case_id": "DEMO-CASE-001",
+                "rule_id": "R06",
+                "purpose": "update",
+                "reason": "Notify receiver that coordination is complete and reminder about carrier verification",
+                "expected_state_version": 4
+              },
+              "id": "call_2088453"
+            },
+            "thoughtSignature": "EmkKZwFpFH0Tm1ovYWrT5iNJ+ybo8Rq/RJOxfhQz4AT9RGH1VKWMXZOIxLpjyDb016ok2Uzt3qlMdvFQV3l/3jZ5vR9QKDgOtp/p0eLuTMdKFdM0sZ09ZK36BNacKHqsRgBVkc69af9a1H0="
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0,
+      "finishMessage": "Model generated function call(s)."
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 13609,
+    "candidatesTokenCount": 111,
+    "totalTokenCount": 13720,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 13609
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "Ba_BavGjHp-6g8UPoOLC2QQ"
+}

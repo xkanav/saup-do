@@ -1,0 +1,53 @@
+{
+  "call_id": "C007",
+  "provider": "Gemini",
+  "status_code": 200,
+  "elapsed_ms": 1978,
+  "content_type": "application/json; charset=UTF-8",
+  "response_body": {
+    "path": "private/C007-response.body",
+    "sha256": "6cffd0f7db18821489ecacac56941f87072d552b67db7cd618258e4378ee98ef",
+    "bytes": 1143
+  },
+  "json": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "name": "transcribe_receiver_audio",
+                "args": {
+                  "case_id": "DEMO-CASE-001",
+                  "rule_id": "R02",
+                  "reason": "Transcribe audio message from receiver Meera",
+                  "audio_id": "sample-19a2acf29199db0c"
+                },
+                "id": "call_1880839"
+              },
+              "thoughtSignature": "EmkKZwFpFH0TyIz8jgb3nQkd5hsmGsq/shmDjUGR8A8APga29/ipTdAg4LJCzV5TR7dI6UxYTGRk03EVV1ULkwW70kXkySs+H65e/edmH7vSA7L2VIBq85ydIxWLOaUCMd+sTwfHCT5XSA4="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "finishMessage": "Model generated function call(s)."
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 7109,
+      "candidatesTokenCount": 73,
+      "totalTokenCount": 7182,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 7109
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.8-flash",
+    "responseId": "arDBavujCsPFg8UPwtCToQo"
+  }
+}

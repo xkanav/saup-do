@@ -1,0 +1,59 @@
+{
+  "call_id": "C009",
+  "provider": "Gemini",
+  "status_code": 200,
+  "elapsed_ms": 1933,
+  "content_type": "application/json; charset=UTF-8",
+  "response_body": {
+    "path": "private/C009-response.body",
+    "sha256": "4ec194aa3a9eb964c079fe469ef971f5377636d018db9da645d95884bcdfb734",
+    "bytes": 1255
+  },
+  "json": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "name": "get_parcel_context",
+                "args": {
+                  "reason": "Fetch state to confirm version and facts before answering receiver question",
+                  "case_id": "DEMO-CASE-001",
+                  "rule_id": "R03"
+                },
+                "id": "call_2551544"
+              },
+              "thoughtSignature": "EmkKZwFpFH0TGO8x/TlUS6YJBUVJVQ/tU7ZWD+Te+AtMPA7b9EY2iRhV4Qa0Z9B5HqSbsGpsX7lXRhQqAxWI+w7F6ww4IpxRWZkofmsiCkOBpKLGlS7dk1lds8JbkOvg3oWjohxCkB0lyyI="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "finishMessage": "Model generated function call(s)."
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 7745,
+      "candidatesTokenCount": 53,
+      "totalTokenCount": 7798,
+      "cachedContentTokenCount": 4016,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 7745
+        }
+      ],
+      "cacheTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 4016
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.8-flash",
+    "responseId": "bbDBaq6uC5jnqfkP79nm-QQ"
+  }
+}

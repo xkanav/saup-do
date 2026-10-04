@@ -1,0 +1,20 @@
+{
+  "call_id": "C008",
+  "provider": "Gnani STT",
+  "status_code": 200,
+  "elapsed_ms": 749,
+  "content_type": "application/json",
+  "response_body": {
+    "path": "private/C008-response.body",
+    "sha256": "027d980bfcfaf08fc7fc0f7a40fef94c912ed456027ec63687f3adb9ebf7c5b0",
+    "bytes": 345
+  },
+  "json": {
+    "success": true,
+    "request_id": "01a10389-8f9e-70fb-916e-8ab0938b50c9",
+    "transcript": "मैंने पहले ही कहा था लेकिन अब मैं यह पार्सल नहीं लेना चाहती।",
+    "model": "gnani-prisma-v2.5",
+    "processing_time": 0.3083341121673584,
+    "end_to_end_latency": 0.3098330497741699
+  }
+}

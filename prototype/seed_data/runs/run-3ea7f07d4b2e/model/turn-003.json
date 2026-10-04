@@ -1,0 +1,41 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "wait_for_event",
+          "args": {
+            "rule_id": "R12",
+            "event_types": [
+              "invitation_responded",
+              "receiver_text_received",
+              "receiver_audio_uploaded",
+              "buyer_revoked"
+            ],
+            "timeout_seconds": 120,
+            "case_id": "DEMO-CASE-001",
+            "reason": "Wait for receiver response to invitation or buyer change"
+          },
+          "id": "call_2755764"
+        },
+        "thoughtSignature": "EmkKZwFpFH0Ttbt9U7IRsCsIlUfY9ryI9SyCEamTyOxJBs8K3MaLaN23A38qwM/ETAuqoCXxmxO/jUbroNzpGHuioTWsxB4P+Cip619sNAMvo1d0jafUJvgpxywlhsI7lxzY74IWl0QhtGQ="
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 4425,
+      "candidatesTokenCount": 94,
+      "totalTokenCount": 4519,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 4425
+        }
+      ],
+      "serviceTier": "standard"
+    }
+  }
+}

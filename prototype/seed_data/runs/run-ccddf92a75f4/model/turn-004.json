@@ -1,0 +1,41 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "send_message",
+          "args": {
+            "rule_id": "R07",
+            "recipient_id": "DEMO-BUYER-01",
+            "expected_state_version": 1,
+            "attempt_id": null,
+            "reason": "Notify buyer Aarav that receiver did not respond within timeout.",
+            "response_kind": "none",
+            "text": "Meera did not respond to the invitation within the allowed time. This coordination case is now closed as unresolved.",
+            "purpose": "update",
+            "case_id": "DEMO-CASE-001"
+          },
+          "id": "call_1706868"
+        },
+        "thoughtSignature": "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"
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 8185,
+      "candidatesTokenCount": 122,
+      "totalTokenCount": 9207,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 8185
+        }
+      ],
+      "thoughtsTokenCount": 900,
+      "serviceTier": "standard"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "call_id": "C004",
+  "provider": "Gemini",
+  "status_code": 200,
+  "elapsed_ms": 1574,
+  "content_type": "application/json; charset=UTF-8",
+  "response_body": {
+    "path": "private/C004-response.body",
+    "sha256": "4419c95215cbcbd801472791d72d317734b21e8683480804accf746320b9416c",
+    "bytes": 2332
+  },
+  "json": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "name": "send_message",
+                "args": {
+                  "case_id": "DEMO-CASE-001",
+                  "response_kind": "text",
+                  "text": "यह मिंत्रा से एक बेडशीट का डेमो पार्सल है जो पहले से प्रीपेड है। डिलीवरी कंपनी अपनी प्रक्रिया से जांच करेगी। क्या आप इस पार्सल के बारे में कुछ पूछना चाहती हैं?",
+                  "expected_state_version": 2,
+                  "rule_id": "R06",
+                  "purpose": "explain",
+                  "recipient_id": "DEMO-RECEIVER-01",
+                  "reason": "Explain parcel details and limitations in coordination_only mode and ask for questions"
+                },
+                "id": "call_1696538"
+              },
+              "thoughtSignature": "EmkKZwFpFH0TVry2Gjj4K67AW1tOBfGmaKRjZ7UWR6BAuPZQ3MPQ8VrXgOw5/mbVWCJ/r5COmezXaXYqtZDm7M3Nbr6WS+TCvGxtiA+OjhorH5KEUemjhIujCO3GgpSi9Mh6hgXAV7TnVjo="
+            },
+            {
+              "functionCall": {
+                "name": "wait_for_event",
+                "args": {
+                  "rule_id": "R12",
+                  "reason": "Wait for receiver question or availability update",
+                  "event_types": [
+                    "receiver_audio_uploaded",
+                    "receiver_text_received",
+                    "availability_changed",
+                    "buyer_revoked"
+                  ],
+                  "case_id": "DEMO-CASE-001",
+                  "timeout_seconds": 120
+                },
+                "id": "call_1696539"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "finishMessage": "Model generated function call(s)."
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 6249,
+      "candidatesTokenCount": 229,
+      "totalTokenCount": 6478,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 6249
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.8-flash",
+    "responseId": "rq_Bat-2HqHOjuMP_IusQQ"
+  }
+}

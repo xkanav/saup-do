@@ -1,0 +1,40 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "name": "get_parcel_context",
+              "args": {
+                "reason": "Read parcel context and enrolled participants following buyer grant",
+                "rule_id": "R03",
+                "case_id": "DEMO-CASE-001"
+              },
+              "id": "call_1767335"
+            },
+            "thoughtSignature": "EmkKZwFpFH0TlxsTemFgU+88f2Z3W0Qi6pfuI0LVmwCe1IwvVg4fjoItAcAG+5rM26OajpWD7kpoFdZcziFTVxGAM9bxTGbkD0tsjcgniJhnRzy+B+x6RTUdMknxC+pc+HR143yK8kmDAR8="
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0,
+      "finishMessage": "Model generated function call(s)."
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 3258,
+    "candidatesTokenCount": 51,
+    "totalTokenCount": 3309,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 3258
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "_q_BasmpJLjnqfkPlpmvqQc"
+}

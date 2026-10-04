@@ -1,0 +1,52 @@
+{
+  "call_id": "C005",
+  "provider": "Gemini",
+  "status_code": 200,
+  "elapsed_ms": 1834,
+  "content_type": "application/json; charset=UTF-8",
+  "response_body": {
+    "path": "private/C005-response.body",
+    "sha256": "b4c95d16071d0b4ee10356d8bc5642210dd9ff1d9527da0cdfdb8f015dab6848",
+    "bytes": 1080
+  },
+  "json": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "name": "get_parcel_context",
+                "args": {
+                  "reason": "Check current parcel context and parameters",
+                  "case_id": "DEMO-CASE-001",
+                  "rule_id": "R03"
+                },
+                "id": "call_2592161"
+              },
+              "thoughtSignature": "EmkKZwFpFH0TUV6AWiA+yvbyRgcH90TcIYFA0F0nB2OrglalpHqqEoRu1kbEkc8MW5+K7h/6GwDOnVV/LCxLT0K59uQoHXZUMVYCeKKcpl31/K1niT3nWn8XPFD6J+TFEi79yFVj8RtEGG4="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "finishMessage": "Model generated function call(s)."
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 6885,
+      "candidatesTokenCount": 48,
+      "totalTokenCount": 6933,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 6885
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.8-flash",
+    "responseId": "f7DBavCdMpazg8UPn-K-mQo"
+  }
+}

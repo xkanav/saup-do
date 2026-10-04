@@ -1,0 +1,40 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "name": "get_parcel_context",
+              "args": {
+                "rule_id": "R03",
+                "reason": "Read parcel context and enrolled participants before taking action.",
+                "case_id": "DEMO-CASE-001"
+              },
+              "id": "call_3043634"
+            },
+            "thoughtSignature": "EmkKZwFpFH0TuM2I14Pjg5NWeE0rD3c4D+ZclirBlGPCk9SPHDTWuvW03h1FF2kBAoli8LjRgGFTIALL7Mavj6WVi5Cr2UNn4hDJ50/wZkXjEHJoBxqD1TZhjuLb3RJQx5tEwMyOk5/I8ys="
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0,
+      "finishMessage": "Model generated function call(s)."
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 3252,
+    "candidatesTokenCount": 52,
+    "totalTokenCount": 3304,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 3252
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "dLDBarqDL5W-g8UP_rmq0QQ"
+}

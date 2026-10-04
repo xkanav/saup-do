@@ -1,0 +1,59 @@
+{
+  "call_id": "C011",
+  "provider": "Gemini",
+  "status_code": 200,
+  "elapsed_ms": 2209,
+  "content_type": "application/json; charset=UTF-8",
+  "response_body": {
+    "path": "private/C011-response.body",
+    "sha256": "8b5f1c60ee61b42da34c1922b0d4c4968c9fcc7de9b157d1e11e6122287bab4b",
+    "bytes": 2751
+  },
+  "json": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "name": "send_message",
+                "args": {
+                  "attempt_id": null,
+                  "text": "यह मिंत्रा से ₹900 की बेडशीट का डेमो पार्सल है और इसका भुगतान पहले ही हो चुका है। डिलीवरी कंपनी अपनी सामान्य प्रक्रिया से ही पार्सल देगी, आपको कोई ओटीपी या पैसे नहीं देने हैं।",
+                  "expected_state_version": 3,
+                  "recipient_id": "DEMO-RECEIVER-01",
+                  "rule_id": "R07",
+                  "case_id": "DEMO-CASE-001",
+                  "response_kind": "none",
+                  "purpose": "explain",
+                  "reason": "Answer receiver questions regarding parcel details, prepaid status, and OTP verification"
+                },
+                "id": "call_1937880"
+              },
+              "thoughtSignature": "EpAGCo0GAWkUfRMT+WG5AhPAbph6nz8Mny9Fdx5JBWCoQVK08WUc2htnOg9FaVb3rTYaTnnczbMTczuDwEvXqCIKsEKTgCZVAnHipfhbQ212WhiZnguWXvYB+DIzB4pujrB4o+FiW7oEQfh5VPZL34DxbFzVdBX+hAhMd7jUpciErWJQNZXjLgFDLJ3Xexf9DGdYmURD81Lw5eMy4QR2v5DH6zAuDdQPmkRKv5zJcU67fAx9n+I3J2+592AYtV7UfkZpTrNT+Up8vHLrxkE0QwixfkPXt44ZPCRbDr0fuayIPWxH210+UihAWw57PI120LGVsb68KEwrG/mer8hOdNwMhz0g2pSMkcZ99PcvweowARCNN2InBLz/Tm1h/c+cxgLUD3HmDwFudMxAPDtGOwe/zJJOAb34Q4bcKgbUfTdy37dRqeQiKo267Ja4YvLnzRYQSZJ//Gw2pDNPZtreYey91ETZZd0vL/RqOvdxTcBZ/iWzBAWyZpW6n7RIeVF+AJrHymq6oBRQ0cfuEAMaf8/qDRS/IglWsVyHraJqOBkkouv9c+PJrlT+8BuUn+j7XJFVkYmeNd//aOso70WoZULqYrvvA2BEzXZWKdsvMbTlOMI0AEMiK1ho+894KpwJ739Ax65Y2V+9UvuEvfDT9nml1QYoOQqsVlJUBcOyFvUszmqnIjUXkXRtJ79G2pcRNrxOhTvViMoKu2JpFFEmc/s/YIdXPD087+IzJT9vdJgQz0drsYt/0IoQHWIxXCf6cIQ8AF9I0iTW/3xNjw+AfMenox5pTgtNoTZhg5sXWM1LLfNL5zL3p/Eyc3xhVy2WWTPuV/E01+9ksI59yO4760BKn9/jJfF6x+LAukD8wUVRimV5MKx8tbtOBJMGYZT2W896FyNdM+Y4iZxsV839UO/SxYLs9ZeGawH68khidbFWxAo4SjpldRtioQXHVspRjVfxcGwR0oNzp0C6CZEm9dmIHHicp/YGDE2LZvwk40aWB3giCjd03Vjukl9UvumeBubTYDeN8R7XXVV4Rok5UCHi7w=="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "finishMessage": "Model generated function call(s)."
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 17021,
+      "candidatesTokenCount": 150,
+      "totalTokenCount": 17388,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 17021
+        }
+      ],
+      "thoughtsTokenCount": 217,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.8-flash",
+    "responseId": "lWjBasHfIsSbjuMP4dHg0Qk"
+  }
+}

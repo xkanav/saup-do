@@ -1,0 +1,34 @@
+{
+  "content": {
+    "parts": [
+      {
+        "functionCall": {
+          "name": "get_parcel_context",
+          "args": {
+            "rule_id": "R03",
+            "reason": "Check current facts after invitation acceptance",
+            "case_id": "DEMO-CASE-001"
+          },
+          "id": "call_1628253"
+        },
+        "thoughtSignature": "EmkKZwFpFH0Tuc8aJBSlzXMJh/G44WH5RP5o2j7cJ60Y3/1YMgp0EtpoXqE9SbNXLHprD0wN6u33h4hPWApPyfU9b/cY3OLDsmYHxCa3WSX/oSrKSPGghVlIHvNnVj/fVkABvRlAP4WqvVs="
+      }
+    ],
+    "role": "model"
+  },
+  "metadata": {
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 4871,
+      "candidatesTokenCount": 48,
+      "totalTokenCount": 4919,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 4871
+        }
+      ],
+      "serviceTier": "standard"
+    }
+  }
+}

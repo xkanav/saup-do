@@ -1,0 +1,48 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "functionCall": {
+              "name": "get_parcel_context",
+              "args": {
+                "reason": "Refresh parcel context after audio transcription.",
+                "case_id": "DEMO-CASE-001",
+                "rule_id": "R03"
+              },
+              "id": "call_1761768"
+            },
+            "thoughtSignature": "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"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0,
+      "finishMessage": "Model generated function call(s)."
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 17608,
+    "candidatesTokenCount": 49,
+    "totalTokenCount": 18081,
+    "cachedContentTokenCount": 12170,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 17608
+      }
+    ],
+    "cacheTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 12170
+      }
+    ],
+    "thoughtsTokenCount": 424,
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.8-flash",
+  "responseId": "5mrBapLmENijqfkP6N_DwAk"
+}
