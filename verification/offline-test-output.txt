@@ -1,0 +1,38 @@
+test_availability_form_dismisses_existing_model_buttons (test_app.AppTests.test_availability_form_dismisses_existing_model_buttons) ... ok
+test_availability_form_requires_invitation_and_active_grant (test_app.AppTests.test_availability_form_requires_invitation_and_active_grant) ... ok
+test_closure_requires_notifications_and_known_evidence (test_app.AppTests.test_closure_requires_notifications_and_known_evidence) ... ok
+test_delivery_completion_disabled (test_app.AppTests.test_delivery_completion_disabled) ... ok
+test_duplicate_human_action_does_not_create_two_grants (test_app.AppTests.test_duplicate_human_action_does_not_create_two_grants) ... ok
+test_duplicate_message_is_stored_once (test_app.AppTests.test_duplicate_message_is_stored_once) ... ok
+test_expiry_prevents_acceptance (test_app.AppTests.test_expiry_prevents_acceptance) ... ok
+test_extra_tool_argument_and_bool_version_rejected (test_app.AppTests.test_extra_tool_argument_and_bool_version_rejected) ... ok
+test_failed_tool_prevents_dependent_wait_in_same_batch (test_app.AppTests.test_failed_tool_prevents_dependent_wait_in_same_batch) ... ok
+test_failed_transcription_is_not_retried (test_app.AppTests.test_failed_transcription_is_not_retried) ... ok
+test_grant_requires_buyer_and_explicit_confirmation (test_app.AppTests.test_grant_requires_buyer_and_explicit_confirmation) ... ok
+test_human_can_offer_availability_and_later_withdraw (test_app.AppTests.test_human_can_offer_availability_and_later_withdraw) ... ok
+test_model_cannot_use_a_consent_write_tool (test_app.AppTests.test_model_cannot_use_a_consent_write_tool) ... ok
+test_new_input_during_model_call_yields_to_event_queue (test_app.AppTests.test_new_input_during_model_call_yields_to_event_queue) ... ok
+test_new_input_prevents_racing_closure (test_app.AppTests.test_new_input_prevents_racing_closure) ... ok
+test_optional_null_attempt_id_is_not_required_in_coordination_mode (test_app.AppTests.test_optional_null_attempt_id_is_not_required_in_coordination_mode) ... ok
+test_real_elapsed_timer_generates_one_event (test_app.AppTests.test_real_elapsed_timer_generates_one_event) ... ok
+test_receiver_can_withdraw_after_availability (test_app.AppTests.test_receiver_can_withdraw_after_availability) ... ok
+test_receiver_cannot_accept_unrequested_invitation (test_app.AppTests.test_receiver_cannot_accept_unrequested_invitation) ... ok
+test_recipient_and_doorstep_controls_guarded (test_app.AppTests.test_recipient_and_doorstep_controls_guarded) ... ok
+test_restart_halts_uncertain_inflight_call (test_app.AppTests.test_restart_halts_uncertain_inflight_call) ... ok
+test_reused_id_with_different_payload_rejected (test_app.AppTests.test_reused_id_with_different_payload_rejected) ... ok
+test_revoke_invalidates_previous_invitation_controls (test_app.AppTests.test_revoke_invalidates_previous_invitation_controls) ... ok
+test_stale_agent_message_rejected (test_app.AppTests.test_stale_agent_message_rejected) ... ok
+test_stale_human_action_does_not_overwrite_new_grant (test_app.AppTests.test_stale_human_action_does_not_overwrite_new_grant) ... ok
+test_stt_not_called_for_unsubmitted_audio (test_app.AppTests.test_stt_not_called_for_unsubmitted_audio) ... ok
+test_transcription_is_cached_and_not_consent (test_app.AppTests.test_transcription_is_cached_and_not_consent) ... ok
+test_wait_cannot_lose_preexisting_input (test_app.AppTests.test_wait_cannot_lose_preexisting_input) ... ok
+test_http_artifacts_cannot_escape_run_directory (test_http.HttpTests.test_http_artifacts_cannot_escape_run_directory) ... ok
+test_http_blocks_foreign_host_and_origin (test_http.HttpTests.test_http_blocks_foreign_host_and_origin) ... ok
+test_http_export_preserves_sources_and_omits_secrets (test_http.HttpTests.test_http_export_preserves_sources_and_omits_secrets) ... ok
+test_http_requires_role_and_rejects_role_escalation (test_http.HttpTests.test_http_requires_role_and_rejects_role_escalation) ... ok
+test_http_state_survives_another_read_without_fabricating_actions (test_http.HttpTests.test_http_state_survives_another_read_without_fabricating_actions) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 2.727s
+
+OK

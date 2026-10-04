@@ -1,0 +1,28 @@
+{
+  "run_id": "run-44a85da4814c",
+  "scenario": "refusal",
+  "driver": "Local app HTTP integration test",
+  "inputs": "Fixed practice grant, invitation acceptance, the selected original recording and availability (before a refusal, or if asked). No model decisions supplied.",
+  "status": "closed",
+  "outcome": "declined",
+  "model_calls": 10,
+  "failure": null,
+  "messages": [
+    {
+      "to": "DEMO-RECEIVER-01",
+      "text": "नमस्ते मीरा जी, यह एक डेमो पार्सल की जानकारी है। आरव ने एक चादर का पार्सल आपके नाम से जोड़ने की मंज़ूरी दी है। क्या आप इस पार्सल की जानकारी में मदद चाहती हैं?"
+    },
+    {
+      "to": "DEMO-RECEIVER-01",
+      "text": "यह मिंत्रा से एक चादर का डेमो पार्सल है, जिसका भुगतान पहले ही हो चुका है। डिलीवरी कंपनी अपनी प्रक्रिया से ही पार्सल देगी। क्या आप इस पार्सल के बारे में कुछ पूछना चाहती हैं?"
+    },
+    {
+      "to": "DEMO-RECEIVER-01",
+      "text": "आपकी बात समझ आ गई है। आप यह पार्सल नहीं लेना चाहती हैं, इसलिए हमने यह प्रक्रिया रोक दी है।"
+    },
+    {
+      "to": "DEMO-BUYER-01",
+      "text": "मीरा जी ने यह पार्सल लेने से मना कर दिया है। SaunpDo की प्रक्रिया बंद कर दी गई है।"
+    }
+  ]
+}

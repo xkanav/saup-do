@@ -1,0 +1,28 @@
+{
+  "run_id": "run-78e31f8d0d0a",
+  "scenario": "question",
+  "driver": "Local app HTTP integration test",
+  "inputs": "Fixed practice grant, invitation acceptance, the selected original recording and availability (before a refusal, or if asked). No model decisions supplied.",
+  "status": "closed",
+  "outcome": "unresolved",
+  "model_calls": 11,
+  "failure": null,
+  "messages": [
+    {
+      "to": "DEMO-RECEIVER-01",
+      "text": "नमस्ते मीरा जी, यह एक डेमो पार्सल की जानकारी है। आरव ने आपके लिए बेडशीट का पार्सल रिसीव करने की मंज़ूरी दी है, क्या आप इसमें मदद चाहती हैं?"
+    },
+    {
+      "to": "DEMO-RECEIVER-01",
+      "text": "यह पार्सल प्रीपेड बेडशीट का है। डिलीवरी कंपनी अपनी प्रक्रिया से ही पार्सल देगी। क्या आप इसे लेने के लिए उपलब्ध हैं या कोई सवाल पूछना चाहती हैं?"
+    },
+    {
+      "to": "DEMO-RECEIVER-01",
+      "text": "आरव का यह पार्सल मिंत्रा से बेडशीट का है और इसके पैसे पहले ही दिए जा चुके हैं। SaunpDo कभी भी आपसे OTP नहीं मांगता और डिलीवरी कंपनी अपनी सामान्य प्रक्रिया से ही पार्सल देगी।"
+    },
+    {
+      "to": "DEMO-BUYER-01",
+      "text": "Meera was informed about your prepaid bedsheet parcel and that SaunpDo does not ask for OTP. Direct carrier release integration is unavailable in this coordination mode."
+    }
+  ]
+}

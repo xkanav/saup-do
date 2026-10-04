@@ -1,0 +1,31 @@
+{
+  "run_id": "run-3ea7f07d4b2e",
+  "driver": "Local app HTTP integration test",
+  "inputs": "Fixed practice choices and original user-supplied question recording. No model decisions supplied.",
+  "status": "halted",
+  "outcome": null,
+  "model_calls": 20,
+  "failure": "Model turn limit reached; no successful outcome was claimed.",
+  "messages": [
+    {
+      "to": "DEMO-RECEIVER-01",
+      "text": "नमस्ते मीरा जी, यह एक डेमो पार्सल की जानकारी है। आरव की मंज़ूरी से क्या आप इस पार्सल की जानकारी समझना चाहती हैं?"
+    },
+    {
+      "to": "DEMO-RECEIVER-01",
+      "text": "यह Myntra से बेडशीट का एक डेमो पार्सल है, जो पहले से प्रीपेड है। डिलीवरी कंपनी अपनी सामान्य प्रक्रिया से ही पार्सल देगी। क्या आपका कोई सवाल है?"
+    },
+    {
+      "to": "DEMO-RECEIVER-01",
+      "text": "यह आरव का Myntra से बेडशीट का डेमो पार्सल है और इसके ₹900 पहले से प्रीपेड हैं। SaunpDo कभी ओ टी पी नहीं मांगता, और डिलीवरी कंपनी अपने नियमों के अनुसार ही डिलीवरी करेगी। क्या आप इसे रिसीव करने के लिए उपलब्ध हैं?"
+    },
+    {
+      "to": "DEMO-RECEIVER-01",
+      "text": "धन्यवाद। डिलीवरी कंपनी पार्सल देते समय अपने सामान्य नियमों के अनुसार सत्यापन करेगी।"
+    },
+    {
+      "to": "DEMO-BUYER-01",
+      "text": "Meera is available to receive the bedsheet parcel. Delivery will proceed via standard carrier verification."
+    }
+  ]
+}

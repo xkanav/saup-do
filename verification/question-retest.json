@@ -1,0 +1,19 @@
+{
+  "run_id": "run-d6c4823ecfd4",
+  "driver": "Local app HTTP integration test",
+  "inputs": "Fixed practice choices and original user-supplied question recording. No model decisions supplied.",
+  "status": "halted",
+  "outcome": null,
+  "model_calls": 7,
+  "failure": "Gemini response did not finish normally: MAX_TOKENS",
+  "messages": [
+    {
+      "to": "DEMO-RECEIVER-01",
+      "text": "नमस्ते मीरा जी, आरव ने एक बेडशीट पार्सल की डेमो जानकारी साझा की है। डिलीवरी कंपनी अपनी जांच खुद करेगी, क्या आप पार्सल की जानकारी में मदद चाहती हैं?"
+    },
+    {
+      "to": "DEMO-RECEIVER-01",
+      "text": "यह मिंत्रा से बेडशीट का डेमो पार्सल है और इसका भुगतान हो चुका है। क्या आपका इस पार्सल को लेकर कोई सवाल है?"
+    }
+  ]
+}

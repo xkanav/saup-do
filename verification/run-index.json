@@ -1,0 +1,116 @@
+[
+  {
+    "run_id": "run-ccddf92a75f4",
+    "created_at_utc": "2026-10-03T17:59:22.730013+00:00",
+    "status": "closed",
+    "outcome": "unresolved",
+    "model_calls": 7,
+    "provider_responses": {
+      "Gemini": 7
+    },
+    "model_choices": 8,
+    "failure": null
+  },
+  {
+    "run_id": "run-69e00506da21",
+    "created_at_utc": "2026-10-03T20:40:20.777993+00:00",
+    "status": "closed",
+    "outcome": "unresolved",
+    "model_calls": 12,
+    "provider_responses": {
+      "Gemini": 12,
+      "Gnani STT": 1
+    },
+    "model_choices": 12,
+    "failure": null
+  },
+  {
+    "run_id": "run-0ed8189fd1fd",
+    "created_at_utc": "2026-10-03T20:49:44.706579+00:00",
+    "status": "closed",
+    "outcome": "declined",
+    "model_calls": 12,
+    "provider_responses": {
+      "Gemini": 12,
+      "Gnani STT": 1
+    },
+    "model_choices": 14,
+    "failure": null
+  },
+  {
+    "run_id": "run-d6c4823ecfd4",
+    "created_at_utc": "2026-10-04T01:39:11.373570+00:00",
+    "status": "halted",
+    "outcome": null,
+    "model_calls": 7,
+    "provider_responses": {
+      "Gemini": 7,
+      "Gnani STT": 1
+    },
+    "model_choices": 8,
+    "failure": "Gemini response did not finish normally: MAX_TOKENS"
+  },
+  {
+    "run_id": "run-3ea7f07d4b2e",
+    "created_at_utc": "2026-10-04T01:41:20.961553+00:00",
+    "status": "halted",
+    "outcome": null,
+    "model_calls": 20,
+    "provider_responses": {
+      "Gemini": 20,
+      "Gnani STT": 1
+    },
+    "model_choices": 20,
+    "failure": "Model turn limit reached; no successful outcome was claimed."
+  },
+  {
+    "run_id": "run-8206c436c2b4",
+    "created_at_utc": "2026-10-04T01:45:11.925354+00:00",
+    "status": "halted",
+    "outcome": null,
+    "model_calls": 5,
+    "provider_responses": {
+      "Gemini": 5
+    },
+    "model_choices": 8,
+    "failure": "Superseded development check stopped before final verification. Original events and outputs retained."
+  },
+  {
+    "run_id": "run-0652ea3cc96d",
+    "created_at_utc": "2026-10-04T01:46:37.804903+00:00",
+    "status": "halted",
+    "outcome": null,
+    "model_calls": 6,
+    "provider_responses": {
+      "Gemini": 6
+    },
+    "model_choices": 9,
+    "failure": "Superseded development check stopped before final verification. Original events and outputs retained."
+  },
+  {
+    "run_id": "run-78e31f8d0d0a",
+    "created_at_utc": "2026-10-04T01:48:15.692224+00:00",
+    "status": "closed",
+    "outcome": "unresolved",
+    "model_calls": 11,
+    "provider_responses": {
+      "Gemini": 11,
+      "Gnani STT": 1
+    },
+    "model_choices": 11,
+    "failure": null
+  },
+  {
+    "run_id": "run-44a85da4814c",
+    "created_at_utc": "2026-10-04T01:48:35.972026+00:00",
+    "status": "closed",
+    "outcome": "declined",
+    "model_calls": 10,
+    "provider_responses": {
+      "Gemini": 10,
+      "Gnani STT": 1
+    },
+    "model_choices": 12,
+    "failure": null
+  }
+]
